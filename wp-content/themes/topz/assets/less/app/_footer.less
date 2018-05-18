@@ -1,0 +1,204 @@
+.footer-style1{
+    padding-top: 58px;
+    .content-wrap >.vc_column-inner {
+        border-bottom: 1px solid lighten(@border-color, 10%);
+    }
+    .vc_wp_custommenu{
+        margin-bottom: 25px;
+    }
+    .widget_nav_menu{
+        .widgettitle{
+            font-size:16px; color:#222; text-transform:uppercase; position: relative; font-weight: 500;
+        }
+        ul.menu{
+            > li{
+                > a{
+                    color:#666;
+                    text-transform:capitalize;
+                    font-size:12px;
+                    position:relative;
+                    padding:8px 0px 8px 10px;
+                    position:relative;
+                    .transition(all 0.3s);
+                    display:block;
+                    vertical-align:top;
+                    position: relative;
+                    .rtl &{
+                        padding: 8px 10px 8px 0;
+                    }
+                    &:before{
+                        content:'\f105 '; font-family:FontAwesome; font-size: 14px;
+                        position: absolute; top:50%; left: 0; margin-top: -8px;
+                        .rtl &{
+                            left: auto; right: 0; content: '\f104';
+                        }
+                    }
+                    &:hover{
+                        color:@color;
+                        padding-left:15px;
+                        .rtl &{
+                            padding-right:15px;
+                            padding-left:0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.title-sign{
+    font-size: 18px; text-transform: uppercase; text-align: center; color: @body-color; border-bottom: 1px @border-color solid; padding: 5px 0;
+}
+.socials-footer{
+    h3{
+        float: left; text-transform: uppercase; color: @body-color; font-size: 16px; margin: 10px 0; font-weight: normal;
+        .rtl &{
+            float: right;
+        }
+    }
+    ul{
+        margin: 0; list-style: none; text-align: center; float: left;
+        .rtl &{
+            float: right;
+        }
+        li{
+            display: inline-block; vertical-align: top; list-style: none; margin: 6px 10px;
+            a{
+                color: @body-color; display: inline-block; text-align: center; .transition(all 0.3s); font-size: 18px;
+                &:hover{
+                    color: @color; .transition(all 0.3s);
+                }
+            }
+        }
+    }
+}
+.newsletter-footer{
+    h3{
+        float: left; text-transform: uppercase; color: @body-color; font-size: 16px; margin: 10px 0; font-weight: normal;
+        .rtl &{
+            float: right;
+        }
+    }
+    .form-newsletter{
+        float: right;
+        .rtl &{
+            float: left;
+        }
+        input{
+            margin:0; display: inline-block; vertical-align: top;
+        }
+        input[type="email"]{
+            border:0;
+            color:#aaa;
+            height:40px; line-height:40px; 
+            padding:0 15px;
+            min-width:240px;
+        }
+        .frm-submit{
+            border:0; font-weight: 600;
+            background-color:@body-color;
+            height:40px; line-height:40px; 
+            color:#fff; border-radius: 0;
+            text-transform:uppercase;
+            font-size:14px;
+            padding:0 19px;
+            .transition(all 0.3s);
+            &:before{
+                content: '\f0e0'; font-family: FontAwesome; margin-right: 5px; font-weight: normal; display: inline-block;
+                .rtl &{
+                    margin-right: 0; margin-left: 5px;
+                }
+            }
+            &:hover{
+                background-color: darken(@color, 10%); .transition(all 0.3s);
+            }
+        }
+    }
+}
+.footer-promotion{
+    overflow: hidden; padding: 28px 0;
+    .item{
+        text-align: center; margin-bottom: 12px;
+        .icon{
+            font-size: 0; display: inline-block;
+            background: url(../assets/img/icon_promotion.png) no-repeat center center;
+            width: 55px; height: 55px;
+        }
+        .content-info{
+            h3{
+                font-size: 16px; color: #fff; text-transform: uppercase; line-height: 22px; position: relative; padding: 20px 0 15px 0; margin-bottom: 8px;
+                min-height: 74px;
+                &:before{
+                    content: ""; width: 80px; height: 1px; background: rgb(255, 255, 255, 0.15);
+                    position: absolute; bottom: 0; left: 50%; margin-left: -40px;
+                }
+            }
+            p{
+                font-size: 12px; color: #c1c1c1; padding: 10px 0 12px 0;
+            }
+            a{
+                font-size: 12px; color: #fff; text-transform: uppercase;
+                &:hover{
+                    color: @color;
+                }
+            }
+        }
+        &.item-1{
+            .icon{
+                background-position: 10px 1px;
+            }
+        }
+        &.item-2{
+            .icon{
+                background-position: -75px 1px;
+            }
+        }
+        &.item-3{
+            .icon{
+                background-position: -165px 1px;
+            }
+        }
+        &.item-4{
+            .icon{
+                background-position: -257px 1px;
+            }
+        }
+    }
+}
+.footer-copyright{
+    .copyright-text{
+        text-align: center;
+        p{
+            margin: 15px 0; font-size: 12px; color: #7d7d7d;
+        }
+    }
+    .widget_sp_image {
+        margin-bottom: 20px;
+        a img{
+            margin-bottom: 0;
+        }
+    }
+}
+#topz-totop {
+    background-color: #000;
+    bottom: 25px; right: 15px;
+    text-align: center; position: fixed;
+    height: 50px; width: 50px; line-height: 43px;
+    z-index: 99;
+    border: 2px @border-color solid;
+    .opacity(1);
+    .transition(all .3s);
+    &:before{
+        content: '\f106'; font-family: fontawesome; color: #fff; font-size: 18px; font-weight: bold;
+    }
+    &:hover {
+        border-color: @color;
+        &:before{
+            color: @color;
+        }
+    }
+    .rtl & {
+        right: auto;
+        left: 15px;
+    }
+}

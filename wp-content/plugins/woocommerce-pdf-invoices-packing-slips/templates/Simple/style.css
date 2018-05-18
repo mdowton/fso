@@ -1,0 +1,1926 @@
+/* Main Body */
+@page {
+	margin-top: 1cm;
+	margin-bottom: 3cm;
+	margin-left: 2cm;
+	margin-right: 2cm;
+}
+body {
+	background: #fff;
+	color: #000;
+	margin: 0cm;
+	font-family: 'Open Sans', sans-serif;
+	/* want to use custom fonts? http://docs.wpovernight.com/woocommerce-pdf-invoices-packing-slips/using-custom-fonts/ */
+	font-size: 9pt;
+	line-height: 100%; /* fixes inherit dompdf bug */
+}
+
+h1, h2, h3, h4 {
+	font-weight: bold;
+	margin: 0;
+}
+
+h1 {
+	font-size: 16pt;
+	margin: 5mm 0;
+}
+
+h2 {
+	font-size: 14pt;
+}
+
+h3, h4 {
+	font-size: 9pt;
+}
+
+
+ol,
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li,
+ul {
+	margin-bottom: 0.75em;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+p + p {
+	margin-top: 1.25em;
+}
+
+a { 
+	border-bottom: 1px solid; 
+	text-decoration: none; 
+}
+
+/* Basic Table Styling */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	page-break-inside: always;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+th, td {
+	vertical-align: top;
+	text-align: left;
+}
+
+table.container {
+	width:100%;
+	border: 0;
+}
+
+tr.no-borders,
+td.no-borders {
+	border: 0 !important;
+	border-top: 0 !important;
+	border-bottom: 0 !important;
+	padding: 0 !important;
+	width: auto;
+}
+
+/* Header */
+table.head {
+	margin-bottom: 12mm;
+}
+
+td.header img {
+	max-height: 3cm;
+	width: auto;
+}
+
+td.header {
+	font-size: 16pt;
+	font-weight: 700;
+}
+
+td.shop-info {
+	width: 40%;
+}
+.document-type-label {
+	text-transform: uppercase;
+}
+
+/* Recipient addressses & order data */
+table.order-data-addresses {
+	width: 100%;
+	margin-bottom: 10mm;
+}
+
+td.order-data {
+	width: 40%;
+}
+
+.invoice .shipping-address {
+	width: 30%;
+}
+
+.packing-slip .billing-address {
+	width: 30%;
+}
+
+td.order-data table th {
+	font-weight: normal;
+	padding-right: 2mm;
+}
+
+/* Order details */
+table.order-details {
+	width:100%;
+	margin-bottom: 8mm;
+}
+
+.quantity,
+.price {
+	width: 20%;
+}
+
+.order-details tr {
+	page-break-inside: always;
+	page-break-after: auto;	
+}
+
+.order-details td,
+.order-details th {
+	border-bottom: 1px #ccc solid;
+	border-top: 1px #ccc solid;
+	padding: 0.375em;
+} 
+
+.order-details th {
+	font-weight: bold;
+	text-align: left;
+}
+
+.order-details thead th {
+	color: white;
+	background-color: black;
+	border-color: black;
+}
+
+/* product bundles compatibility */
+.order-details tr.bundled-item td.product {
+	padding-left: 5mm;
+}
+
+.order-details tr.product-bundle td,
+.order-details tr.bundled-item td {
+	border: 0;
+}
+
+
+/* item meta formatting for WC2.6 and older */
+dl {
+	margin: 4px 0;
+}
+
+dt, dd, dd p {
+	display: inline;
+	font-size: 7pt;
+	line-height: 7pt;
+}
+
+dd {
+	margin-left: 5px;
+}
+
+dd:after {
+	content: "\A";
+	white-space: pre;
+}
+/* item-meta formatting for WC3.0+ */
+.wc-item-meta {
+	margin: 4px 0;
+	font-size: 7pt;
+	line-height: 7pt;
+}
+.wc-item-meta p {
+	display: inline;
+}
+.wc-item-meta li {
+	margin: 0;
+	margin-left: 5px;
+}
+
+/* Notes & Totals */
+.customer-notes {
+	margin-top: 5mm;
+}
+
+table.totals {
+	width: 100%;
+	margin-top: 5mm;
+}
+
+table.totals th,
+table.totals td {
+	border: 0;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+table.totals th.description,
+table.totals td.price {
+	width: 50%;
+}
+
+table.totals tr.order_total td,
+table.totals tr.order_total th {
+	border-top: 2px solid #000;
+	border-bottom: 2px solid #000;
+	font-weight: bold;
+}
+
+table.totals tr.payment_method {
+	display: none;
+}
+
+/* Footer Imprint */
+#footer {
+	position: absolute;
+	bottom: -2cm;
+	left: 0;
+	right: 0;
+	height: 2cm; /* if you change the footer height, don't forget to change the bottom (=negative height) and the @page margin-bottom as well! */
+	text-align: center;
+	border-top: 0.1mm solid gray;
+	margin-bottom: 0;
+	padding-top: 2mm;
+}
+
+/* page numbers */
+.pagenum:before {
+	content: counter(page);
+}
+.pagenum,.pagecount {
+	font-family: sans-serif;
+}
+
+/** Corner Shower Right (Without) **/
+.test1.product-3743.right.without {
+    position: absolute;
+    margin-top: -49.9%;
+    margin-left: 41.2%;
+	font-size: 8px;
+}
+.test2.product-3743.right.without { 
+    position: absolute;
+    margin-top: 15.5%;
+    margin-left: 43.9%;
+	font-size: 8px;
+}
+.test3.product-3743.right.without {
+    position: absolute;
+    margin-top: -0.2%;
+    margin-left: 19.1%;
+	font-size: 8px;
+}
+.test4.product-3743.right.without {
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 23.8%;
+	font-size: 8px;
+}
+.test5.product-3743.right.without {
+    position: absolute;
+    margin-top: -0.2%;
+    margin-left: 59.4%;
+	font-size: 8px;
+}
+.test6.product-3743.right.without {
+    position: absolute;
+    margin-top: 15.3%;
+    margin-left: 61.5%;
+	font-size: 8px;
+}
+.test6extra.product-3743.right.without {
+    position: absolute;
+    margin-top: -5.2%;
+    margin-left: 71.4%;
+    font-size: 8px;
+}
+
+/** Corner Shower Left (Without) **/
+
+.test1.product-3743.left.without {
+    position: absolute;
+    margin-top: -50%;
+    margin-left: 38.1%;
+	font-size: 8px;
+}
+.test2.product-3743.left.without { 
+    position: absolute;
+    margin-top: 13.8%;
+    margin-left: 35.1%;
+	font-size: 8px;
+}
+.test3.product-3743.left.without {
+    position: absolute;
+    margin-top: -0.1%;
+    margin-left: 59.1%;
+	font-size: 8px;
+}
+.test4.product-3743.left.without {
+    position: absolute;
+    margin-top: 13.3%;
+    margin-left: 16.7%;
+	font-size: 8px;
+}
+.test5.product-3743.left.without {
+    position: absolute;
+	margin-top: 0%;
+    margin-left: 19.5%;
+	font-size: 8px;
+}
+.test6.product-3743.left.without {
+    position: absolute;
+    margin-top: 13.8%;
+    margin-left: 54.9%;
+	font-size: 8px;
+}
+.test6extra.product-3743.left.without {
+    position: absolute;
+    margin-top: -5.3%;
+    margin-left: 4.8%;
+    font-size: 8px;
+}
+/** Corner Shower Right (With) **/
+.test1.product-3743.right.with {
+    position: absolute;
+    margin-top: -50%;
+    margin-left: 39.8%;
+	font-size: 8px;
+}
+.test2.product-3743.right.with { 
+    position: absolute;
+    margin-top: 15.1%;
+    margin-left: 43.4%;
+	font-size: 8px;
+}
+.test3.product-3743.right.with {
+    position: absolute;
+    margin-top: -0%;
+    margin-left: 18.8%;
+	font-size: 8px;
+}
+.test4.product-3743.right.with {
+    position: absolute;
+    margin-top: 15.2%;
+    margin-left: 23.8%;
+	font-size: 8px;
+}
+.test5.product-3743.right.with {
+    position: absolute;
+    margin-top: -0.1%;
+    margin-left: 59.1%;
+	font-size: 8px;
+}
+.test6.product-3743.right.with {
+    position: absolute;
+    margin-top: 15.1%;
+    margin-left: 61%;
+	font-size: 8px;
+}
+.test6extra.product-3743.right.with {
+    position: absolute;
+    margin-top: -5.3%;
+    margin-left: 71.1%;
+    font-size: 8px;
+}
+
+.demo1.product-3743.right.with {
+    position: absolute;
+    margin-top: -10.8%;
+    margin-left: 11.9%;
+	font-size: 10px;  
+}
+.demo2.product-3743.right.with {
+    position: absolute;
+    margin-top: -10.8%;
+    margin-left: 68%;
+	font-size: 10px;
+}
+.demo3.product-3743.right.with {
+    position: absolute;
+    margin-top: 23.2%;
+    margin-left: 11.9%;
+	font-size: 10px;  
+}
+.demo4.product-3743.right.with {
+    position: absolute;
+    margin-top: 23.9%;
+    margin-left: 69%;
+	font-size: 10px;
+}
+.demo5.product-3743.right.with {
+    position: absolute;
+    margin-top: 28.3%;
+    margin-left: 15.1%;
+	font-size: 10px;
+}
+.demo6.product-3743.right.with {
+    position: absolute;
+    margin-top: 28.7%;
+    margin-left: 30.5%;
+	font-size: 10px;
+}
+.demo7.product-3743.right.with {
+    position: absolute;
+    margin-top: 30.2%;
+    margin-left:56.8%;
+	font-size: 10px;
+}
+.demo8.product-3743.right.with {
+    position: absolute;
+    margin-top: 29.8%;
+    margin-left: 64.5%;
+	font-size: 10px;
+}
+/** Corner Shower Left (With) **/
+.test1.product-3743.left.with {
+    position: absolute;
+    margin-top: -50.1%;
+    margin-left: 38%;
+	font-size: 8px;
+}
+.test2.product-3743.left.with { 
+    position: absolute;
+    margin-top: 14.9%;
+    margin-left: 35.1%;
+	font-size: 8px;
+}
+.test3.product-3743.left.with {
+    position: absolute;
+    margin-top: -0.1%;
+    margin-left: 59.8%;
+	font-size: 8px;
+}
+.test4.product-3743.left.with {
+    position: absolute;
+    margin-top: 15.1%;
+    margin-left: 16.8%;
+	font-size: 8px;
+}
+.test5.product-3743.left.with {
+    position: absolute;
+	margin-top: 0%;
+    margin-left:19%;
+	font-size: 8px;
+}
+.test6.product-3743.left.with {
+    position: absolute;
+    margin-top: 15.1%;
+    margin-left: 55.1%;
+	font-size: 8px;
+}
+.test6extra.product-3743.left.with {
+    position: absolute;
+    margin-top: -5.5%;
+    margin-left: 4.8%;
+	font-size: 8px;
+}
+.demo1.product-3743.left.with {
+    position: absolute;
+    margin-top: -10.8%;
+    margin-left: 11.4%;
+	font-size: 10px;
+}
+.demo2.product-3743.left.with {
+    position: absolute;
+    margin-top: -10.6%;
+    margin-left: 69.2%;
+	font-size: 10px;
+}
+.demo3.product-3743.left.with {
+    position: absolute;
+    margin-top: 23.5%;
+    margin-left: 12.4%;
+	font-size: 10px;
+}
+.demo4.product-3743.left.with {
+    position: absolute;
+    margin-top: 23.3%;
+    margin-left: 68.4%;
+	font-size: 10px;
+}
+.demo5.product-3743.left.with {
+    position: absolute;
+    margin-top: 29%;
+    margin-left: 15.7%;
+	font-size: 10px;
+}
+.demo6.product-3743.left.with {
+    position: absolute;
+    margin-top: 29.7%;
+    margin-left: 24.1%;
+	font-size: 10px;
+}
+.demo7.product-3743.left.with {
+    position: absolute;
+    margin-top: 28.7%;
+    margin-left: 50.1%;
+	font-size: 10px;
+}
+.demo8.product-3743.left.with {
+    position: absolute;
+    margin-top: 28.7%;
+    margin-left: 65.1%;
+	font-size: 10px;
+}
+
+
+/** Fixed Panel Shower Right (without) **/
+.test1.product-4241.right.without {
+    position: absolute;
+    margin-top: -50.1%;
+    margin-left: 59%;
+	font-size: 8px;
+}
+.test2.product-4241.right.without { 
+    position: absolute;
+    margin-top: 15.2%;
+    margin-left: 61%;
+	font-size: 8px;
+}
+.test2extra.product-4241.right.without { 
+    position: absolute;
+    margin-top: -5%;
+    margin-left: 71%;
+	font-size: 8px;
+}
+
+/** Fixed Panel Shower Right (with) **/
+.test1.product-4241.right.with {
+    position: absolute;
+    margin-top: -49.9%;
+    margin-left: 59%;
+	font-size: 8px;
+}
+.test2.product-4241.right.with { 
+    position: absolute;
+    margin-top: 15.2%;
+    margin-left: 61%;
+	font-size: 8px;
+    
+}
+.test2extra.product-4241.right.with { 
+	position: absolute;
+    margin-top: -4.8%;
+    margin-left: 71%;
+	font-size: 8px;
+}
+.demo2.product-4241.right.with {
+    position: absolute;
+    margin-top: -10.9%;
+    margin-left: 68.5%;
+	font-size: 10px;
+}
+.demo4.product-4241.right.with {
+    position: absolute;
+    margin-top: 23.9%;
+    margin-left: 68.8%;
+	font-size: 10px;
+}
+.demo5.product-4241.right.with {
+    position: absolute;
+    margin-top: 30.3%;
+    margin-left: 49.4%;
+	font-size: 10px;
+}
+.demo6.product-4241.right.with {
+    position: absolute;
+    margin-top: 30%;
+    margin-left: 64.8%;
+	font-size: 10px;
+}
+
+/** Fixed Panel Shower Left (without) **/
+.test1.product-4241.left.without {
+    position: absolute;
+    margin-top: -50.5%;
+    margin-left: 45%;
+	font-size: 8px;
+}
+.test2.product-4241.left.without { 
+    position: absolute;
+    margin-top: 13.3%;
+    margin-left: 42%;
+	font-size: 8px;
+}
+.test2extra.product-4241.left.without { 
+    position: absolute;
+    margin-top: -5%;
+    margin-left: 30%;
+	font-size: 8px;
+}
+/** Fixed Panel Shower Left (with) **/
+.test1.product-4241.left.with {
+    position: absolute;
+    margin-top: -49%;
+    margin-left: 44%;
+	font-size: 8px;
+}
+.test2.product-4241.left.with { 
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 42%;
+	font-size: 8px;
+    
+}
+.test2extra.product-4241.left.with { 
+	position: absolute;
+    margin-top: -5.8%;
+    margin-left: 30%;
+	font-size: 8px;
+}
+.demo1.product-4241.left.with {
+    position: absolute;
+    margin-top: -11%;
+    margin-left: 37.3%;
+	font-size: 10px;
+}
+.demo3.product-4241.left.with {
+    position: absolute;
+    margin-top: 23.6%;
+    margin-left: 37.3%;
+	font-size: 10px;
+}
+.demo5.product-4241.left.with {
+    position: absolute;
+    margin-top: 29%;
+    margin-left: 40.8%;
+	font-size: 10px;
+}
+.demo6.product-4241.left.with {
+    position: absolute;
+    margin-top: 29%;
+    margin-left: 55.5%;
+	font-size: 10px;
+}
+
+
+/** Wall to Wall Shower (without)**/
+/*** Right ***/
+.test1.product-4255.right.without {
+    position: absolute;
+    margin-top: -50%;
+    margin-left: 40.9%;
+	font-size: 8px;
+}
+.test2.product-4255.right.without { 
+    position: absolute;
+    margin-top: 15.5%;
+    margin-left: 43.9%;
+	font-size: 8px;
+}
+.test3.product-4255.right.without {
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 18.9%;
+	font-size: 8px;
+}
+.test4.product-4255.right.without { 
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 23.8%;
+	font-size: 8px;
+}
+.test5.product-4255.right.without {
+    position: absolute;
+    margin-top: -0.2%;
+    margin-left: 59.6%;
+	font-size: 8px;
+}
+.test6.product-4255.right.without {
+    position: absolute;
+    margin-top: 15.3%;
+    margin-left: 61.5%;
+	font-size: 8px;
+}
+.test6extra.product-4255.right.without {
+    position: absolute;
+    margin-top: -5.2%;
+    margin-left: 71.1%;
+	font-size: 8px;
+}
+
+/*** Left ***/
+.test1.product-4255.left.without {
+    position: absolute;
+    margin-top: -50%;
+    margin-left: 38.4%;
+	font-size: 8px;
+}
+.test2.product-4255.left.without { 
+    position: absolute;
+    margin-top: 13.8%;
+    margin-left: 35.1%;
+	font-size: 8px;
+}
+.test3.product-4255.left.without {
+    position: absolute;
+    margin-top: -0.3%;
+    margin-left: 19.5%;
+	font-size: 8px;
+}
+.test4.product-4255.left.without { 
+    position: absolute;
+    margin-top: 13.3%;
+    margin-left: 16.7%;
+	font-size: 8px;
+}
+.test5.product-4255.left.without {
+    position: absolute;
+    margin-top: -0.3%;
+    margin-left: 59.1%;
+	font-size: 8px;
+}
+.test6.product-4255.left.without {
+    position: absolute;
+    margin-top: 13.5%;
+    margin-left: 54.9%;
+	font-size: 8px;
+}
+.test6extra.product-4255.left.without {
+    position: absolute;
+    margin-top: -5.4%;
+    margin-left: 4.8%;
+	font-size: 8px;
+}
+/** Wall to Wall Shower (with)**/
+/*** Right ***/
+.test1.product-4255.right.with {
+    position: absolute;
+    margin-top: -50.1%;
+    margin-left: 39.5%;
+	font-size: 8px;
+}
+.test2.product-4255.right.with { 
+    position: absolute;
+    margin-top: 15.2%;
+    margin-left: 43.3%;
+	font-size: 8px;
+}
+.test3.product-4255.right.with {
+    position: absolute;
+    margin-top:0%;
+    margin-left: 18.9%;
+	font-size: 8px;
+}
+.test4.product-4255.right.with { 
+    position: absolute;
+    margin-top: 15.1%;
+    margin-left: 23.8%;
+	font-size: 8px;
+}
+.test5.product-4255.right.with {
+    position: absolute;
+    margin-top: 0.1%;
+    margin-left: 59.1%;
+	font-size: 8px;
+}
+.test6.product-4255.right.with {
+    position: absolute;
+    margin-top: 15.1%;
+    margin-left: 61.4%;
+	font-size: 8px;
+}
+.test6extra.product-4255.right.with {
+    position: absolute;
+    margin-top: -4.9%;
+    margin-left: 71.1%;
+	font-size: 8px;
+}
+
+.demo1.product-4255.right.with {
+    position: absolute;
+    margin-top: -10.9%;
+    margin-left: 11%;
+	font-size: 10px;
+}
+.demo2.product-4255.right.with {
+    position: absolute;
+    margin-top: -10.9%;
+    margin-left: 68.2%;
+	font-size: 10px;
+}
+.demo3.product-4255.right.with {
+	position: absolute;
+    margin-top: 22.9%;
+    margin-left: 12.1%;
+	font-size: 10px;
+}
+.demo4.product-4255.right.with {
+    position: absolute;
+    margin-top: 24.4%;
+    margin-left: 68%;
+	font-size: 10px;
+}
+.demo5.product-4255.right.with {
+    position: absolute;
+    margin-top: 28.5%;
+    margin-left: 14.9%;
+	font-size: 10px;
+}
+.demo6.product-4255.right.with {
+    position: absolute;
+    margin-top: 28.5%;
+    margin-left: 30.2%;
+	font-size: 10px;
+}
+.demo7.product-4255.right.with {
+    position: absolute;
+    margin-top: 30.2%;
+    margin-left: 56.5%;
+	font-size: 10px;
+}
+.demo8.product-4255.right.with {
+    position: absolute;
+    margin-top: 30.2%;
+    margin-left: 64.8%;
+	font-size: 10px;
+}
+
+/*** Left ***/
+.test1.product-4255.left.with {
+    position: absolute;
+    margin-top: -50.1%;
+    margin-left: 38.1%;
+	font-size: 8px;
+}
+.test2.product-4255.left.with { 
+    position: absolute;
+    margin-top: 14.9%;
+    margin-left: 35.3%;
+	font-size: 8px;
+}
+.test3.product-4255.left.with {
+    position: absolute;
+    margin-top: -0.3%;
+    margin-left:59.2%;
+	font-size: 8px;
+}
+.test4.product-4255.left.with { 
+	position: absolute;
+    margin-top: 15.1%;
+    margin-left: 55.2%;
+	font-size: 8px;   
+}
+.test5.product-4255.left.with {
+	position: absolute;
+    margin-top: -0.3%;
+    margin-left:18.5%;
+	font-size: 8px;
+}
+.test6.product-4255.left.with {
+	position: absolute;
+    margin-top: 15.1%;
+    margin-left: 16.8%;
+	font-size: 8px;
+}
+.test6extra.product-4255.left.with {
+    position: absolute;
+    margin-top: -5.3%;
+    margin-left: 5%;
+	font-size: 8px;
+}
+
+.demo1.product-4255.left.with {
+    position: absolute;
+    margin-top: -10.9%;
+    margin-left: 11.8%;
+	font-size: 10px;
+}
+.demo2.product-4255.left.with {
+    position: absolute;
+    margin-top: -10.8%;
+    margin-left: 69%;
+	font-size: 10px;
+}
+.demo3.product-4255.left.with {
+	position: absolute;
+    margin-top: 23.6%;
+    margin-left: 11.9%;
+	font-size: 10px;
+}
+.demo4.product-4255.left.with {
+    position: absolute;
+    margin-top: 23.3%;
+    margin-left: 68%;
+	font-size: 10px;
+}
+.demo5.product-4255.left.with {
+    position: absolute;
+    margin-top: 29%;
+    margin-left: 15.2%;
+	font-size: 10px;
+}
+.demo6.product-4255.left.with {
+    position: absolute;
+    margin-top: 29.7%;
+    margin-left: 23.9%;
+	font-size: 10px;
+}
+.demo7.product-4255.left.with {
+    position: absolute;
+    margin-top: 28.7%;
+    margin-left: 49.9%;
+	font-size: 10px;
+}
+.demo8.product-4255.left.with {
+    position: absolute;
+    margin-top: 28.7%;
+    margin-left: 64.9%;
+	font-size: 10px;
+}
+
+/** Next to Bath Shower Right (without) **/
+.test1.product-4248.right.without {
+    position: absolute;
+    margin-top: -49.8%;
+    margin-left: 41.4%;
+	font-size: 8px;
+}
+.test2.product-4248.right.without { 
+    position: absolute;
+    margin-top: 10.5%;
+    margin-left: 47%;
+	font-size: 8px;
+}
+.test3.product-4248.right.without {
+    position: absolute;
+    margin-top: -0.2%;
+    margin-left: 20.6%;
+	font-size: 8px;
+}
+.test4.product-4248.right.without {
+    position: absolute;
+    margin-top: 9.8%;
+    margin-left: 28.5%;
+	font-size: 8px;
+}
+.test5.product-4248.right.without {
+    position: absolute;
+    margin-top: -0.2%;
+    margin-left: 58.5%;
+	font-size: 8px;
+}
+.test6.product-4248.right.without {
+    position: absolute;
+    margin-top: 11.2%;
+    margin-left: 61.6%;
+	font-size: 8px;
+}
+.test6extra.product-4248.right.without { 
+    position: absolute;
+    margin-top: -0.2%;
+    margin-left: 68.6%;
+	font-size: 8px;
+}
+.test6extra1.product-4248.right.without { 
+    position: absolute;
+    margin-top: -0.4%;
+    margin-left: 8.4%;
+	font-size: 8px;
+}
+.test7.product-4248.right.without {
+    position: absolute;
+    margin-top: 13.8%;
+    margin-left: 20.2%;
+	font-size: 8px;
+}
+.test8.product-4248.right.without {
+    position: absolute;
+    margin-top: 20.3%;
+    margin-left: 28.2%;
+	font-size: 8px;
+}
+/** Next to Bath Shower Right (with) **/
+.test1.product-4248.right.with {
+    position: absolute;
+    margin-top: -49.8%;
+    margin-left: 41.4%;
+	font-size: 8px;
+}
+.test2.product-4248.right.with { 
+    position: absolute;
+    margin-top: 10.5%;
+    margin-left: 47%;
+	font-size: 8px;
+}
+.test3.product-4248.right.with {
+    position: absolute;
+    margin-top: -0.2%;
+    margin-left: 20.6%;
+	font-size: 8px;
+}
+.test4.product-4248.right.with{
+    position: absolute;
+    margin-top: 9.8%;
+    margin-left: 28.5%;
+	font-size: 8px;
+}
+.test5.product-4248.right.with {
+    position: absolute;
+    margin-top: -0.2%;
+    margin-left: 58.5%;
+	font-size: 8px;
+}
+.test6.product-4248.right.with {
+    position: absolute;
+    margin-top: 11.2%;
+    margin-left: 61.6%;
+	font-size: 8px;
+}
+.test6extra.product-4248.right.with { 
+    position: absolute;
+    margin-top: -0.1%;
+    margin-left: 73%;
+	font-size: 8px;
+}
+.test6extra1.product-4248.right.with { 
+    position: absolute;
+    margin-top: -0.4%;
+    margin-left: 4.6%;
+	font-size: 8px;
+}
+.test7.product-4248.right.with {
+    position: absolute;
+    margin-top: 13.8%;
+    margin-left: 20%;
+	font-size: 8px;
+}
+.test8.product-4248.right.with {
+    position: absolute;
+    margin-top: 20.3%;
+    margin-left: 28%;
+	font-size: 8px;
+}
+.demo1.product-4248.right.with {
+    position: absolute;
+    margin-top: -10%;
+    margin-left: 10.8%;
+	font-size: 10px;
+}
+.demo2.product-4248.right.with {
+    position: absolute;
+    margin-top: -10%;
+    margin-left: 67.8%; 
+	font-size: 10px;
+}
+.demo3.product-4248.right.with {
+	position: absolute;
+    margin-top: 14.7%;
+    margin-left: 11.3%;
+	font-size: 10px;
+}
+.demo4.product-4248.right.with {
+    position: absolute;
+    margin-top: 23.4%;
+    margin-left: 67.2%;
+	font-size: 10px;
+}
+.demo5.product-4248.right.with {
+    position: absolute;
+    margin-top: 19%;
+    margin-left: 14.9%;
+	font-size: 10px;
+}
+.demo6.product-4248.right.with {
+    position: absolute;
+    margin-top: 19%;
+    margin-left: 24.4%;
+	font-size: 10px;
+}
+.demo7.product-4248.right.with {
+    position: absolute;
+    margin-top: 30.8%;
+    margin-left: 56.4%;
+	font-size: 10px;
+}
+.demo8.product-4248.right.with {
+    position: absolute;
+    margin-top: 30.8%;
+    margin-left: 63.8%;
+	font-size: 10px;
+}
+
+/** Next to Bath Shower Left (without) **/
+.test1.product-4248.left.without {
+    position: absolute;
+    margin-top: -50%;
+    margin-left: 33.4%;
+	font-size: 8px;
+}
+.test2.product-4248.left.without { 
+    position: absolute;
+    margin-top: 7%;
+    margin-left: 30.3%;
+	font-size: 8px;
+}
+.test3.product-4248.left.without {
+    position: absolute;
+    margin-top: -0.2%;
+    margin-left: 18.6%;
+	font-size: 8px;
+}
+.test4.product-4248.left.without {
+    position: absolute;
+    margin-top: 7%;
+    margin-left: 15.5%;
+	font-size: 8px;
+}
+.test5.product-4248.left.without {
+    position: absolute;
+    margin-top: -0.2%;
+    margin-left: 52.5%;
+	font-size: 8px;
+}
+.test6.product-4248.left.without {
+    position: absolute;
+    margin-top: 7.5%;
+    margin-left: 49%;
+	font-size: 8px;
+}
+.test6extra.product-4248.left.without { 
+    position: absolute;
+    margin-top: -0.3%;
+    margin-left: 5.8%;
+	font-size: 8px;
+}
+.test6extra1.product-4248.left.without { 
+    position: absolute;
+    margin-top: -0.3%;
+    margin-left: 73.5%;
+	font-size: 8px;
+}
+.test7.product-4248.left.without {
+    position: absolute;
+    margin-top: 14.2%;
+    margin-left: 60%;
+	font-size: 8px;
+}
+.test8.product-4248.left.without {
+    position: absolute;
+    margin-top: 20.3%;
+    margin-left: 50.2%;
+	font-size: 8px;
+}
+/** Next to Bath Shower Left (with) **/
+.test1.product-4248.left.with {
+    position: absolute;
+    margin-top: -50%;
+    margin-left: 33.4%;
+	font-size: 8px;
+}
+.test2.product-4248.left.with { 
+    position: absolute;
+    margin-top: 7%;
+    margin-left: 30.3%;
+	font-size: 8px;
+}
+.test3.product-4248.left.with {
+    position: absolute;
+    margin-top: -0.2%;
+    margin-left: 18.6%;
+	font-size: 8px;
+}
+.test4.product-4248.left.with { 
+    position: absolute;
+    margin-top: 7%;
+    margin-left: 15.5%;
+	font-size: 8px;
+}
+.test5.product-4248.left.with {
+    position: absolute;
+    margin-top: -0.2%;
+    margin-left: 52.5%;
+	font-size: 8px;
+}
+.test6.product-4248.left.with { 
+    position: absolute;
+    margin-top: 7.5%;
+    margin-left: 49%;
+	font-size: 8px;
+}
+.test6extra.product-4248.left.with { 
+    position: absolute;
+    margin-top: -0.3%;
+    margin-left: 5.8%;
+	font-size: 8px;
+}
+.test6extra1.product-4248.left.with { 
+    position: absolute;
+    margin-top: -0.3%;
+    margin-left: 73.5%;
+	font-size: 8px;
+}
+.test7.product-4248.left.with {
+    position: absolute;
+    margin-top: 14.2%;
+    margin-left: 60%;
+	font-size: 8px;
+}
+.test8.product-4248.left.with {
+    position: absolute;
+    margin-top: 20.3%;
+    margin-left: 50.2%;
+	font-size: 8px;
+}
+.demo1.product-4248.left.with {
+    position: absolute;
+    margin-top: -10.4%;
+    margin-left: 11.6%;
+	font-size: 10px;
+}
+.demo2.product-4248.left.with {
+    position: absolute;
+    margin-top: -11%;
+    margin-left: 69%;
+	font-size: 10px;
+}
+.demo3.product-4248.left.with {
+	position: absolute;
+    margin-top: 23.6%;
+    margin-left: 12.2%;
+	font-size: 10px;
+}
+.demo4.product-4248.left.with {
+    position: absolute;
+    margin-top: 14.8%;
+    margin-left: 68.2%;
+	font-size: 10px;
+}
+.demo5.product-4248.left.with {
+    position: absolute;
+    margin-top: 30.8%;
+    margin-left: 15.4%;
+	font-size: 10px;
+}
+.demo6.product-4248.left.with {
+    position: absolute;
+    margin-top: 30.8%;
+    margin-left: 23.9%;
+	font-size: 10px;
+}
+.demo7.product-4248.left.with {
+    position: absolute;
+    margin-top: 19.3%;
+    margin-left: 54.9%;
+	font-size: 10px;
+}
+.demo8.product-4248.left.with {
+    position: absolute;
+    margin-top: 19.4%;
+    margin-left: 64.8%;
+	font-size: 10px;
+}
+
+
+/** Angled Coner Shower Right (without) **/
+.test1.product-4280.right.without {
+    position: absolute;
+    margin-top: -49.8%;
+    margin-left: 38.4%;
+	font-size: 8px;
+}
+.test2.product-4280.right.without { 
+    position: absolute;
+    margin-top: 13.5%;
+    margin-left: 35%;
+	font-size: 8px;
+}
+.test3.product-4280.right.without{
+    position: absolute;
+    margin-top: -0.6%;
+    margin-left: 19.2%;
+	font-size: 8px;
+}
+.test4.product-4280.right.without { 
+    position: absolute;
+    margin-top: 13%;
+    margin-left: 17%;
+	font-size: 8px;
+}
+.test5.product-4280.right.without {
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 58%;
+	font-size: 8px;
+}
+.test6.product-4280.right.without {
+    position: absolute;
+    margin-top: 13.5%;
+    margin-left: 55%;
+	font-size: 8px;
+}
+.test6extra.product-4280.right.without{
+    position: absolute;
+    margin-top: -5.6%;
+    margin-left: 4.8%;
+	font-size: 8px;
+}
+
+/** Angled Coner Shower Right (with) **/
+.test1.product-4280.right.with{
+    position: absolute;
+    margin-top: -49.8%;
+    margin-left: 38.4%;
+	font-size: 8px;
+}
+.test2.product-4280.right.with { 
+    position: absolute;
+    margin-top: 13.5%;
+    margin-left: 35%;
+	font-size: 8px;
+}
+.test3.product-4280.right.with{
+    position: absolute;
+    margin-top: -0.6%;
+    margin-left: 19.2%;
+	font-size: 8px;
+}
+.test4.product-4280.right.with { 
+    position: absolute;
+    margin-top: 13%;
+    margin-left: 17%;
+	font-size: 8px;
+}
+.test5.product-4280.right.with {
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 58%;
+	font-size: 8px;
+}
+.test6.product-4280.right.with {
+    position: absolute;
+    margin-top: 13.5%;
+    margin-left: 55%;
+	font-size: 8px;
+}
+.test6extra.product-4280.right.with {
+    position: absolute;
+    margin-top: -5.6%;
+    margin-left: 4.8%;
+	font-size: 8px;
+}
+.demo1.product-4280.right.with {
+    position: absolute;
+    margin-top: -11%;
+    margin-left: 9.4%;
+	font-size: 10px;
+}
+.demo2.product-4280.right.with {
+    position: absolute;
+    margin-top: -11%;
+    margin-left: 65.5%; 
+	font-size: 10px;
+}
+.demo3.product-4280.right.with {
+    position: absolute;
+    margin-top: 23.6%;
+    margin-left: 10%;
+	font-size: 10px;
+}
+.demo4.product-4280.right.with {
+    position: absolute;
+    margin-top: 23.6%;
+    margin-left: 65.9%;
+    font-size: 10px;	
+}
+.demo5.product-4280.right.with {
+    position: absolute;
+    margin-top: 30.8%;
+    margin-left: 13.9%;
+	font-size: 10px;
+}
+.demo6.product-4280.right.with {
+    position: absolute;
+    margin-top: 30.9%;
+    margin-left: 23.5%;
+	font-size: 10px;
+}
+.demo7.product-4280.right.with {
+    position: absolute;
+    margin-top: 30.5%;
+    margin-left: 51.5%;
+	font-size: 10px;
+}
+.demo8.product-4280.right.with {
+    position: absolute;
+    margin-top: 30.2%;
+    margin-left: 61.9%;
+	font-size: 10px;
+}
+
+/** Angled Coner Shower Left (without) **/
+.test1.product-4280.left.without{
+    position: absolute;
+    margin-top: -49.8%;
+    margin-left: 38.4%;
+	font-size: 8px;
+}
+.test2.product-4280.left.without { 
+    position: absolute;
+    margin-top: 13.5%;
+    margin-left: 35%;
+	font-size: 8px;
+}
+.test3.product-4280.left.without{
+    position: absolute;
+    margin-top: -0.6%;
+    margin-left: 19.2%;
+	font-size: 8px;
+}
+.test4.product-4280.left.without { 
+    position: absolute;
+    margin-top: 13%;
+    margin-left: 17%;
+	font-size: 8px;
+}
+.test5.product-4280.left.without {
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 58%;
+	font-size: 8px;
+}
+.test6.product-4280.left.without {
+    position: absolute;
+    margin-top: 13.5%;
+    margin-left: 55%;
+	font-size: 8px;
+}
+.test6extra.product-4280.left.without {
+    position: absolute;
+    margin-top: -5.6%;
+    margin-left: 4.8%;
+	font-size: 8px;
+}
+
+/** Angled Coner Shower Left (with) **/
+.test1.product-4280.left.with{
+    position: absolute;
+    margin-top: -49.8%;
+    margin-left: 38.4%;
+	font-size: 8px;
+}
+.test2.product-4280.left.with { 
+    position: absolute;
+    margin-top: 13.5%;
+    margin-left: 35%;
+	font-size: 8px;
+}
+.test3.product-4280.left.with{
+    position: absolute;
+    margin-top: -0.6%;
+    margin-left: 19.2%;
+	font-size: 8px;
+}
+.test4.product-4280.left.with { 
+    position: absolute;
+    margin-top: 13%;
+    margin-left: 17%;
+	font-size: 8px;
+}
+.test5.product-4280.left.with {
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 58%;
+	font-size: 8px;
+}
+.test6.product-4280.left.with {
+    position: absolute;
+    margin-top: 13.5%;
+    margin-left: 55%;
+	font-size: 8px;
+}
+.test6extra.product-4280.left.with {
+    position: absolute;
+    margin-top: -5.6%;
+    margin-left: 4.8%;
+	font-size: 8px;
+}
+.demo1.product-4280.left.with {
+    position: absolute;
+    margin-top: -11%;
+    margin-left: 10.3%;
+	font-size: 10px;
+}
+.demo2.product-4280.left.with {
+    position: absolute;
+    margin-top: -11%;
+    margin-left: 66%; 
+	font-size: 10px;
+}
+.demo3.product-4280.left.with {
+    position: absolute;
+    margin-top: 23.6%;
+    margin-left: 10%;
+	font-size: 10px;
+}
+.demo4.product-4280.left.with {
+    position: absolute;
+    margin-top: 23.6%;
+    margin-left: 65.9%;  
+	font-size: 10px;
+}
+.demo5.product-4280.left.with {
+    position: absolute;
+    margin-top: 30.8%;
+    margin-left: 13.9%;
+	font-size: 10px;
+}
+.demo6.product-4280.left.with {
+    position: absolute;
+    margin-top: 30.9%;
+    margin-left: 23.5%;
+	font-size: 10px;
+}
+.demo7.product-4280.left.with {
+    position: absolute;
+    margin-top: 30.5%;
+    margin-left: 51.5%;
+	font-size: 10px;
+}
+.demo8.product-4280.left.with {
+    position: absolute;
+    margin-top: 30.2%;
+    margin-left: 61.9%;
+	font-size: 10px;
+}
+
+
+
+/** Over Bath Shower-hinged (without) **/
+/*** Right ***/
+.test1.product-4262.right.without {
+    position: absolute;
+    margin-top: -50.4%;
+    margin-left: 41%;
+	font-size: 8px; 
+}
+.test2.product-4262.right.without { 
+    position: absolute;
+    margin-top: 15.9%;
+    margin-left: 43.9%;
+	font-size: 8px;
+}
+.test3.product-4262.right.without {
+    position: absolute;
+    margin-top: 0.1%;
+    margin-left: 59.7%;
+	font-size: 8px;
+}
+.test4.product-4262.right.without {
+    position: absolute;
+    margin-top: 15.8%;
+    margin-left: 61.3%;
+	font-size: 8px;
+}
+.test4extra.product-4262.right.without { 
+    position: absolute;
+    margin-top: -4.7%;
+    margin-left: 71.4%;
+	font-size: 8px;
+}
+
+/*** Left ***/
+.test1.product-4262.left.without {
+    position: absolute;
+    margin-top: -50.1%;
+    margin-left: 62.4%;
+	font-size: 8px; 
+}
+.test2.product-4262.left.without { 
+    position: absolute;
+    margin-top: 13.8%;
+    margin-left: 59.1%;
+	font-size: 8px;
+}
+.test3.product-4262.left.without {
+    position: absolute;
+    margin-top: -0.1%;
+    margin-left: 43.4%;
+	font-size: 8px;
+}
+.test4.product-4262.left.without{
+    position: absolute;
+    margin-top: 13.3%;
+    margin-left: 40.8%;
+	font-size: 8px;
+}
+.test4extra.product-4262.left.without { 
+    position: absolute;
+    margin-top: -5.2%;
+    margin-left: 28.9%;
+	font-size: 8px;
+}
+
+
+/** Over Bath Shower-hinged (with) **/
+/*** Right ***/
+.test1.product-4262.right.with {
+    position: absolute;
+    margin-top: -50%;
+    margin-left: 39.5%;
+	font-size: 8px; 
+}
+.test2.product-4262.right.with { 
+    position: absolute;
+    margin-top: 15.1%;
+    margin-left: 43.3%;
+	font-size: 8px;
+}
+.test3.product-4262.right.with {
+    position: absolute;
+    margin-top: 0.1%;
+    margin-left: 59.3%;
+	font-size: 8px;
+}
+.test4.product-4262.right.with {
+    position: absolute;
+    margin-top: 15.2%;
+    margin-left: 61.3%;
+	font-size: 8px;
+}
+.test4extra.product-4262.right.with { 
+    position: absolute;
+    margin-top: -5.2%;
+    margin-left: 71.1%;
+	font-size: 8px;
+}
+.demo2.product-4262.right.with {
+    position: absolute;
+    margin-top: -10.9%;
+    margin-left: 68.6%;
+	font-size: 10px;
+}
+.demo4.product-4262.right.with {
+    position: absolute;
+    margin-top: 24%;
+    margin-left: 68.5%;
+    font-size: 10px;	
+}
+.demo7.product-4262.right.with {
+    position: absolute;
+    margin-top: 28.1%;
+    margin-left: 56.7%;
+	font-size: 10px;
+}
+.demo8.product-4262.right.with {
+    position: absolute;
+    margin-top: 28.2%;
+    margin-left: 65%;
+	font-size: 10px;
+}
+
+/*** Left ***/
+.test1.product-4262.left.with {
+    position: absolute;
+    margin-top: -50.6%;
+    margin-left: 61%;
+	font-size: 8px; 
+}
+.test2.product-4262.left.with { 
+    position: absolute;
+    margin-top: 14.9%;
+    margin-left:58%;
+	font-size: 8px;
+}
+.test3.product-4262.left.with {
+    position: absolute;
+    margin-top: -0.1%;
+    margin-left: 41.7%;
+	font-size: 8px;
+}
+.test4.product-4262.left.with{
+    position: absolute;
+    margin-top: 14.8%;
+    margin-left: 39.8%;
+	font-size: 8px;
+}
+.test4extra.product-4262.left.with { 
+    position: absolute;
+    margin-top: -5.2%;
+    margin-left: 27.4%;
+	font-size: 8px;
+}
+.demo1.product-4262.left.with {
+    position: absolute;
+    margin-top: -10.4%;
+    margin-left: 35%;
+	font-size: 10px;
+}
+.demo3.product-4262.left.with {
+    position: absolute;
+    margin-top: 24%;
+    margin-left: 35%;
+    font-size: 10px;	
+}
+.demo7.product-4262.left.with {
+    position: absolute;
+    margin-top: 29.2%;
+    margin-left: 38.6%;
+	font-size: 10px;
+}
+.demo8.product-4262.left.with {
+    position: absolute;
+    margin-top: 29.4%;
+    margin-left: 46.8%;
+	font-size: 10px;
+}
+
+
+
+/** Over Bath Shower-fixed (without) **/
+.test1.product-4271.right.without {
+    position: absolute;
+    margin-top: -50%;
+    margin-left: 59%;
+	font-size: 8px; 
+}
+.test2.product-4271.right.without { 
+    position: absolute;
+    margin-top: 14.8%;
+    margin-left: 61%;
+	font-size: 8px;
+}
+.test2extra.product-4271.right.without { 
+    position: absolute;
+    margin-top: -4.8%;
+    margin-left: 71.6%;
+	font-size: 8px;
+}
+
+/** Over Bath Shower-fixed (without) left **/
+.test1.product-4271.left.without {
+    position: absolute;
+    margin-top: -50.4%;
+    margin-left: 45.1%;
+	font-size: 8px; 
+}
+.test2.product-4271.left.without { 
+    position: absolute;
+    margin-top: 13.1%;
+    margin-left: 42%;
+	font-size: 8px;
+}
+.test2extra.product-4271.left.without { 
+    position: absolute;
+    margin-top: -4.4%;
+    margin-left: 30.2%;
+	font-size: 8px;
+}
+
+/** Over Bath Shower-fixed (with) **/
+/*** Right ***/
+.test1.product-4271.right.with {
+    position: absolute;
+    margin-top: -50%;
+    margin-left: 59%;
+	font-size: 8px; 
+}
+.test2.product-4271.right.with { 
+    position: absolute;
+    margin-top: 14.8%;
+    margin-left: 61%;
+	font-size: 8px;
+}
+.test2extra.product-4271.right.with { 
+    position: absolute;
+    margin-top: -4.8%;
+    margin-left: 71.1%;
+	font-size: 8px;
+}
+.demo2.product-4271.right.with {
+    position: absolute;
+    margin-top: -11%;
+    margin-left: 68.5%;
+	font-size: 10px;
+}
+.demo4.product-4271.right.with {
+    position: absolute;
+    margin-top: 24.2%;
+    margin-left: 68.6%;
+	font-size: 10px;
+}
+.demo5.product-4271.right.with {
+    position: absolute;
+    padding-top:28.5%;
+    margin-left: 49.6%;
+	font-size: 10px;
+}
+.demo6.product-4271.right.with {
+    position: absolute;
+    margin-top: 28.5%;
+    margin-left: 64.6%;
+	font-size: 10px;
+}
+
+/*** Left ***/
+.test1.product-4271.left.with {
+    position: absolute;
+    margin-top: -50.4%;
+    margin-left: 45.1%;
+	font-size: 8px; 
+}
+.test2.product-4271.left.with { 
+    position: absolute;
+    margin-top: 16.1%;
+    margin-left: 42%;
+	font-size: 8px;
+}
+.test2extra.product-4271.left.with { 
+    position: absolute;
+    margin-top: -4.4%;
+    margin-left: 29.8%;
+	font-size: 8px;
+}
+.demo1.product-4271.left.with {
+    position: absolute;
+    margin-top: -9.2%;
+    margin-left: 37.2%;
+	font-size: 10px;
+}
+.demo3.product-4271.left.with {
+    position: absolute;
+    margin-top: 25.2%;
+    margin-left: 37.2%;
+	font-size: 10px;
+}
+.demo5.product-4271.left.with {
+    position: absolute;
+    padding-top:30.5%;
+    margin-left: 40.8%;
+	font-size: 10px;
+}
+.demo6.product-4271.left.with {
+    position: absolute;
+    margin-top: 30.8%;
+    margin-left: 55.4%;
+	font-size: 10px;
+}
+
+
+
+
+.draw-image {
+	width: 520px !important;
+}  
+.pdf_invoice {
+	display: inline-flex;
+}
+.pdfinvoice_text {
+	width: 20%; 
+	float: left;
+	border: 1px solid #000;
+	padding-top: 22px;
+	padding-bottom: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: -3%;       
+}
+.pdfinvoice_image {
+	float: right;
+	width: 75%;
+}
+.pdfsupport_text {
+	text-align: center;
+	/* margin-top: 39.7%; */ 
+	padding-top: 40px;  
+	margin-bottom: 0px;
+}
+.order_th {
+	padding-right: 10px;
+}
+.order_number, .order_numbertext {
+	font-size: 10px;
+}
+.order_date, .order_datetext {
+	font-size: 10px;
+}
+.glass_type, .glass_typetext {
+	font-size: 10px;
+} 
+.table-div {
+	display:table;
+}
+.tr-div {
+	display:table-row;
+}
+.td-div {
+	display:table-cell;
+}
+.product {
+    padding-bottom: 25% !important;
+}

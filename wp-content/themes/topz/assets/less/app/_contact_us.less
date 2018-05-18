@@ -1,0 +1,144 @@
+.page .listing-title h1{
+	margin:40px 0 0;
+}
+.wpb_gmaps_widget .wpb_wrapper {
+	padding: 0;
+	.wpb_map_wraper {
+		border: 5px solid #fff;
+	}
+}
+.contact-comment{
+	.title-page{
+		font-size: 18px; color: @body-color; text-transform: uppercase; font-weight: 600;
+	}
+	p{
+		font-size: 13px; color: #545454; margin-bottom: 20px;
+	}
+}
+.wrap-quest{
+	padding: 5px 0; overflow: hidden; 
+	.item{
+		.wrap{
+			display: block; background: #f2f2f2; padding: 15px 5px;
+			.icon{
+				display: inline-block; vertical-align: middle; font-size: 0; width: 66px; height: 66px; .opacity(1); margin: 0 10px;
+				background: url(../assets/img/icon-contact.png) no-repeat center center; .transition(all 0.3s ease);
+				border: 1px @border-color solid; border-radius: 50%;
+			}
+			.content{
+				overflow: hidden; display: inline-block; vertical-align: middle;
+				p{
+					color: @body-color; font-size: 14px; margin-bottom: 0;
+				}
+			}
+			&:hover{
+				.icon{
+					.opacity(0.6); .transition(all 0.3s ease);
+				}
+				.content p{
+					color: @color; .transition(all 0.2s ease);
+				}
+			}
+		}
+		&.item-1{
+			padding-left: 0;
+			.wrap .icon{
+				background-position: 10px 15px;
+			}
+		}
+		&.item-2{
+			.wrap .icon{
+				background-position: -65px 15px;
+			}
+		}
+		&.item-3{
+			padding-right: 0;
+			.wrap .icon{
+				background-position: -130px 15px;
+			}
+		}
+	}
+}
+.wpcf7{
+	overflow: hidden;
+	.wpcf7-form-control-wrap{
+		input{
+			width:100%;	.border-radius(0);
+			.rtl &{
+				text-align: right;
+			}
+		}
+		input::-webkit-input-placeholder {
+			color: #545454;
+		}
+		input::-moz-placeholder {  
+			color: #545454;  
+		}
+		input:-ms-input-placeholder {  
+			color: #545454; 
+		}
+		.wpcf7-text{
+			height:40px;
+			border:1px solid lighten(@border-color, 10%);
+			font-size:13px;
+			color:#545454;
+			padding:10px 20px;
+			margin-bottom: 15px;
+			.border-radius(0);
+		}
+	}
+	textarea{
+		padding:10px 20px;
+		height:40px;
+		border:1px solid lighten(@border-color, 10%);
+		font-size:13px;
+		width:100%;
+		min-height:150px;
+		.border-radius(0);
+		.rtl &{
+			text-align: right;
+		}
+	}
+	textarea::-webkit-input-placeholder {
+		color: #545454;
+	}
+	textarea::-moz-placeholder {  
+		color: #545454;  
+	}
+	textarea:-ms-input-placeholder {  
+		color: #545454; 
+	}
+	&.your-message{
+		float:none;
+		clear:both;
+	}
+	.wpcf7-submit{
+		margin-top:10px;
+		color:#fffefe;
+		font-size:13px;
+		text-transform:uppercase;
+		border:0 !important;
+		background-color:@color !important;
+		height:42px;
+		line-height:35px;
+		padding:0 20px !important;
+		&:hover{
+			background-color:@body-color !important;
+		}
+	}
+	p {
+		margin-bottom: 5px;
+		.res{
+			color: red;
+		}
+		.rtl &{
+			text-align: right;
+		}
+	}
+	.wpcf7-validation-errors{
+		margin-top: 40px;
+		.rtl &{
+			text-align: right;
+		}
+	}
+}

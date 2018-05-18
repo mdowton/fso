@@ -1,0 +1,15 @@
+.show_pickups {
+    border-collapse: collapse;
+    margin-top: .5em;
+    width: 100%;
+    clear: both;
+    font-size: 14px;
+}
+.show_pickups th {
+    vertical-align: top;
+    text-align: left;
+    padding: 20px 10px 20px 0;
+    width: 200px;
+    line-height: 1.3;
+    font-weight: 700;
+}

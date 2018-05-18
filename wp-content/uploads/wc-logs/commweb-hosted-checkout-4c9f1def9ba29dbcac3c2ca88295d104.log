@@ -1,0 +1,1997 @@
+03-29-2018 @ 09:17:17 - start process Commweb
+03-29-2018 @ 09:17:17 - Checkout session request: Array
+(
+    [apiOperation] => CREATE_CHECKOUT_SESSION
+    [apiPassword] => 
+    [apiUsername] => merchant.
+    [merchant] => 
+    [order.id] => 6076_0724369001522275437
+    [order.amount] => 1369.00
+    [order.currency] => AUD
+)
+
+03-29-2018 @ 09:17:18 - Checkout session response: Array
+(
+    [error_cause] => INVALID_REQUEST
+    [error_explanation] => Value '' is invalid. Length is 0 characters, but must be at least 1
+    [error_field] => merchant
+    [error_validationType] => INVALID
+    [result] => ERROR
+)
+
+03-29-2018 @ 10:27:54 - start process Commweb
+03-29-2018 @ 10:27:54 - Checkout session request: Array
+(
+    [apiOperation] => CREATE_CHECKOUT_SESSION
+    [apiPassword] => f7cf032d2f1f1b93638b96c362480704
+    [apiUsername] => merchant.TESTFRASHOCOM201
+    [merchant] => TESTFRASHOCOM201
+    [order.id] => 6077_0526132001522279674
+    [order.amount] => 1835.00
+    [order.currency] => AUD
+)
+
+03-29-2018 @ 10:27:54 - Checkout session response: Array
+(
+    [merchant] => TESTFRASHOCOM201
+    [result] => SUCCESS
+    [session_id] => SESSION0002746004039L69606176L4
+    [session_updateStatus] => SUCCESS
+    [session_version] => e484eb2401
+    [successIndicator] => faa9036191154b2c
+)
+
+03-29-2018 @ 10:35:46 - Order detail from commweb: Array
+(
+    [amount] => 1835.00
+    [billing_address_street] => 10001 Alpha St
+    [creationTime] => 2018-03-28T23:35:44.941Z
+    [currency] => AUD
+    [customer_firstName] => John
+    [customer_lastName] => Smith
+    [description] => Commweb Order
+    [device_browser] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+    [device_ipAddress] => 103.217.166.140
+    [id] => 6077_0526132001522279674
+    [merchant] => TESTFRASHOCOM201
+    [result] => SUCCESS
+    [risk_response_gatewayCode] => ACCEPTED
+    [risk_response_review_decision] => NOT_REQUIRED
+    [risk_response_rule_data] => A
+    [risk_response_rule_name] => MERCHANT_AVS
+    [risk_response_rule_recommendation] => NO_ACTION
+    [risk_response_rule_type] => MERCHANT_RULE
+    [risk_response_rule] => Array
+        (
+            [10] => MSO_RULE
+            [1] => MERCHANT_RULE
+            [2] => MERCHANT_RULE
+            [3] => MERCHANT_RULE
+            [4] => MERCHANT_RULE
+            [5] => MERCHANT_RULE
+            [6] => MERCHANT_RULE
+            [7] => MSO_RULE
+            [8] => MSO_RULE
+            [9] => MSO_RULE
+        )
+
+    [sourceOfFunds_provided_card_brand] => MASTERCARD
+    [sourceOfFunds_provided_card_expiry_month] => 5
+    [sourceOfFunds_provided_card_expiry_year] => 21
+    [sourceOfFunds_provided_card_fundingMethod] => DEBIT
+    [sourceOfFunds_provided_card_issuer] => U.S. BANK NATIONAL ASSOCIATION
+    [sourceOfFunds_provided_card_nameOnCard] => John Smith
+    [sourceOfFunds_provided_card_number] => 511111xxxxxx1118
+    [sourceOfFunds_provided_card_scheme] => MASTERCARD
+    [sourceOfFunds_type] => CARD
+    [status] => CAPTURED
+    [totalAuthorizedAmount] => 1835.00
+    [totalCapturedAmount] => 1835.00
+    [totalRefundedAmount] => 0.00
+    [transaction_authorizationResponse_avsCode] => A
+    [transaction_authorizationResponse_cardSecurityCodeError] => M
+    [transaction_authorizationResponse_commercialCard] => 888
+    [transaction_authorizationResponse_commercialCardIndicator] => 3
+    [transaction_authorizationResponse_financialNetworkCode] => 777
+    [transaction_authorizationResponse_processingCode] => 003000
+    [transaction_authorizationResponse_responseCode] => 00
+    [transaction_authorizationResponse_stan] => 232914
+    [transaction_authorizationResponse_transactionIdentifier] => 123456789
+    [transaction_billing_address_street] => 10001 Alpha St
+    [transaction_customer_firstName] => John
+    [transaction_customer_lastName] => Smith
+    [transaction_device_browser] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+    [transaction_device_ipAddress] => 103.217.166.140
+    [transaction_gatewayEntryPoint] => CHECKOUT
+    [transaction_merchant] => TESTFRASHOCOM201
+    [transaction_order_amount] => 1835.00
+    [transaction_order_creationTime] => 2018-03-28T23:35:44.941Z
+    [transaction_order_currency] => AUD
+    [transaction_order_description] => Commweb Order
+    [transaction_order_id] => 6077_0526132001522279674
+    [transaction_order_status] => CAPTURED
+    [transaction_order_totalAuthorizedAmount] => 1835.00
+    [transaction_order_totalCapturedAmount] => 1835.00
+    [transaction_order_totalRefundedAmount] => 0.00
+    [transaction_response_acquirerCode] => 00
+    [transaction_response_acquirerMessage] => Approved
+    [transaction_response_cardSecurityCode_acquirerCode] => M
+    [transaction_response_cardSecurityCode_gatewayCode] => MATCH
+    [transaction_response_cardholderVerification_avs_acquirerCode] => A
+    [transaction_response_cardholderVerification_avs_gatewayCode] => ADDRESS_MATCH
+    [transaction_response_gatewayCode] => APPROVED
+    [transaction_result] => SUCCESS
+    [transaction_risk_response_gatewayCode] => ACCEPTED
+    [transaction_risk_response_review_decision] => NOT_REQUIRED
+    [transaction_risk_response_rule_data] => A
+    [transaction_risk_response_rule_name] => MERCHANT_AVS
+    [transaction_risk_response_rule_recommendation] => NO_ACTION
+    [transaction_risk_response_rule_type] => MERCHANT_RULE
+    [transaction_risk_response_rule] => Array
+        (
+            [10] => MSO_RULE
+            [1] => MERCHANT_RULE
+            [2] => MERCHANT_RULE
+            [3] => MERCHANT_RULE
+            [4] => MERCHANT_RULE
+            [5] => MERCHANT_RULE
+            [6] => MERCHANT_RULE
+            [7] => MSO_RULE
+            [8] => MSO_RULE
+            [9] => MSO_RULE
+        )
+
+    [transaction_sourceOfFunds_provided_card_brand] => MASTERCARD
+    [transaction_sourceOfFunds_provided_card_expiry_month] => 5
+    [transaction_sourceOfFunds_provided_card_expiry_year] => 21
+    [transaction_sourceOfFunds_provided_card_fundingMethod] => DEBIT
+    [transaction_sourceOfFunds_provided_card_issuer] => U.S. BANK NATIONAL ASSOCIATION
+    [transaction_sourceOfFunds_provided_card_nameOnCard] => John Smith
+    [transaction_sourceOfFunds_provided_card_number] => 511111xxxxxx1118
+    [transaction_sourceOfFunds_provided_card_scheme] => MASTERCARD
+    [transaction_sourceOfFunds_type] => CARD
+    [transaction_timeOfRecord] => 2018-03-28T23:35:44.941Z
+    [transaction_transaction_acquirer_batch] => 20180328
+    [transaction_transaction_acquirer_date] => 0328
+    [transaction_transaction_acquirer_id] => CBA_S2I
+    [transaction_transaction_acquirer_merchantId] => 353109290134156
+    [transaction_transaction_acquirer_settlementDate] => 2018-03-28
+    [transaction_transaction_acquirer_timeZone] => +1100
+    [transaction_transaction_acquirer_transactionId] => 123456789
+    [transaction_transaction_amount] => 1835.00
+    [transaction_transaction_authorizationCode] => 232914
+    [transaction_transaction_currency] => AUD
+    [transaction_transaction_frequency] => SINGLE
+    [transaction_transaction_id] => 1
+    [transaction_transaction_receipt] => 808723232914
+    [transaction_transaction_source] => INTERNET
+    [transaction_transaction_terminal] => CBAS2I05
+    [transaction_transaction_type] => PAYMENT
+    [transaction_version] => 45
+)
+
+03-29-2018 @ 10:52:44 - start process Commweb
+03-29-2018 @ 10:52:44 - Checkout session request: Array
+(
+    [apiOperation] => CREATE_CHECKOUT_SESSION
+    [apiPassword] => f7cf032d2f1f1b93638b96c362480704
+    [apiUsername] => merchant.TESTFRASHOCOM201
+    [merchant] => TESTFRASHOCOM201
+    [order.id] => 6078_0762954001522281164
+    [order.amount] => 3610.00
+    [order.currency] => AUD
+)
+
+03-29-2018 @ 10:52:45 - Checkout session response: Array
+(
+    [merchant] => TESTFRASHOCOM201
+    [result] => SUCCESS
+    [session_id] => SESSION0002834969510H55644125E7
+    [session_updateStatus] => SUCCESS
+    [session_version] => 5cda6e9801
+    [successIndicator] => 94eadbd8bd6845f0
+)
+
+03-29-2018 @ 11:06:38 - start process Commweb
+03-29-2018 @ 11:06:38 - Checkout session request: Array
+(
+    [apiOperation] => CREATE_CHECKOUT_SESSION
+    [apiPassword] => f7cf032d2f1f1b93638b96c362480704
+    [apiUsername] => merchant.TESTFRASHOCOM201
+    [merchant] => TESTFRASHOCOM201
+    [order.id] => 6079_0102598001522281998
+    [order.amount] => 1210.00
+    [order.currency] => AUD
+)
+
+03-29-2018 @ 11:06:38 - Checkout session response: Array
+(
+    [merchant] => TESTFRASHOCOM201
+    [result] => SUCCESS
+    [session_id] => SESSION0002695266322E03837103J2
+    [session_updateStatus] => SUCCESS
+    [session_version] => c0a5b17e01
+    [successIndicator] => 383cac3fdcb94f17
+)
+
+03-29-2018 @ 11:07:42 - Order detail from commweb: Array
+(
+    [amount] => 1210.00
+    [billing_address_city] => Glenhaven
+    [billing_address_country] => AUS
+    [billing_address_postcodeZip] => 2156
+    [billing_address_stateProvince] => NSW
+    [billing_address_street] => 10001 Alpha Street
+    [creationTime] => 2018-03-29T00:07:41.449Z
+    [currency] => AUD
+    [customer_firstName] => jaimee
+    [customer_lastName] => tracey
+    [description] => Commweb Order
+    [device_browser] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299
+    [device_ipAddress] => 1.144.106.168
+    [id] => 6079_0102598001522281998
+    [merchant] => TESTFRASHOCOM201
+    [result] => SUCCESS
+    [risk_response_gatewayCode] => ACCEPTED
+    [risk_response_review_decision] => NOT_REQUIRED
+    [risk_response_rule_data] => A
+    [risk_response_rule_name] => MERCHANT_AVS
+    [risk_response_rule_recommendation] => NO_ACTION
+    [risk_response_rule_type] => MERCHANT_RULE
+    [risk_response_rule] => Array
+        (
+            [10] => MSO_RULE
+            [1] => MERCHANT_RULE
+            [2] => MERCHANT_RULE
+            [3] => MERCHANT_RULE
+            [4] => MERCHANT_RULE
+            [5] => MERCHANT_RULE
+            [6] => MERCHANT_RULE
+            [7] => MSO_RULE
+            [8] => MSO_RULE
+            [9] => MSO_RULE
+        )
+
+    [sourceOfFunds_provided_card_brand] => MASTERCARD
+    [sourceOfFunds_provided_card_expiry_month] => 5
+    [sourceOfFunds_provided_card_expiry_year] => 21
+    [sourceOfFunds_provided_card_fundingMethod] => DEBIT
+    [sourceOfFunds_provided_card_issuer] => U.S. BANK NATIONAL ASSOCIATION
+    [sourceOfFunds_provided_card_nameOnCard] => jaimee tracey
+    [sourceOfFunds_provided_card_number] => 511111xxxxxx1118
+    [sourceOfFunds_provided_card_scheme] => MASTERCARD
+    [sourceOfFunds_type] => CARD
+    [status] => CAPTURED
+    [totalAuthorizedAmount] => 1210.00
+    [totalCapturedAmount] => 1210.00
+    [totalRefundedAmount] => 0.00
+    [transaction_authorizationResponse_avsCode] => A
+    [transaction_authorizationResponse_cardSecurityCodeError] => M
+    [transaction_authorizationResponse_commercialCard] => 888
+    [transaction_authorizationResponse_commercialCardIndicator] => 3
+    [transaction_authorizationResponse_financialNetworkCode] => 777
+    [transaction_authorizationResponse_processingCode] => 003000
+    [transaction_authorizationResponse_responseCode] => 00
+    [transaction_authorizationResponse_stan] => 227895
+    [transaction_authorizationResponse_transactionIdentifier] => 123456789
+    [transaction_billing_address_city] => Glenhaven
+    [transaction_billing_address_country] => AUS
+    [transaction_billing_address_postcodeZip] => 2156
+    [transaction_billing_address_stateProvince] => NSW
+    [transaction_billing_address_street] => 10001 Alpha Street
+    [transaction_customer_firstName] => jaimee
+    [transaction_customer_lastName] => tracey
+    [transaction_device_browser] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299
+    [transaction_device_ipAddress] => 1.144.106.168
+    [transaction_gatewayEntryPoint] => CHECKOUT
+    [transaction_merchant] => TESTFRASHOCOM201
+    [transaction_order_amount] => 1210.00
+    [transaction_order_creationTime] => 2018-03-29T00:07:41.449Z
+    [transaction_order_currency] => AUD
+    [transaction_order_description] => Commweb Order
+    [transaction_order_id] => 6079_0102598001522281998
+    [transaction_order_status] => CAPTURED
+    [transaction_order_totalAuthorizedAmount] => 1210.00
+    [transaction_order_totalCapturedAmount] => 1210.00
+    [transaction_order_totalRefundedAmount] => 0.00
+    [transaction_response_acquirerCode] => 00
+    [transaction_response_acquirerMessage] => Approved
+    [transaction_response_cardSecurityCode_acquirerCode] => M
+    [transaction_response_cardSecurityCode_gatewayCode] => MATCH
+    [transaction_response_cardholderVerification_avs_acquirerCode] => A
+    [transaction_response_cardholderVerification_avs_gatewayCode] => ADDRESS_MATCH
+    [transaction_response_gatewayCode] => APPROVED
+    [transaction_result] => SUCCESS
+    [transaction_risk_response_gatewayCode] => ACCEPTED
+    [transaction_risk_response_review_decision] => NOT_REQUIRED
+    [transaction_risk_response_rule_data] => A
+    [transaction_risk_response_rule_name] => MERCHANT_AVS
+    [transaction_risk_response_rule_recommendation] => NO_ACTION
+    [transaction_risk_response_rule_type] => MERCHANT_RULE
+    [transaction_risk_response_rule] => Array
+        (
+            [10] => MSO_RULE
+            [1] => MERCHANT_RULE
+            [2] => MERCHANT_RULE
+            [3] => MERCHANT_RULE
+            [4] => MERCHANT_RULE
+            [5] => MERCHANT_RULE
+            [6] => MERCHANT_RULE
+            [7] => MSO_RULE
+            [8] => MSO_RULE
+            [9] => MSO_RULE
+        )
+
+    [transaction_sourceOfFunds_provided_card_brand] => MASTERCARD
+    [transaction_sourceOfFunds_provided_card_expiry_month] => 5
+    [transaction_sourceOfFunds_provided_card_expiry_year] => 21
+    [transaction_sourceOfFunds_provided_card_fundingMethod] => DEBIT
+    [transaction_sourceOfFunds_provided_card_issuer] => U.S. BANK NATIONAL ASSOCIATION
+    [transaction_sourceOfFunds_provided_card_nameOnCard] => jaimee tracey
+    [transaction_sourceOfFunds_provided_card_number] => 511111xxxxxx1118
+    [transaction_sourceOfFunds_provided_card_scheme] => MASTERCARD
+    [transaction_sourceOfFunds_type] => CARD
+    [transaction_timeOfRecord] => 2018-03-29T00:07:41.449Z
+    [transaction_transaction_acquirer_batch] => 20180329
+    [transaction_transaction_acquirer_date] => 0329
+    [transaction_transaction_acquirer_id] => CBA_S2I
+    [transaction_transaction_acquirer_merchantId] => 353109290134156
+    [transaction_transaction_acquirer_settlementDate] => 2018-03-29
+    [transaction_transaction_acquirer_timeZone] => +1100
+    [transaction_transaction_acquirer_transactionId] => 123456789
+    [transaction_transaction_amount] => 1210.00
+    [transaction_transaction_authorizationCode] => 227895
+    [transaction_transaction_currency] => AUD
+    [transaction_transaction_frequency] => SINGLE
+    [transaction_transaction_id] => 1
+    [transaction_transaction_receipt] => 808800227895
+    [transaction_transaction_source] => INTERNET
+    [transaction_transaction_terminal] => CBAS2I05
+    [transaction_transaction_type] => PAYMENT
+    [transaction_version] => 45
+)
+
+03-29-2018 @ 11:11:36 - start process Commweb
+03-29-2018 @ 11:11:36 - Checkout session request: Array
+(
+    [apiOperation] => CREATE_CHECKOUT_SESSION
+    [apiPassword] => f7cf032d2f1f1b93638b96c362480704
+    [apiUsername] => merchant.TESTFRASHOCOM201
+    [merchant] => TESTFRASHOCOM201
+    [order.id] => 6080_0912092001522282296
+    [order.amount] => 1364.00
+    [order.currency] => AUD
+)
+
+03-29-2018 @ 11:11:37 - Checkout session response: Array
+(
+    [merchant] => TESTFRASHOCOM201
+    [result] => SUCCESS
+    [session_id] => SESSION0002949348468G75514052K8
+    [session_updateStatus] => SUCCESS
+    [session_version] => 1e9cbbfd01
+    [successIndicator] => 0d60c7abb8b8423c
+)
+
+03-29-2018 @ 11:13:26 - start process Commweb
+03-29-2018 @ 11:13:26 - Checkout session request: Array
+(
+    [apiOperation] => CREATE_CHECKOUT_SESSION
+    [apiPassword] => f7cf032d2f1f1b93638b96c362480704
+    [apiUsername] => merchant.TESTFRASHOCOM201
+    [merchant] => TESTFRASHOCOM201
+    [order.id] => 6080_0301754001522282406
+    [order.amount] => 1364.00
+    [order.currency] => AUD
+)
+
+03-29-2018 @ 11:13:26 - Checkout session response: Array
+(
+    [merchant] => TESTFRASHOCOM201
+    [result] => SUCCESS
+    [session_id] => SESSION0002182665109K39372863H3
+    [session_updateStatus] => SUCCESS
+    [session_version] => 1fc0b49001
+    [successIndicator] => 7ca0f6d56d1146b7
+)
+
+03-29-2018 @ 11:15:00 - start process Commweb
+03-29-2018 @ 11:15:00 - Checkout session request: Array
+(
+    [apiOperation] => CREATE_CHECKOUT_SESSION
+    [apiPassword] => f7cf032d2f1f1b93638b96c362480704
+    [apiUsername] => merchant.TESTFRASHOCOM201
+    [merchant] => TESTFRASHOCOM201
+    [order.id] => 6080_0117386001522282500
+    [order.amount] => 1364.00
+    [order.currency] => AUD
+)
+
+03-29-2018 @ 11:15:00 - Checkout session response: Array
+(
+    [merchant] => TESTFRASHOCOM201
+    [result] => SUCCESS
+    [session_id] => SESSION0002277477800N46895497L4
+    [session_updateStatus] => SUCCESS
+    [session_version] => 070670a201
+    [successIndicator] => 5a476a1b06ff4afa
+)
+
+03-29-2018 @ 11:16:00 - start process Commweb
+03-29-2018 @ 11:16:00 - Checkout session request: Array
+(
+    [apiOperation] => CREATE_CHECKOUT_SESSION
+    [apiPassword] => f7cf032d2f1f1b93638b96c362480704
+    [apiUsername] => merchant.TESTFRASHOCOM201
+    [merchant] => TESTFRASHOCOM201
+    [order.id] => 6080_0266696001522282560
+    [order.amount] => 1364.00
+    [order.currency] => AUD
+)
+
+03-29-2018 @ 11:16:00 - Checkout session response: Array
+(
+    [merchant] => TESTFRASHOCOM201
+    [result] => SUCCESS
+    [session_id] => SESSION0002715702462J75419802K3
+    [session_updateStatus] => SUCCESS
+    [session_version] => d89da37101
+    [successIndicator] => 15c4688d5d574bd9
+)
+
+03-29-2018 @ 11:34:16 - start process Commweb
+03-29-2018 @ 11:34:16 - Checkout session request: Array
+(
+    [apiOperation] => CREATE_CHECKOUT_SESSION
+    [apiPassword] => f7cf032d2f1f1b93638b96c362480704
+    [apiUsername] => merchant.TESTFRASHOCOM201
+    [merchant] => TESTFRASHOCOM201
+    [order.id] => 6080_0959185001522283656
+    [order.amount] => 1364.00
+    [order.currency] => AUD
+)
+
+03-29-2018 @ 11:34:17 - Checkout session response: Array
+(
+    [merchant] => TESTFRASHOCOM201
+    [result] => SUCCESS
+    [session_id] => SESSION0002387196039J01481015J9
+    [session_updateStatus] => SUCCESS
+    [session_version] => 0150d38901
+    [successIndicator] => dd1104c0e92d4f24
+)
+
+03-29-2018 @ 11:35:49 - start process Commweb
+03-29-2018 @ 11:35:49 - Checkout session request: Array
+(
+    [apiOperation] => CREATE_CHECKOUT_SESSION
+    [apiPassword] => f7cf032d2f1f1b93638b96c362480704
+    [apiUsername] => merchant.TESTFRASHOCOM201
+    [merchant] => TESTFRASHOCOM201
+    [order.id] => 6080_0412251001522283749
+    [order.amount] => 1364.00
+    [order.currency] => AUD
+)
+
+03-29-2018 @ 11:35:49 - Checkout session response: Array
+(
+    [merchant] => TESTFRASHOCOM201
+    [result] => SUCCESS
+    [session_id] => SESSION0002072558044H66188033J5
+    [session_updateStatus] => SUCCESS
+    [session_version] => 1860c75e01
+    [successIndicator] => d42c1a1f52c84aad
+)
+
+03-29-2018 @ 11:37:15 - start process Commweb
+03-29-2018 @ 11:37:15 - Checkout session request: Array
+(
+    [apiOperation] => CREATE_CHECKOUT_SESSION
+    [apiPassword] => f7cf032d2f1f1b93638b96c362480704
+    [apiUsername] => merchant.TESTFRASHOCOM201
+    [merchant] => TESTFRASHOCOM201
+    [order.id] => 6080_0482634001522283835
+    [order.amount] => 1364.00
+    [order.currency] => AUD
+)
+
+03-29-2018 @ 11:37:15 - Checkout session response: Array
+(
+    [merchant] => TESTFRASHOCOM201
+    [result] => SUCCESS
+    [session_id] => SESSION0002134911001L08022127J2
+    [session_updateStatus] => SUCCESS
+    [session_version] => 4d4d1f6d01
+    [successIndicator] => 9e1b58987f704bd6
+)
+
+03-29-2018 @ 11:37:48 - Order detail from commweb: Array
+(
+    [amount] => 1364.00
+    [billing_address_city] => Glenhaven
+    [billing_address_country] => AUS
+    [billing_address_postcodeZip] => 2156
+    [billing_address_stateProvince] => NSW
+    [billing_address_street] => 10005 Sierra Street
+    [creationTime] => 2018-03-29T00:37:47.163Z
+    [currency] => AUD
+    [customer_firstName] => jaimee
+    [customer_lastName] => tracey
+    [description] => Commweb Order
+    [device_browser] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299
+    [device_ipAddress] => 1.144.106.168
+    [id] => 6080_0482634001522283835
+    [merchant] => TESTFRASHOCOM201
+    [result] => SUCCESS
+    [risk_response_gatewayCode] => ACCEPTED
+    [risk_response_review_decision] => NOT_REQUIRED
+    [risk_response_rule_data] => S
+    [risk_response_rule_name] => MERCHANT_AVS
+    [risk_response_rule_recommendation] => NO_ACTION
+    [risk_response_rule_type] => MERCHANT_RULE
+    [risk_response_rule] => Array
+        (
+            [10] => MSO_RULE
+            [1] => MERCHANT_RULE
+            [2] => MERCHANT_RULE
+            [3] => MERCHANT_RULE
+            [4] => MERCHANT_RULE
+            [5] => MERCHANT_RULE
+            [6] => MERCHANT_RULE
+            [7] => MSO_RULE
+            [8] => MSO_RULE
+            [9] => MSO_RULE
+        )
+
+    [sourceOfFunds_provided_card_brand] => MASTERCARD
+    [sourceOfFunds_provided_card_expiry_month] => 5
+    [sourceOfFunds_provided_card_expiry_year] => 21
+    [sourceOfFunds_provided_card_fundingMethod] => DEBIT
+    [sourceOfFunds_provided_card_issuer] => U.S. BANK NATIONAL ASSOCIATION
+    [sourceOfFunds_provided_card_nameOnCard] => jaimee tracey
+    [sourceOfFunds_provided_card_number] => 511111xxxxxx1118
+    [sourceOfFunds_provided_card_scheme] => MASTERCARD
+    [sourceOfFunds_type] => CARD
+    [status] => CAPTURED
+    [totalAuthorizedAmount] => 1364.00
+    [totalCapturedAmount] => 1364.00
+    [totalRefundedAmount] => 0.00
+    [transaction_authorizationResponse_avsCode] => S
+    [transaction_authorizationResponse_cardSecurityCodeError] => N
+    [transaction_authorizationResponse_commercialCard] => 888
+    [transaction_authorizationResponse_commercialCardIndicator] => 3
+    [transaction_authorizationResponse_financialNetworkCode] => 777
+    [transaction_authorizationResponse_processingCode] => 003000
+    [transaction_authorizationResponse_responseCode] => 00
+    [transaction_authorizationResponse_stan] => 232068
+    [transaction_authorizationResponse_transactionIdentifier] => 123456789
+    [transaction_billing_address_city] => Glenhaven
+    [transaction_billing_address_country] => AUS
+    [transaction_billing_address_postcodeZip] => 2156
+    [transaction_billing_address_stateProvince] => NSW
+    [transaction_billing_address_street] => 10005 Sierra Street
+    [transaction_customer_firstName] => jaimee
+    [transaction_customer_lastName] => tracey
+    [transaction_device_browser] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299
+    [transaction_device_ipAddress] => 1.144.106.168
+    [transaction_gatewayEntryPoint] => CHECKOUT
+    [transaction_merchant] => TESTFRASHOCOM201
+    [transaction_order_amount] => 1364.00
+    [transaction_order_creationTime] => 2018-03-29T00:37:47.163Z
+    [transaction_order_currency] => AUD
+    [transaction_order_description] => Commweb Order
+    [transaction_order_id] => 6080_0482634001522283835
+    [transaction_order_status] => CAPTURED
+    [transaction_order_totalAuthorizedAmount] => 1364.00
+    [transaction_order_totalCapturedAmount] => 1364.00
+    [transaction_order_totalRefundedAmount] => 0.00
+    [transaction_response_acquirerCode] => 00
+    [transaction_response_acquirerMessage] => Approved
+    [transaction_response_cardSecurityCode_acquirerCode] => N
+    [transaction_response_cardSecurityCode_gatewayCode] => NO_MATCH
+    [transaction_response_cardholderVerification_avs_acquirerCode] => S
+    [transaction_response_cardholderVerification_avs_gatewayCode] => SERVICE_NOT_SUPPORTED
+    [transaction_response_gatewayCode] => APPROVED
+    [transaction_result] => SUCCESS
+    [transaction_risk_response_gatewayCode] => ACCEPTED
+    [transaction_risk_response_review_decision] => NOT_REQUIRED
+    [transaction_risk_response_rule_data] => S
+    [transaction_risk_response_rule_name] => MERCHANT_AVS
+    [transaction_risk_response_rule_recommendation] => NO_ACTION
+    [transaction_risk_response_rule_type] => MERCHANT_RULE
+    [transaction_risk_response_rule] => Array
+        (
+            [10] => MSO_RULE
+            [1] => MERCHANT_RULE
+            [2] => MERCHANT_RULE
+            [3] => MERCHANT_RULE
+            [4] => MERCHANT_RULE
+            [5] => MERCHANT_RULE
+            [6] => MERCHANT_RULE
+            [7] => MSO_RULE
+            [8] => MSO_RULE
+            [9] => MSO_RULE
+        )
+
+    [transaction_sourceOfFunds_provided_card_brand] => MASTERCARD
+    [transaction_sourceOfFunds_provided_card_expiry_month] => 5
+    [transaction_sourceOfFunds_provided_card_expiry_year] => 21
+    [transaction_sourceOfFunds_provided_card_fundingMethod] => DEBIT
+    [transaction_sourceOfFunds_provided_card_issuer] => U.S. BANK NATIONAL ASSOCIATION
+    [transaction_sourceOfFunds_provided_card_nameOnCard] => jaimee tracey
+    [transaction_sourceOfFunds_provided_card_number] => 511111xxxxxx1118
+    [transaction_sourceOfFunds_provided_card_scheme] => MASTERCARD
+    [transaction_sourceOfFunds_type] => CARD
+    [transaction_timeOfRecord] => 2018-03-29T00:37:47.163Z
+    [transaction_transaction_acquirer_batch] => 20180329
+    [transaction_transaction_acquirer_date] => 0329
+    [transaction_transaction_acquirer_id] => CBA_S2I
+    [transaction_transaction_acquirer_merchantId] => 353109290134156
+    [transaction_transaction_acquirer_settlementDate] => 2018-03-29
+    [transaction_transaction_acquirer_timeZone] => +1100
+    [transaction_transaction_acquirer_transactionId] => 123456789
+    [transaction_transaction_amount] => 1364.00
+    [transaction_transaction_authorizationCode] => 232068
+    [transaction_transaction_currency] => AUD
+    [transaction_transaction_frequency] => SINGLE
+    [transaction_transaction_id] => 1
+    [transaction_transaction_receipt] => 808800232068
+    [transaction_transaction_source] => INTERNET
+    [transaction_transaction_terminal] => CBAS2I05
+    [transaction_transaction_type] => PAYMENT
+    [transaction_version] => 45
+)
+
+03-29-2018 @ 11:40:13 - start process Commweb
+03-29-2018 @ 11:40:13 - Checkout session request: Array
+(
+    [apiOperation] => CREATE_CHECKOUT_SESSION
+    [apiPassword] => f7cf032d2f1f1b93638b96c362480704
+    [apiUsername] => merchant.TESTFRASHOCOM201
+    [merchant] => TESTFRASHOCOM201
+    [order.id] => 6081_0720704001522284013
+    [order.amount] => 1070.00
+    [order.currency] => AUD
+)
+
+03-29-2018 @ 11:40:14 - Checkout session response: Array
+(
+    [merchant] => TESTFRASHOCOM201
+    [result] => SUCCESS
+    [session_id] => SESSION0002452169799M53498394G8
+    [session_updateStatus] => SUCCESS
+    [session_version] => 3fabaa9b01
+    [successIndicator] => cce6b31be5894e1b
+)
+
+03-29-2018 @ 11:41:04 - Order detail from commweb: Array
+(
+    [amount] => 1070.00
+    [billing_address_city] => Glenhaven
+    [billing_address_country] => AUS
+    [billing_address_postcodeZip] => 2156
+    [billing_address_stateProvince] => NSW
+    [billing_address_street] => 10006 Uniform Street
+    [creationTime] => 2018-03-29T00:41:02.759Z
+    [currency] => AUD
+    [customer_firstName] => jaimee
+    [customer_lastName] => tracey
+    [description] => Commweb Order
+    [device_browser] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299
+    [device_ipAddress] => 1.144.106.168
+    [id] => 6081_0720704001522284013
+    [merchant] => TESTFRASHOCOM201
+    [result] => SUCCESS
+    [risk_response_gatewayCode] => ACCEPTED
+    [risk_response_review_decision] => NOT_REQUIRED
+    [risk_response_rule_data] => U
+    [risk_response_rule_name] => MERCHANT_AVS
+    [risk_response_rule_recommendation] => NO_ACTION
+    [risk_response_rule_type] => MERCHANT_RULE
+    [risk_response_rule] => Array
+        (
+            [10] => MSO_RULE
+            [1] => MERCHANT_RULE
+            [2] => MERCHANT_RULE
+            [3] => MERCHANT_RULE
+            [4] => MERCHANT_RULE
+            [5] => MERCHANT_RULE
+            [6] => MERCHANT_RULE
+            [7] => MSO_RULE
+            [8] => MSO_RULE
+            [9] => MSO_RULE
+        )
+
+    [sourceOfFunds_provided_card_brand] => MASTERCARD
+    [sourceOfFunds_provided_card_expiry_month] => 5
+    [sourceOfFunds_provided_card_expiry_year] => 21
+    [sourceOfFunds_provided_card_fundingMethod] => DEBIT
+    [sourceOfFunds_provided_card_issuer] => U.S. BANK NATIONAL ASSOCIATION
+    [sourceOfFunds_provided_card_nameOnCard] => jaimee tracey
+    [sourceOfFunds_provided_card_number] => 511111xxxxxx1118
+    [sourceOfFunds_provided_card_scheme] => MASTERCARD
+    [sourceOfFunds_type] => CARD
+    [status] => CAPTURED
+    [totalAuthorizedAmount] => 1070.00
+    [totalCapturedAmount] => 1070.00
+    [totalRefundedAmount] => 0.00
+    [transaction_authorizationResponse_avsCode] => U
+    [transaction_authorizationResponse_cardSecurityCodeError] => M
+    [transaction_authorizationResponse_commercialCard] => 888
+    [transaction_authorizationResponse_commercialCardIndicator] => 3
+    [transaction_authorizationResponse_financialNetworkCode] => 777
+    [transaction_authorizationResponse_processingCode] => 003000
+    [transaction_authorizationResponse_responseCode] => 00
+    [transaction_authorizationResponse_stan] => 234151
+    [transaction_authorizationResponse_transactionIdentifier] => 123456789
+    [transaction_billing_address_city] => Glenhaven
+    [transaction_billing_address_country] => AUS
+    [transaction_billing_address_postcodeZip] => 2156
+    [transaction_billing_address_stateProvince] => NSW
+    [transaction_billing_address_street] => 10006 Uniform Street
+    [transaction_customer_firstName] => jaimee
+    [transaction_customer_lastName] => tracey
+    [transaction_device_browser] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299
+    [transaction_device_ipAddress] => 1.144.106.168
+    [transaction_gatewayEntryPoint] => CHECKOUT
+    [transaction_merchant] => TESTFRASHOCOM201
+    [transaction_order_amount] => 1070.00
+    [transaction_order_creationTime] => 2018-03-29T00:41:02.759Z
+    [transaction_order_currency] => AUD
+    [transaction_order_description] => Commweb Order
+    [transaction_order_id] => 6081_0720704001522284013
+    [transaction_order_status] => CAPTURED
+    [transaction_order_totalAuthorizedAmount] => 1070.00
+    [transaction_order_totalCapturedAmount] => 1070.00
+    [transaction_order_totalRefundedAmount] => 0.00
+    [transaction_response_acquirerCode] => 00
+    [transaction_response_acquirerMessage] => Approved
+    [transaction_response_cardSecurityCode_acquirerCode] => M
+    [transaction_response_cardSecurityCode_gatewayCode] => MATCH
+    [transaction_response_cardholderVerification_avs_acquirerCode] => U
+    [transaction_response_cardholderVerification_avs_gatewayCode] => NOT_AVAILABLE
+    [transaction_response_gatewayCode] => APPROVED
+    [transaction_result] => SUCCESS
+    [transaction_risk_response_gatewayCode] => ACCEPTED
+    [transaction_risk_response_review_decision] => NOT_REQUIRED
+    [transaction_risk_response_rule_data] => U
+    [transaction_risk_response_rule_name] => MERCHANT_AVS
+    [transaction_risk_response_rule_recommendation] => NO_ACTION
+    [transaction_risk_response_rule_type] => MERCHANT_RULE
+    [transaction_risk_response_rule] => Array
+        (
+            [10] => MSO_RULE
+            [1] => MERCHANT_RULE
+            [2] => MERCHANT_RULE
+            [3] => MERCHANT_RULE
+            [4] => MERCHANT_RULE
+            [5] => MERCHANT_RULE
+            [6] => MERCHANT_RULE
+            [7] => MSO_RULE
+            [8] => MSO_RULE
+            [9] => MSO_RULE
+        )
+
+    [transaction_sourceOfFunds_provided_card_brand] => MASTERCARD
+    [transaction_sourceOfFunds_provided_card_expiry_month] => 5
+    [transaction_sourceOfFunds_provided_card_expiry_year] => 21
+    [transaction_sourceOfFunds_provided_card_fundingMethod] => DEBIT
+    [transaction_sourceOfFunds_provided_card_issuer] => U.S. BANK NATIONAL ASSOCIATION
+    [transaction_sourceOfFunds_provided_card_nameOnCard] => jaimee tracey
+    [transaction_sourceOfFunds_provided_card_number] => 511111xxxxxx1118
+    [transaction_sourceOfFunds_provided_card_scheme] => MASTERCARD
+    [transaction_sourceOfFunds_type] => CARD
+    [transaction_timeOfRecord] => 2018-03-29T00:41:02.759Z
+    [transaction_transaction_acquirer_batch] => 20180329
+    [transaction_transaction_acquirer_date] => 0329
+    [transaction_transaction_acquirer_id] => CBA_S2I
+    [transaction_transaction_acquirer_merchantId] => 353109290134156
+    [transaction_transaction_acquirer_settlementDate] => 2018-03-29
+    [transaction_transaction_acquirer_timeZone] => +1100
+    [transaction_transaction_acquirer_transactionId] => 123456789
+    [transaction_transaction_amount] => 1070.00
+    [transaction_transaction_authorizationCode] => 234151
+    [transaction_transaction_currency] => AUD
+    [transaction_transaction_frequency] => SINGLE
+    [transaction_transaction_id] => 1
+    [transaction_transaction_receipt] => 808800234151
+    [transaction_transaction_source] => INTERNET
+    [transaction_transaction_terminal] => CBAS2I05
+    [transaction_transaction_type] => PAYMENT
+    [transaction_version] => 45
+)
+
+03-29-2018 @ 11:43:26 - start process Commweb
+03-29-2018 @ 11:43:26 - Checkout session request: Array
+(
+    [apiOperation] => CREATE_CHECKOUT_SESSION
+    [apiPassword] => f7cf032d2f1f1b93638b96c362480704
+    [apiUsername] => merchant.TESTFRASHOCOM201
+    [merchant] => TESTFRASHOCOM201
+    [order.id] => 6082_0110066001522284206
+    [order.amount] => 1120.00
+    [order.currency] => AUD
+)
+
+03-29-2018 @ 11:43:26 - Checkout session response: Array
+(
+    [merchant] => TESTFRASHOCOM201
+    [result] => SUCCESS
+    [session_id] => SESSION0002109179821J24231569H4
+    [session_updateStatus] => SUCCESS
+    [session_version] => cfe74cdc01
+    [successIndicator] => b5cdd1156552466c
+)
+
+03-29-2018 @ 11:44:21 - start process Commweb
+03-29-2018 @ 11:44:21 - Checkout session request: Array
+(
+    [apiOperation] => CREATE_CHECKOUT_SESSION
+    [apiPassword] => f7cf032d2f1f1b93638b96c362480704
+    [apiUsername] => merchant.TESTFRASHOCOM201
+    [merchant] => TESTFRASHOCOM201
+    [order.id] => 6082_0462479001522284261
+    [order.amount] => 1120.00
+    [order.currency] => AUD
+)
+
+03-29-2018 @ 11:44:21 - Checkout session response: Array
+(
+    [merchant] => TESTFRASHOCOM201
+    [result] => SUCCESS
+    [session_id] => SESSION0002458080702I32163763I1
+    [session_updateStatus] => SUCCESS
+    [session_version] => 2a20aa8501
+    [successIndicator] => 797bd3dc8d6d4207
+)
+
+03-29-2018 @ 11:45:16 - start process Commweb
+03-29-2018 @ 11:45:16 - Checkout session request: Array
+(
+    [apiOperation] => CREATE_CHECKOUT_SESSION
+    [apiPassword] => f7cf032d2f1f1b93638b96c362480704
+    [apiUsername] => merchant.TESTFRASHOCOM201
+    [merchant] => TESTFRASHOCOM201
+    [order.id] => 6082_0470174001522284316
+    [order.amount] => 1120.00
+    [order.currency] => AUD
+)
+
+03-29-2018 @ 11:45:16 - Checkout session response: Array
+(
+    [merchant] => TESTFRASHOCOM201
+    [result] => SUCCESS
+    [session_id] => SESSION0002813325763N00770034H1
+    [session_updateStatus] => SUCCESS
+    [session_version] => 16356f2e01
+    [successIndicator] => ba3980351b9740e7
+)
+
+03-29-2018 @ 11:45:59 - start process Commweb
+03-29-2018 @ 11:46:00 - Checkout session request: Array
+(
+    [apiOperation] => CREATE_CHECKOUT_SESSION
+    [apiPassword] => f7cf032d2f1f1b93638b96c362480704
+    [apiUsername] => merchant.TESTFRASHOCOM201
+    [merchant] => TESTFRASHOCOM201
+    [order.id] => 6082_0000475001522284360
+    [order.amount] => 1120.00
+    [order.currency] => AUD
+)
+
+03-29-2018 @ 11:46:00 - Checkout session response: Array
+(
+    [merchant] => TESTFRASHOCOM201
+    [result] => SUCCESS
+    [session_id] => SESSION0002922403069N95230722N1
+    [session_updateStatus] => SUCCESS
+    [session_version] => 68f5402301
+    [successIndicator] => 06f8e9d2b5be4519
+)
+
+03-29-2018 @ 11:46:33 - Order detail from commweb: Array
+(
+    [amount] => 1120.00
+    [billing_address_city] => Glenhaven
+    [billing_address_country] => AUS
+    [billing_address_postcodeZip] => 2156
+    [billing_address_stateProvince] => NSW
+    [billing_address_street] => 10009 Kilo Street
+    [creationTime] => 2018-03-29T00:46:32.056Z
+    [currency] => AUD
+    [customer_firstName] => jaimee
+    [customer_lastName] => tracey
+    [description] => Commweb Order
+    [device_browser] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299
+    [device_ipAddress] => 1.144.106.168
+    [id] => 6082_0000475001522284360
+    [merchant] => TESTFRASHOCOM201
+    [result] => SUCCESS
+    [risk_response_gatewayCode] => ACCEPTED
+    [risk_response_review_decision] => NOT_REQUIRED
+    [risk_response_rule_data] => K
+    [risk_response_rule_name] => MERCHANT_AVS
+    [risk_response_rule_recommendation] => NO_ACTION
+    [risk_response_rule_type] => MERCHANT_RULE
+    [risk_response_rule] => Array
+        (
+            [10] => MSO_RULE
+            [1] => MERCHANT_RULE
+            [2] => MERCHANT_RULE
+            [3] => MERCHANT_RULE
+            [4] => MERCHANT_RULE
+            [5] => MERCHANT_RULE
+            [6] => MERCHANT_RULE
+            [7] => MSO_RULE
+            [8] => MSO_RULE
+            [9] => MSO_RULE
+        )
+
+    [sourceOfFunds_provided_card_brand] => VISA
+    [sourceOfFunds_provided_card_expiry_month] => 5
+    [sourceOfFunds_provided_card_expiry_year] => 31
+    [sourceOfFunds_provided_card_fundingMethod] => CREDIT
+    [sourceOfFunds_provided_card_nameOnCard] => jaimee tracey
+    [sourceOfFunds_provided_card_number] => 401200xxxxxx0026
+    [sourceOfFunds_provided_card_scheme] => VISA
+    [sourceOfFunds_type] => CARD
+    [status] => CAPTURED
+    [totalAuthorizedAmount] => 1120.00
+    [totalCapturedAmount] => 1120.00
+    [totalRefundedAmount] => 0.00
+    [transaction_authorizationResponse_avsCode] => K
+    [transaction_authorizationResponse_cardLevelIndicator] => 88
+    [transaction_authorizationResponse_cardSecurityCodeError] => M
+    [transaction_authorizationResponse_commercialCard] => 888
+    [transaction_authorizationResponse_commercialCardIndicator] => 3
+    [transaction_authorizationResponse_marketSpecificData] => 8
+    [transaction_authorizationResponse_processingCode] => 003000
+    [transaction_authorizationResponse_responseCode] => 00
+    [transaction_authorizationResponse_returnAci] => 8
+    [transaction_authorizationResponse_stan] => 233121
+    [transaction_authorizationResponse_transactionIdentifier] => 123456789012345
+    [transaction_authorizationResponse_validationCode] => 6789
+    [transaction_billing_address_city] => Glenhaven
+    [transaction_billing_address_country] => AUS
+    [transaction_billing_address_postcodeZip] => 2156
+    [transaction_billing_address_stateProvince] => NSW
+    [transaction_billing_address_street] => 10009 Kilo Street
+    [transaction_customer_firstName] => jaimee
+    [transaction_customer_lastName] => tracey
+    [transaction_device_browser] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299
+    [transaction_device_ipAddress] => 1.144.106.168
+    [transaction_gatewayEntryPoint] => CHECKOUT
+    [transaction_merchant] => TESTFRASHOCOM201
+    [transaction_order_amount] => 1120.00
+    [transaction_order_creationTime] => 2018-03-29T00:46:32.056Z
+    [transaction_order_currency] => AUD
+    [transaction_order_description] => Commweb Order
+    [transaction_order_id] => 6082_0000475001522284360
+    [transaction_order_status] => CAPTURED
+    [transaction_order_totalAuthorizedAmount] => 1120.00
+    [transaction_order_totalCapturedAmount] => 1120.00
+    [transaction_order_totalRefundedAmount] => 0.00
+    [transaction_response_acquirerCode] => 00
+    [transaction_response_acquirerMessage] => Approved
+    [transaction_response_cardSecurityCode_acquirerCode] => M
+    [transaction_response_cardSecurityCode_gatewayCode] => MATCH
+    [transaction_response_cardholderVerification_avs_acquirerCode] => K
+    [transaction_response_cardholderVerification_avs_gatewayCode] => NAME_MATCH
+    [transaction_response_gatewayCode] => APPROVED
+    [transaction_result] => SUCCESS
+    [transaction_risk_response_gatewayCode] => ACCEPTED
+    [transaction_risk_response_review_decision] => NOT_REQUIRED
+    [transaction_risk_response_rule_data] => K
+    [transaction_risk_response_rule_name] => MERCHANT_AVS
+    [transaction_risk_response_rule_recommendation] => NO_ACTION
+    [transaction_risk_response_rule_type] => MERCHANT_RULE
+    [transaction_risk_response_rule] => Array
+        (
+            [10] => MSO_RULE
+            [1] => MERCHANT_RULE
+            [2] => MERCHANT_RULE
+            [3] => MERCHANT_RULE
+            [4] => MERCHANT_RULE
+            [5] => MERCHANT_RULE
+            [6] => MERCHANT_RULE
+            [7] => MSO_RULE
+            [8] => MSO_RULE
+            [9] => MSO_RULE
+        )
+
+    [transaction_sourceOfFunds_provided_card_brand] => VISA
+    [transaction_sourceOfFunds_provided_card_expiry_month] => 5
+    [transaction_sourceOfFunds_provided_card_expiry_year] => 31
+    [transaction_sourceOfFunds_provided_card_fundingMethod] => CREDIT
+    [transaction_sourceOfFunds_provided_card_nameOnCard] => jaimee tracey
+    [transaction_sourceOfFunds_provided_card_number] => 401200xxxxxx0026
+    [transaction_sourceOfFunds_provided_card_scheme] => VISA
+    [transaction_sourceOfFunds_type] => CARD
+    [transaction_timeOfRecord] => 2018-03-29T00:46:32.056Z
+    [transaction_transaction_acquirer_batch] => 20180329
+    [transaction_transaction_acquirer_date] => 0329
+    [transaction_transaction_acquirer_id] => CBA_S2I
+    [transaction_transaction_acquirer_merchantId] => 353109290134156
+    [transaction_transaction_acquirer_settlementDate] => 2018-03-29
+    [transaction_transaction_acquirer_timeZone] => +1100
+    [transaction_transaction_acquirer_transactionId] => 123456789012345
+    [transaction_transaction_amount] => 1120.00
+    [transaction_transaction_authorizationCode] => 233121
+    [transaction_transaction_currency] => AUD
+    [transaction_transaction_frequency] => SINGLE
+    [transaction_transaction_id] => 1
+    [transaction_transaction_receipt] => 808800233121
+    [transaction_transaction_source] => INTERNET
+    [transaction_transaction_terminal] => CBAS2I05
+    [transaction_transaction_type] => PAYMENT
+    [transaction_version] => 45
+)
+
+03-29-2018 @ 11:48:12 - start process Commweb
+03-29-2018 @ 11:48:12 - Checkout session request: Array
+(
+    [apiOperation] => CREATE_CHECKOUT_SESSION
+    [apiPassword] => f7cf032d2f1f1b93638b96c362480704
+    [apiUsername] => merchant.TESTFRASHOCOM201
+    [merchant] => TESTFRASHOCOM201
+    [order.id] => 6083_0769861001522284492
+    [order.amount] => 1443.00
+    [order.currency] => AUD
+)
+
+03-29-2018 @ 11:48:13 - Checkout session response: Array
+(
+    [merchant] => TESTFRASHOCOM201
+    [result] => SUCCESS
+    [session_id] => SESSION0002455942805M95254314E9
+    [session_updateStatus] => SUCCESS
+    [session_version] => 7ed7b96e01
+    [successIndicator] => 47a890bbf53e46f0
+)
+
+03-29-2018 @ 11:50:58 - start process Commweb
+03-29-2018 @ 11:50:58 - Checkout session request: Array
+(
+    [apiOperation] => CREATE_CHECKOUT_SESSION
+    [apiPassword] => f7cf032d2f1f1b93638b96c362480704
+    [apiUsername] => merchant.TESTFRASHOCOM201
+    [merchant] => TESTFRASHOCOM201
+    [order.id] => 6083_0026847001522284658
+    [order.amount] => 1443.00
+    [order.currency] => AUD
+)
+
+03-29-2018 @ 11:50:58 - Checkout session response: Array
+(
+    [merchant] => TESTFRASHOCOM201
+    [result] => SUCCESS
+    [session_id] => SESSION0002796316956H30752232K5
+    [session_updateStatus] => SUCCESS
+    [session_version] => 2655038701
+    [successIndicator] => 5d3b77d1ea0840d7
+)
+
+03-29-2018 @ 11:52:05 - start process Commweb
+03-29-2018 @ 11:52:05 - Checkout session request: Array
+(
+    [apiOperation] => CREATE_CHECKOUT_SESSION
+    [apiPassword] => f7cf032d2f1f1b93638b96c362480704
+    [apiUsername] => merchant.TESTFRASHOCOM201
+    [merchant] => TESTFRASHOCOM201
+    [order.id] => 6083_0888918001522284725
+    [order.amount] => 1443.00
+    [order.currency] => AUD
+)
+
+03-29-2018 @ 11:52:06 - Checkout session response: Array
+(
+    [merchant] => TESTFRASHOCOM201
+    [result] => SUCCESS
+    [session_id] => SESSION0002934366413H34912821K2
+    [session_updateStatus] => SUCCESS
+    [session_version] => 5d108f6b01
+    [successIndicator] => 015214145b7042dd
+)
+
+03-29-2018 @ 12:03:13 - start process Commweb
+03-29-2018 @ 12:03:13 - Checkout session request: Array
+(
+    [apiOperation] => CREATE_CHECKOUT_SESSION
+    [apiPassword] => f7cf032d2f1f1b93638b96c362480704
+    [apiUsername] => merchant.TESTFRASHOCOM201
+    [merchant] => TESTFRASHOCOM201
+    [order.id] => 6083_0397864001522285393
+    [order.amount] => 1443.00
+    [order.currency] => AUD
+)
+
+03-29-2018 @ 12:03:13 - Checkout session response: Array
+(
+    [merchant] => TESTFRASHOCOM201
+    [result] => SUCCESS
+    [session_id] => SESSION0002749289847E17958580I0
+    [session_updateStatus] => SUCCESS
+    [session_version] => 73cfeae701
+    [successIndicator] => 15a305e72e3149b8
+)
+
+03-29-2018 @ 12:04:46 - start process Commweb
+03-29-2018 @ 12:04:46 - Checkout session request: Array
+(
+    [apiOperation] => CREATE_CHECKOUT_SESSION
+    [apiPassword] => f7cf032d2f1f1b93638b96c362480704
+    [apiUsername] => merchant.TESTFRASHOCOM201
+    [merchant] => TESTFRASHOCOM201
+    [order.id] => 6083_0995484001522285486
+    [order.amount] => 1443.00
+    [order.currency] => AUD
+)
+
+03-29-2018 @ 12:04:47 - Checkout session response: Array
+(
+    [merchant] => TESTFRASHOCOM201
+    [result] => SUCCESS
+    [session_id] => SESSION0002266809487G36886977I1
+    [session_updateStatus] => SUCCESS
+    [session_version] => 1dc05cc401
+    [successIndicator] => 9bcf7123427e4938
+)
+
+03-29-2018 @ 12:05:17 - Order detail from commweb: Array
+(
+    [amount] => 1443.00
+    [billing_address_city] => Glenhaven
+    [billing_address_country] => AUS
+    [billing_address_postcodeZip] => 2156
+    [billing_address_stateProvince] => NSW
+    [billing_address_street] => 10012 Zero Street
+    [creationTime] => 2018-03-29T01:05:15.527Z
+    [currency] => AUD
+    [customer_firstName] => jaimee
+    [customer_lastName] => tracey
+    [description] => Commweb Order
+    [device_browser] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299
+    [device_ipAddress] => 1.144.106.168
+    [id] => 6083_0995484001522285486
+    [merchant] => TESTFRASHOCOM201
+    [result] => SUCCESS
+    [risk_response_gatewayCode] => ACCEPTED
+    [risk_response_review_decision] => NOT_REQUIRED
+    [risk_response_rule_data] => 401200
+    [risk_response_rule_name] => MERCHANT_BIN_RANGE
+    [risk_response_rule_recommendation] => NO_ACTION
+    [risk_response_rule_type] => MERCHANT_RULE
+    [risk_response_rule] => Array
+        (
+            [1] => MERCHANT_RULE
+            [2] => MERCHANT_RULE
+            [3] => MERCHANT_RULE
+            [4] => MERCHANT_RULE
+            [5] => MERCHANT_RULE
+            [6] => MSO_RULE
+            [7] => MSO_RULE
+            [8] => MSO_RULE
+            [9] => MSO_RULE
+        )
+
+    [sourceOfFunds_provided_card_brand] => VISA
+    [sourceOfFunds_provided_card_expiry_month] => 5
+    [sourceOfFunds_provided_card_expiry_year] => 21
+    [sourceOfFunds_provided_card_fundingMethod] => CREDIT
+    [sourceOfFunds_provided_card_nameOnCard] => jaimee tracey
+    [sourceOfFunds_provided_card_number] => 401200xxxxxx0026
+    [sourceOfFunds_provided_card_scheme] => VISA
+    [sourceOfFunds_type] => CARD
+    [status] => CAPTURED
+    [totalAuthorizedAmount] => 1443.00
+    [totalCapturedAmount] => 1443.00
+    [totalRefundedAmount] => 0.00
+    [transaction_authorizationResponse_avsCode] => 0
+    [transaction_authorizationResponse_cardLevelIndicator] => 88
+    [transaction_authorizationResponse_cardSecurityCodeError] => M
+    [transaction_authorizationResponse_commercialCard] => 888
+    [transaction_authorizationResponse_commercialCardIndicator] => 3
+    [transaction_authorizationResponse_marketSpecificData] => 8
+    [transaction_authorizationResponse_processingCode] => 003000
+    [transaction_authorizationResponse_responseCode] => 00
+    [transaction_authorizationResponse_returnAci] => 8
+    [transaction_authorizationResponse_stan] => 231172
+    [transaction_authorizationResponse_transactionIdentifier] => 123456789012345
+    [transaction_authorizationResponse_validationCode] => 6789
+    [transaction_billing_address_city] => Glenhaven
+    [transaction_billing_address_country] => AUS
+    [transaction_billing_address_postcodeZip] => 2156
+    [transaction_billing_address_stateProvince] => NSW
+    [transaction_billing_address_street] => 10012 Zero Street
+    [transaction_customer_firstName] => jaimee
+    [transaction_customer_lastName] => tracey
+    [transaction_device_browser] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299
+    [transaction_device_ipAddress] => 1.144.106.168
+    [transaction_gatewayEntryPoint] => CHECKOUT
+    [transaction_merchant] => TESTFRASHOCOM201
+    [transaction_order_amount] => 1443.00
+    [transaction_order_creationTime] => 2018-03-29T01:05:15.527Z
+    [transaction_order_currency] => AUD
+    [transaction_order_description] => Commweb Order
+    [transaction_order_id] => 6083_0995484001522285486
+    [transaction_order_status] => CAPTURED
+    [transaction_order_totalAuthorizedAmount] => 1443.00
+    [transaction_order_totalCapturedAmount] => 1443.00
+    [transaction_order_totalRefundedAmount] => 0.00
+    [transaction_response_acquirerCode] => 00
+    [transaction_response_acquirerMessage] => Approved
+    [transaction_response_cardSecurityCode_acquirerCode] => M
+    [transaction_response_cardSecurityCode_gatewayCode] => MATCH
+    [transaction_response_cardholderVerification_avs_acquirerCode] => 0
+    [transaction_response_gatewayCode] => APPROVED
+    [transaction_result] => SUCCESS
+    [transaction_risk_response_gatewayCode] => ACCEPTED
+    [transaction_risk_response_review_decision] => NOT_REQUIRED
+    [transaction_risk_response_rule_data] => 401200
+    [transaction_risk_response_rule_name] => MERCHANT_BIN_RANGE
+    [transaction_risk_response_rule_recommendation] => NO_ACTION
+    [transaction_risk_response_rule_type] => MERCHANT_RULE
+    [transaction_risk_response_rule] => Array
+        (
+            [1] => MERCHANT_RULE
+            [2] => MERCHANT_RULE
+            [3] => MERCHANT_RULE
+            [4] => MERCHANT_RULE
+            [5] => MERCHANT_RULE
+            [6] => MSO_RULE
+            [7] => MSO_RULE
+            [8] => MSO_RULE
+            [9] => MSO_RULE
+        )
+
+    [transaction_sourceOfFunds_provided_card_brand] => VISA
+    [transaction_sourceOfFunds_provided_card_expiry_month] => 5
+    [transaction_sourceOfFunds_provided_card_expiry_year] => 21
+    [transaction_sourceOfFunds_provided_card_fundingMethod] => CREDIT
+    [transaction_sourceOfFunds_provided_card_nameOnCard] => jaimee tracey
+    [transaction_sourceOfFunds_provided_card_number] => 401200xxxxxx0026
+    [transaction_sourceOfFunds_provided_card_scheme] => VISA
+    [transaction_sourceOfFunds_type] => CARD
+    [transaction_timeOfRecord] => 2018-03-29T01:05:15.527Z
+    [transaction_transaction_acquirer_batch] => 20180329
+    [transaction_transaction_acquirer_date] => 0329
+    [transaction_transaction_acquirer_id] => CBA_S2I
+    [transaction_transaction_acquirer_merchantId] => 353109290134156
+    [transaction_transaction_acquirer_settlementDate] => 2018-03-29
+    [transaction_transaction_acquirer_timeZone] => +1100
+    [transaction_transaction_acquirer_transactionId] => 123456789012345
+    [transaction_transaction_amount] => 1443.00
+    [transaction_transaction_authorizationCode] => 231172
+    [transaction_transaction_currency] => AUD
+    [transaction_transaction_frequency] => SINGLE
+    [transaction_transaction_id] => 1
+    [transaction_transaction_receipt] => 808801231172
+    [transaction_transaction_source] => INTERNET
+    [transaction_transaction_terminal] => CBAS2I05
+    [transaction_transaction_type] => PAYMENT
+    [transaction_version] => 45
+)
+
+03-29-2018 @ 12:06:55 - start process Commweb
+03-29-2018 @ 12:06:55 - Checkout session request: Array
+(
+    [apiOperation] => CREATE_CHECKOUT_SESSION
+    [apiPassword] => f7cf032d2f1f1b93638b96c362480704
+    [apiUsername] => merchant.TESTFRASHOCOM201
+    [merchant] => TESTFRASHOCOM201
+    [order.id] => 6084_0159175001522285615
+    [order.amount] => 1103.00
+    [order.currency] => AUD
+)
+
+03-29-2018 @ 12:06:55 - Checkout session response: Array
+(
+    [merchant] => TESTFRASHOCOM201
+    [result] => SUCCESS
+    [session_id] => SESSION0002713662492J77675375K4
+    [session_updateStatus] => SUCCESS
+    [session_version] => 34c3412501
+    [successIndicator] => 1d99b9eba8354991
+)
+
+03-29-2018 @ 12:07:27 - Order detail from commweb: Array
+(
+    [amount] => 1103.00
+    [billing_address_city] => Glenhaven
+    [billing_address_country] => AUS
+    [billing_address_postcodeZip] => 2156
+    [billing_address_stateProvince] => NSW
+    [billing_address_street] => 10012 Zero Street
+    [creationTime] => 2018-03-29T01:07:25.819Z
+    [currency] => AUD
+    [customer_firstName] => jaimee
+    [customer_lastName] => trc
+    [description] => Commweb Order
+    [device_browser] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299
+    [device_ipAddress] => 1.144.106.168
+    [id] => 6084_0159175001522285615
+    [merchant] => TESTFRASHOCOM201
+    [result] => SUCCESS
+    [risk_response_gatewayCode] => ACCEPTED
+    [risk_response_review_decision] => NOT_REQUIRED
+    [risk_response_rule_data] => 401200
+    [risk_response_rule_name] => MERCHANT_BIN_RANGE
+    [risk_response_rule_recommendation] => NO_ACTION
+    [risk_response_rule_type] => MERCHANT_RULE
+    [risk_response_rule] => Array
+        (
+            [1] => MERCHANT_RULE
+            [2] => MERCHANT_RULE
+            [3] => MERCHANT_RULE
+            [4] => MERCHANT_RULE
+            [5] => MERCHANT_RULE
+            [6] => MSO_RULE
+            [7] => MSO_RULE
+            [8] => MSO_RULE
+            [9] => MSO_RULE
+        )
+
+    [sourceOfFunds_provided_card_brand] => VISA
+    [sourceOfFunds_provided_card_expiry_month] => 3
+    [sourceOfFunds_provided_card_expiry_year] => 27
+    [sourceOfFunds_provided_card_fundingMethod] => CREDIT
+    [sourceOfFunds_provided_card_nameOnCard] => jaimee trc
+    [sourceOfFunds_provided_card_number] => 401200xxxxxx0026
+    [sourceOfFunds_provided_card_scheme] => VISA
+    [sourceOfFunds_type] => CARD
+    [status] => CAPTURED
+    [totalAuthorizedAmount] => 1103.00
+    [totalCapturedAmount] => 1103.00
+    [totalRefundedAmount] => 0.00
+    [transaction_authorizationResponse_avsCode] => 0
+    [transaction_authorizationResponse_cardLevelIndicator] => 88
+    [transaction_authorizationResponse_cardSecurityCodeError] => N
+    [transaction_authorizationResponse_commercialCard] => 888
+    [transaction_authorizationResponse_commercialCardIndicator] => 3
+    [transaction_authorizationResponse_marketSpecificData] => 8
+    [transaction_authorizationResponse_processingCode] => 003000
+    [transaction_authorizationResponse_responseCode] => 00
+    [transaction_authorizationResponse_returnAci] => 8
+    [transaction_authorizationResponse_stan] => 229161
+    [transaction_authorizationResponse_transactionIdentifier] => 123456789012345
+    [transaction_authorizationResponse_validationCode] => 6789
+    [transaction_billing_address_city] => Glenhaven
+    [transaction_billing_address_country] => AUS
+    [transaction_billing_address_postcodeZip] => 2156
+    [transaction_billing_address_stateProvince] => NSW
+    [transaction_billing_address_street] => 10012 Zero Street
+    [transaction_customer_firstName] => jaimee
+    [transaction_customer_lastName] => trc
+    [transaction_device_browser] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299
+    [transaction_device_ipAddress] => 1.144.106.168
+    [transaction_gatewayEntryPoint] => CHECKOUT
+    [transaction_merchant] => TESTFRASHOCOM201
+    [transaction_order_amount] => 1103.00
+    [transaction_order_creationTime] => 2018-03-29T01:07:25.819Z
+    [transaction_order_currency] => AUD
+    [transaction_order_description] => Commweb Order
+    [transaction_order_id] => 6084_0159175001522285615
+    [transaction_order_status] => CAPTURED
+    [transaction_order_totalAuthorizedAmount] => 1103.00
+    [transaction_order_totalCapturedAmount] => 1103.00
+    [transaction_order_totalRefundedAmount] => 0.00
+    [transaction_response_acquirerCode] => 00
+    [transaction_response_acquirerMessage] => Approved
+    [transaction_response_cardSecurityCode_acquirerCode] => N
+    [transaction_response_cardSecurityCode_gatewayCode] => NO_MATCH
+    [transaction_response_cardholderVerification_avs_acquirerCode] => 0
+    [transaction_response_gatewayCode] => APPROVED
+    [transaction_result] => SUCCESS
+    [transaction_risk_response_gatewayCode] => ACCEPTED
+    [transaction_risk_response_review_decision] => NOT_REQUIRED
+    [transaction_risk_response_rule_data] => 401200
+    [transaction_risk_response_rule_name] => MERCHANT_BIN_RANGE
+    [transaction_risk_response_rule_recommendation] => NO_ACTION
+    [transaction_risk_response_rule_type] => MERCHANT_RULE
+    [transaction_risk_response_rule] => Array
+        (
+            [1] => MERCHANT_RULE
+            [2] => MERCHANT_RULE
+            [3] => MERCHANT_RULE
+            [4] => MERCHANT_RULE
+            [5] => MERCHANT_RULE
+            [6] => MSO_RULE
+            [7] => MSO_RULE
+            [8] => MSO_RULE
+            [9] => MSO_RULE
+        )
+
+    [transaction_sourceOfFunds_provided_card_brand] => VISA
+    [transaction_sourceOfFunds_provided_card_expiry_month] => 3
+    [transaction_sourceOfFunds_provided_card_expiry_year] => 27
+    [transaction_sourceOfFunds_provided_card_fundingMethod] => CREDIT
+    [transaction_sourceOfFunds_provided_card_nameOnCard] => jaimee trc
+    [transaction_sourceOfFunds_provided_card_number] => 401200xxxxxx0026
+    [transaction_sourceOfFunds_provided_card_scheme] => VISA
+    [transaction_sourceOfFunds_type] => CARD
+    [transaction_timeOfRecord] => 2018-03-29T01:07:25.819Z
+    [transaction_transaction_acquirer_batch] => 20180329
+    [transaction_transaction_acquirer_date] => 0329
+    [transaction_transaction_acquirer_id] => CBA_S2I
+    [transaction_transaction_acquirer_merchantId] => 353109290134156
+    [transaction_transaction_acquirer_settlementDate] => 2018-03-29
+    [transaction_transaction_acquirer_timeZone] => +1100
+    [transaction_transaction_acquirer_transactionId] => 123456789012345
+    [transaction_transaction_amount] => 1103.00
+    [transaction_transaction_authorizationCode] => 229161
+    [transaction_transaction_currency] => AUD
+    [transaction_transaction_frequency] => SINGLE
+    [transaction_transaction_id] => 1
+    [transaction_transaction_receipt] => 808801229161
+    [transaction_transaction_source] => INTERNET
+    [transaction_transaction_terminal] => CBAS2I05
+    [transaction_transaction_type] => PAYMENT
+    [transaction_version] => 45
+)
+
+03-29-2018 @ 12:08:38 - start process Commweb
+03-29-2018 @ 12:08:38 - Checkout session request: Array
+(
+    [apiOperation] => CREATE_CHECKOUT_SESSION
+    [apiPassword] => f7cf032d2f1f1b93638b96c362480704
+    [apiUsername] => merchant.TESTFRASHOCOM201
+    [merchant] => TESTFRASHOCOM201
+    [order.id] => 6085_0246567001522285718
+    [order.amount] => 1348.00
+    [order.currency] => AUD
+)
+
+03-29-2018 @ 12:08:38 - Checkout session response: Array
+(
+    [merchant] => TESTFRASHOCOM201
+    [result] => SUCCESS
+    [session_id] => SESSION0002966372638E81666471E1
+    [session_updateStatus] => SUCCESS
+    [session_version] => 8bab93f001
+    [successIndicator] => 505ec0423d7445b0
+)
+
+03-29-2018 @ 12:09:32 - start process Commweb
+03-29-2018 @ 12:09:32 - Checkout session request: Array
+(
+    [apiOperation] => CREATE_CHECKOUT_SESSION
+    [apiPassword] => f7cf032d2f1f1b93638b96c362480704
+    [apiUsername] => merchant.TESTFRASHOCOM201
+    [merchant] => TESTFRASHOCOM201
+    [order.id] => 6085_0768316001522285772
+    [order.amount] => 1348.00
+    [order.currency] => AUD
+)
+
+03-29-2018 @ 12:09:33 - Checkout session response: Array
+(
+    [merchant] => TESTFRASHOCOM201
+    [result] => SUCCESS
+    [session_id] => SESSION0002639815975J83047638M1
+    [session_updateStatus] => SUCCESS
+    [session_version] => 027c09f701
+    [successIndicator] => c6a4201748c94cb1
+)
+
+03-29-2018 @ 12:10:27 - start process Commweb
+03-29-2018 @ 12:10:27 - Checkout session request: Array
+(
+    [apiOperation] => CREATE_CHECKOUT_SESSION
+    [apiPassword] => f7cf032d2f1f1b93638b96c362480704
+    [apiUsername] => merchant.TESTFRASHOCOM201
+    [merchant] => TESTFRASHOCOM201
+    [order.id] => 6085_0799221001522285827
+    [order.amount] => 1348.00
+    [order.currency] => AUD
+)
+
+03-29-2018 @ 12:10:28 - Checkout session response: Array
+(
+    [merchant] => TESTFRASHOCOM201
+    [result] => SUCCESS
+    [session_id] => SESSION0002186845280N26273476N2
+    [session_updateStatus] => SUCCESS
+    [session_version] => 6b80b9b001
+    [successIndicator] => 395d531d39c84753
+)
+
+03-29-2018 @ 12:11:08 - start process Commweb
+03-29-2018 @ 12:11:08 - Checkout session request: Array
+(
+    [apiOperation] => CREATE_CHECKOUT_SESSION
+    [apiPassword] => f7cf032d2f1f1b93638b96c362480704
+    [apiUsername] => merchant.TESTFRASHOCOM201
+    [merchant] => TESTFRASHOCOM201
+    [order.id] => 6085_0481318001522285868
+    [order.amount] => 1348.00
+    [order.currency] => AUD
+)
+
+03-29-2018 @ 12:11:08 - Checkout session response: Array
+(
+    [merchant] => TESTFRASHOCOM201
+    [result] => SUCCESS
+    [session_id] => SESSION0002437849237F38045343H9
+    [session_updateStatus] => SUCCESS
+    [session_version] => bb2ddcb901
+    [successIndicator] => b550ed01e813467a
+)
+
+03-29-2018 @ 12:11:47 - start process Commweb
+03-29-2018 @ 12:11:47 - Checkout session request: Array
+(
+    [apiOperation] => CREATE_CHECKOUT_SESSION
+    [apiPassword] => f7cf032d2f1f1b93638b96c362480704
+    [apiUsername] => merchant.TESTFRASHOCOM201
+    [merchant] => TESTFRASHOCOM201
+    [order.id] => 6085_0478246001522285907
+    [order.amount] => 1348.00
+    [order.currency] => AUD
+)
+
+03-29-2018 @ 12:11:47 - Checkout session response: Array
+(
+    [merchant] => TESTFRASHOCOM201
+    [result] => SUCCESS
+    [session_id] => SESSION0002932331768L41447394G4
+    [session_updateStatus] => SUCCESS
+    [session_version] => 4624b6ee01
+    [successIndicator] => 3e74fbea4e184030
+)
+
+03-29-2018 @ 12:12:15 - Order detail from commweb: Array
+(
+    [amount] => 1348.00
+    [billing_address_city] => Glenhaven
+    [billing_address_country] => AUS
+    [billing_address_postcodeZip] => 2156
+    [billing_address_stateProvince] => NSW
+    [billing_address_street] => 10012 Zero Street
+    [creationTime] => 2018-03-29T01:12:14.180Z
+    [currency] => AUD
+    [customer_firstName] => jaimee
+    [customer_lastName] => tracey
+    [description] => Commweb Order
+    [device_browser] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299
+    [device_ipAddress] => 1.144.106.168
+    [id] => 6085_0478246001522285907
+    [merchant] => TESTFRASHOCOM201
+    [result] => SUCCESS
+    [risk_response_gatewayCode] => ACCEPTED
+    [risk_response_review_decision] => NOT_REQUIRED
+    [risk_response_rule_data] => 401200
+    [risk_response_rule_name] => MERCHANT_BIN_RANGE
+    [risk_response_rule_recommendation] => NO_ACTION
+    [risk_response_rule_type] => MERCHANT_RULE
+    [risk_response_rule] => Array
+        (
+            [1] => MERCHANT_RULE
+            [2] => MERCHANT_RULE
+            [3] => MERCHANT_RULE
+            [4] => MERCHANT_RULE
+            [5] => MERCHANT_RULE
+            [6] => MSO_RULE
+            [7] => MSO_RULE
+            [8] => MSO_RULE
+            [9] => MSO_RULE
+        )
+
+    [sourceOfFunds_provided_card_brand] => VISA
+    [sourceOfFunds_provided_card_expiry_month] => 5
+    [sourceOfFunds_provided_card_expiry_year] => 21
+    [sourceOfFunds_provided_card_fundingMethod] => CREDIT
+    [sourceOfFunds_provided_card_nameOnCard] => jaimee tracey
+    [sourceOfFunds_provided_card_number] => 401200xxxxxx0026
+    [sourceOfFunds_provided_card_scheme] => VISA
+    [sourceOfFunds_type] => CARD
+    [status] => CAPTURED
+    [totalAuthorizedAmount] => 1348.00
+    [totalCapturedAmount] => 1348.00
+    [totalRefundedAmount] => 0.00
+    [transaction_authorizationResponse_avsCode] => 0
+    [transaction_authorizationResponse_cardLevelIndicator] => 88
+    [transaction_authorizationResponse_cardSecurityCodeError] => M
+    [transaction_authorizationResponse_commercialCard] => 888
+    [transaction_authorizationResponse_commercialCardIndicator] => 3
+    [transaction_authorizationResponse_marketSpecificData] => 8
+    [transaction_authorizationResponse_processingCode] => 003000
+    [transaction_authorizationResponse_responseCode] => 00
+    [transaction_authorizationResponse_returnAci] => 8
+    [transaction_authorizationResponse_stan] => 235358
+    [transaction_authorizationResponse_transactionIdentifier] => 123456789012345
+    [transaction_authorizationResponse_validationCode] => 6789
+    [transaction_billing_address_city] => Glenhaven
+    [transaction_billing_address_country] => AUS
+    [transaction_billing_address_postcodeZip] => 2156
+    [transaction_billing_address_stateProvince] => NSW
+    [transaction_billing_address_street] => 10012 Zero Street
+    [transaction_customer_firstName] => jaimee
+    [transaction_customer_lastName] => tracey
+    [transaction_device_browser] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299
+    [transaction_device_ipAddress] => 1.144.106.168
+    [transaction_gatewayEntryPoint] => CHECKOUT
+    [transaction_merchant] => TESTFRASHOCOM201
+    [transaction_order_amount] => 1348.00
+    [transaction_order_creationTime] => 2018-03-29T01:12:14.180Z
+    [transaction_order_currency] => AUD
+    [transaction_order_description] => Commweb Order
+    [transaction_order_id] => 6085_0478246001522285907
+    [transaction_order_status] => CAPTURED
+    [transaction_order_totalAuthorizedAmount] => 1348.00
+    [transaction_order_totalCapturedAmount] => 1348.00
+    [transaction_order_totalRefundedAmount] => 0.00
+    [transaction_response_acquirerCode] => 00
+    [transaction_response_acquirerMessage] => Approved
+    [transaction_response_cardSecurityCode_acquirerCode] => M
+    [transaction_response_cardSecurityCode_gatewayCode] => MATCH
+    [transaction_response_cardholderVerification_avs_acquirerCode] => 0
+    [transaction_response_gatewayCode] => APPROVED
+    [transaction_result] => SUCCESS
+    [transaction_risk_response_gatewayCode] => ACCEPTED
+    [transaction_risk_response_review_decision] => NOT_REQUIRED
+    [transaction_risk_response_rule_data] => 401200
+    [transaction_risk_response_rule_name] => MERCHANT_BIN_RANGE
+    [transaction_risk_response_rule_recommendation] => NO_ACTION
+    [transaction_risk_response_rule_type] => MERCHANT_RULE
+    [transaction_risk_response_rule] => Array
+        (
+            [1] => MERCHANT_RULE
+            [2] => MERCHANT_RULE
+            [3] => MERCHANT_RULE
+            [4] => MERCHANT_RULE
+            [5] => MERCHANT_RULE
+            [6] => MSO_RULE
+            [7] => MSO_RULE
+            [8] => MSO_RULE
+            [9] => MSO_RULE
+        )
+
+    [transaction_sourceOfFunds_provided_card_brand] => VISA
+    [transaction_sourceOfFunds_provided_card_expiry_month] => 5
+    [transaction_sourceOfFunds_provided_card_expiry_year] => 21
+    [transaction_sourceOfFunds_provided_card_fundingMethod] => CREDIT
+    [transaction_sourceOfFunds_provided_card_nameOnCard] => jaimee tracey
+    [transaction_sourceOfFunds_provided_card_number] => 401200xxxxxx0026
+    [transaction_sourceOfFunds_provided_card_scheme] => VISA
+    [transaction_sourceOfFunds_type] => CARD
+    [transaction_timeOfRecord] => 2018-03-29T01:12:14.180Z
+    [transaction_transaction_acquirer_batch] => 20180329
+    [transaction_transaction_acquirer_date] => 0329
+    [transaction_transaction_acquirer_id] => CBA_S2I
+    [transaction_transaction_acquirer_merchantId] => 353109290134156
+    [transaction_transaction_acquirer_settlementDate] => 2018-03-29
+    [transaction_transaction_acquirer_timeZone] => +1100
+    [transaction_transaction_acquirer_transactionId] => 123456789012345
+    [transaction_transaction_amount] => 1348.00
+    [transaction_transaction_authorizationCode] => 235358
+    [transaction_transaction_currency] => AUD
+    [transaction_transaction_frequency] => SINGLE
+    [transaction_transaction_id] => 1
+    [transaction_transaction_receipt] => 808801235358
+    [transaction_transaction_source] => INTERNET
+    [transaction_transaction_terminal] => CBAS2I05
+    [transaction_transaction_type] => PAYMENT
+    [transaction_version] => 45
+)
+
+04-17-2018 @ 12:37:29 - start process Commweb
+04-17-2018 @ 12:37:29 - Checkout session request: Array
+(
+    [apiOperation] => CREATE_CHECKOUT_SESSION
+    [apiPassword] => ebe8e1fa336825e89c0ff89673db8e1c
+    [apiUsername] => merchant.FRASHOCOM201
+    [merchant] => FRASHOCOM201
+    [order.id] => 6160_0398022001523932649
+    [order.amount] => 1.00
+    [order.currency] => AUD
+)
+
+04-17-2018 @ 12:37:29 - Checkout session response: Array
+(
+    [merchant] => FRASHOCOM201
+    [result] => SUCCESS
+    [session_id] => SESSION0002574134102E04858745M9
+    [session_updateStatus] => SUCCESS
+    [session_version] => b42c421401
+    [successIndicator] => e818eec65dd14db8
+)
+
+04-17-2018 @ 12:38:15 - Order detail from commweb: Array
+(
+    [amount] => 1.00
+    [billing_address_city] => Glenhaven
+    [billing_address_country] => AUS
+    [billing_address_postcodeZip] => 2156
+    [billing_address_stateProvince] => NSW
+    [billing_address_street] => 29 Fullers Road
+    [creationTime] => 2018-04-17T02:38:11.553Z
+    [currency] => AUD
+    [customer_firstName] => Bruce
+    [customer_lastName] => Richardson
+    [description] => Commweb Order
+    [device_browser] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+    [device_ipAddress] => 103.217.166.45
+    [id] => 6160_0398022001523932649
+    [merchant] => FRASHOCOM201
+    [result] => SUCCESS
+    [risk_response_gatewayCode] => ACCEPTED
+    [risk_response_review_decision] => NOT_REQUIRED
+    [risk_response_rule_data] => S
+    [risk_response_rule_name] => MERCHANT_AVS
+    [risk_response_rule_recommendation] => NO_ACTION
+    [risk_response_rule_type] => MERCHANT_RULE
+    [risk_response_rule] => Array
+        (
+            [10] => MSO_RULE
+            [1] => MERCHANT_RULE
+            [2] => MERCHANT_RULE
+            [3] => MERCHANT_RULE
+            [4] => MERCHANT_RULE
+            [5] => MERCHANT_RULE
+            [6] => MERCHANT_RULE
+            [7] => MSO_RULE
+            [8] => MSO_RULE
+            [9] => MSO_RULE
+        )
+
+    [sourceOfFunds_provided_card_brand] => MASTERCARD
+    [sourceOfFunds_provided_card_expiry_month] => 9
+    [sourceOfFunds_provided_card_expiry_year] => 21
+    [sourceOfFunds_provided_card_fundingMethod] => CREDIT
+    [sourceOfFunds_provided_card_issuer] => AUSTRALIA AND NEW ZEALAND BANKING GROUP, LTD.
+    [sourceOfFunds_provided_card_nameOnCard] => Bruce Richardson
+    [sourceOfFunds_provided_card_number] => 546828xxxxxx3548
+    [sourceOfFunds_provided_card_scheme] => MASTERCARD
+    [sourceOfFunds_type] => CARD
+    [status] => CAPTURED
+    [totalAuthorizedAmount] => 1.00
+    [totalCapturedAmount] => 1.00
+    [totalRefundedAmount] => 0.00
+    [transaction_authorizationResponse_avsCode] => S
+    [transaction_authorizationResponse_cardSecurityCodeError] => M
+    [transaction_authorizationResponse_commercialCardIndicator] => 1
+    [transaction_authorizationResponse_date] => 0417
+    [transaction_authorizationResponse_financialNetworkCode] => MPL
+    [transaction_authorizationResponse_processingCode] => 003000
+    [transaction_authorizationResponse_responseCode] => 00
+    [transaction_authorizationResponse_stan] => 163214
+    [transaction_authorizationResponse_time] => 023811
+    [transaction_authorizationResponse_transactionIdentifier] => FVCXKK
+    [transaction_billing_address_city] => Glenhaven
+    [transaction_billing_address_country] => AUS
+    [transaction_billing_address_postcodeZip] => 2156
+    [transaction_billing_address_stateProvince] => NSW
+    [transaction_billing_address_street] => 29 Fullers Road
+    [transaction_customer_firstName] => Bruce
+    [transaction_customer_lastName] => Richardson
+    [transaction_device_browser] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+    [transaction_device_ipAddress] => 103.217.166.45
+    [transaction_gatewayEntryPoint] => CHECKOUT
+    [transaction_merchant] => FRASHOCOM201
+    [transaction_order_amount] => 1.00
+    [transaction_order_creationTime] => 2018-04-17T02:38:11.553Z
+    [transaction_order_currency] => AUD
+    [transaction_order_description] => Commweb Order
+    [transaction_order_id] => 6160_0398022001523932649
+    [transaction_order_status] => CAPTURED
+    [transaction_order_totalAuthorizedAmount] => 1.00
+    [transaction_order_totalCapturedAmount] => 1.00
+    [transaction_order_totalRefundedAmount] => 0.00
+    [transaction_response_acquirerCode] => 00
+    [transaction_response_acquirerMessage] => Approved
+    [transaction_response_cardSecurityCode_acquirerCode] => M
+    [transaction_response_cardSecurityCode_gatewayCode] => MATCH
+    [transaction_response_cardholderVerification_avs_acquirerCode] => S
+    [transaction_response_cardholderVerification_avs_gatewayCode] => SERVICE_NOT_SUPPORTED
+    [transaction_response_gatewayCode] => APPROVED
+    [transaction_result] => SUCCESS
+    [transaction_risk_response_gatewayCode] => ACCEPTED
+    [transaction_risk_response_review_decision] => NOT_REQUIRED
+    [transaction_risk_response_rule_data] => S
+    [transaction_risk_response_rule_name] => MERCHANT_AVS
+    [transaction_risk_response_rule_recommendation] => NO_ACTION
+    [transaction_risk_response_rule_type] => MERCHANT_RULE
+    [transaction_risk_response_rule] => Array
+        (
+            [10] => MSO_RULE
+            [1] => MERCHANT_RULE
+            [2] => MERCHANT_RULE
+            [3] => MERCHANT_RULE
+            [4] => MERCHANT_RULE
+            [5] => MERCHANT_RULE
+            [6] => MERCHANT_RULE
+            [7] => MSO_RULE
+            [8] => MSO_RULE
+            [9] => MSO_RULE
+        )
+
+    [transaction_sourceOfFunds_provided_card_brand] => MASTERCARD
+    [transaction_sourceOfFunds_provided_card_expiry_month] => 9
+    [transaction_sourceOfFunds_provided_card_expiry_year] => 21
+    [transaction_sourceOfFunds_provided_card_fundingMethod] => CREDIT
+    [transaction_sourceOfFunds_provided_card_issuer] => AUSTRALIA AND NEW ZEALAND BANKING GROUP, LTD.
+    [transaction_sourceOfFunds_provided_card_nameOnCard] => Bruce Richardson
+    [transaction_sourceOfFunds_provided_card_number] => 546828xxxxxx3548
+    [transaction_sourceOfFunds_provided_card_scheme] => MASTERCARD
+    [transaction_sourceOfFunds_type] => CARD
+    [transaction_timeOfRecord] => 2018-04-17T02:38:11.553Z
+    [transaction_transaction_acquirer_batch] => 20180417
+    [transaction_transaction_acquirer_date] => 0417
+    [transaction_transaction_acquirer_id] => CBA_S2I
+    [transaction_transaction_acquirer_merchantId] => 353109290134156
+    [transaction_transaction_acquirer_settlementDate] => 2018-04-17
+    [transaction_transaction_acquirer_timeZone] => +1000
+    [transaction_transaction_acquirer_transactionId] => FVCXKK
+    [transaction_transaction_amount] => 1.00
+    [transaction_transaction_authorizationCode] => 799426
+    [transaction_transaction_currency] => AUD
+    [transaction_transaction_frequency] => SINGLE
+    [transaction_transaction_id] => 1
+    [transaction_transaction_receipt] => 810702163214
+    [transaction_transaction_source] => INTERNET
+    [transaction_transaction_terminal] => CBAS2I04
+    [transaction_transaction_type] => PAYMENT
+    [transaction_version] => 45
+)
+
+04-27-2018 @ 07:53:05 - start process Commweb
+04-27-2018 @ 07:53:05 - Checkout session request: Array
+(
+    [apiOperation] => CREATE_CHECKOUT_SESSION
+    [apiPassword] => ebe8e1fa336825e89c0ff89673db8e1c
+    [apiUsername] => merchant.FRASHOCOM201
+    [merchant] => FRASHOCOM201
+    [order.id] => 6354_0184923001524779585
+    [order.amount] => 730.00
+    [order.currency] => AUD
+)
+
+04-27-2018 @ 07:53:05 - Checkout session response: Array
+(
+    [merchant] => FRASHOCOM201
+    [result] => SUCCESS
+    [session_id] => SESSION0002006456811N0290613L51
+    [session_updateStatus] => SUCCESS
+    [session_version] => 3571bac501
+    [successIndicator] => b445400e27764968
+)
+
+04-27-2018 @ 07:55:34 - Order detail from commweb: Array
+(
+    [amount] => 730.00
+    [billing_address_city] => Heatherbrae
+    [billing_address_country] => AUS
+    [billing_address_postcodeZip] => 2324
+    [billing_address_stateProvince] => Nsw
+    [billing_address_street] => 6/14 Jura st heatherbrae
+    [creationTime] => 2018-04-26T21:55:30.691Z
+    [currency] => AUD
+    [customer_firstName] => James
+    [customer_lastName] => morphett
+    [description] => Commweb Order
+    [device_browser] => Mozilla/5.0 (iPhone; CPU iPhone OS 11_2_1 like Mac OS X) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0 Mobile/15C153 Safari/604.1
+    [device_ipAddress] => 1.144.110.211
+    [id] => 6354_0184923001524779585
+    [merchant] => FRASHOCOM201
+    [result] => SUCCESS
+    [risk_response_gatewayCode] => ACCEPTED
+    [risk_response_review_decision] => NOT_REQUIRED
+    [risk_response_rule_data] => U
+    [risk_response_rule_name] => MERCHANT_AVS
+    [risk_response_rule_recommendation] => NO_ACTION
+    [risk_response_rule_type] => MERCHANT_RULE
+    [risk_response_rule] => Array
+        (
+            [10] => MSO_RULE
+            [1] => MERCHANT_RULE
+            [2] => MERCHANT_RULE
+            [3] => MERCHANT_RULE
+            [4] => MERCHANT_RULE
+            [5] => MERCHANT_RULE
+            [6] => MERCHANT_RULE
+            [7] => MSO_RULE
+            [8] => MSO_RULE
+            [9] => MSO_RULE
+        )
+
+    [sourceOfFunds_provided_card_brand] => VISA
+    [sourceOfFunds_provided_card_expiry_month] => 3
+    [sourceOfFunds_provided_card_expiry_year] => 21
+    [sourceOfFunds_provided_card_fundingMethod] => DEBIT
+    [sourceOfFunds_provided_card_nameOnCard] => James morphett
+    [sourceOfFunds_provided_card_number] => 406587xxxxxx5066
+    [sourceOfFunds_provided_card_scheme] => VISA
+    [sourceOfFunds_type] => CARD
+    [status] => CAPTURED
+    [totalAuthorizedAmount] => 730.00
+    [totalCapturedAmount] => 730.00
+    [totalRefundedAmount] => 0.00
+    [transaction_authorizationResponse_avsCode] => U
+    [transaction_authorizationResponse_cardLevelIndicator] => G 
+    [transaction_authorizationResponse_cardSecurityCodeError] => M
+    [transaction_authorizationResponse_commercialCard] => !01
+    [transaction_authorizationResponse_commercialCardIndicator] => B
+    [transaction_authorizationResponse_date] => 0426
+    [transaction_authorizationResponse_processingCode] => 003000
+    [transaction_authorizationResponse_responseCode] => 00
+    [transaction_authorizationResponse_returnAci] => V
+    [transaction_authorizationResponse_stan] => 96191
+    [transaction_authorizationResponse_time] => 215530
+    [transaction_authorizationResponse_transactionIdentifier] => 308116789309600
+    [transaction_authorizationResponse_validationCode] => QJZ4
+    [transaction_billing_address_city] => Heatherbrae
+    [transaction_billing_address_country] => AUS
+    [transaction_billing_address_postcodeZip] => 2324
+    [transaction_billing_address_stateProvince] => Nsw
+    [transaction_billing_address_street] => 6/14 Jura st heatherbrae
+    [transaction_customer_firstName] => James
+    [transaction_customer_lastName] => morphett
+    [transaction_device_browser] => Mozilla/5.0 (iPhone; CPU iPhone OS 11_2_1 like Mac OS X) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0 Mobile/15C153 Safari/604.1
+    [transaction_device_ipAddress] => 1.144.110.211
+    [transaction_gatewayEntryPoint] => CHECKOUT
+    [transaction_merchant] => FRASHOCOM201
+    [transaction_order_amount] => 730.00
+    [transaction_order_creationTime] => 2018-04-26T21:55:30.691Z
+    [transaction_order_currency] => AUD
+    [transaction_order_description] => Commweb Order
+    [transaction_order_id] => 6354_0184923001524779585
+    [transaction_order_status] => CAPTURED
+    [transaction_order_totalAuthorizedAmount] => 730.00
+    [transaction_order_totalCapturedAmount] => 730.00
+    [transaction_order_totalRefundedAmount] => 0.00
+    [transaction_response_acquirerCode] => 00
+    [transaction_response_acquirerMessage] => Approved
+    [transaction_response_cardSecurityCode_acquirerCode] => M
+    [transaction_response_cardSecurityCode_gatewayCode] => MATCH
+    [transaction_response_cardholderVerification_avs_acquirerCode] => U
+    [transaction_response_cardholderVerification_avs_gatewayCode] => NOT_AVAILABLE
+    [transaction_response_gatewayCode] => APPROVED
+    [transaction_result] => SUCCESS
+    [transaction_risk_response_gatewayCode] => ACCEPTED
+    [transaction_risk_response_review_decision] => NOT_REQUIRED
+    [transaction_risk_response_rule_data] => U
+    [transaction_risk_response_rule_name] => MERCHANT_AVS
+    [transaction_risk_response_rule_recommendation] => NO_ACTION
+    [transaction_risk_response_rule_type] => MERCHANT_RULE
+    [transaction_risk_response_rule] => Array
+        (
+            [10] => MSO_RULE
+            [1] => MERCHANT_RULE
+            [2] => MERCHANT_RULE
+            [3] => MERCHANT_RULE
+            [4] => MERCHANT_RULE
+            [5] => MERCHANT_RULE
+            [6] => MERCHANT_RULE
+            [7] => MSO_RULE
+            [8] => MSO_RULE
+            [9] => MSO_RULE
+        )
+
+    [transaction_sourceOfFunds_provided_card_brand] => VISA
+    [transaction_sourceOfFunds_provided_card_expiry_month] => 3
+    [transaction_sourceOfFunds_provided_card_expiry_year] => 21
+    [transaction_sourceOfFunds_provided_card_fundingMethod] => DEBIT
+    [transaction_sourceOfFunds_provided_card_nameOnCard] => James morphett
+    [transaction_sourceOfFunds_provided_card_number] => 406587xxxxxx5066
+    [transaction_sourceOfFunds_provided_card_scheme] => VISA
+    [transaction_sourceOfFunds_type] => CARD
+    [transaction_timeOfRecord] => 2018-04-26T21:55:30.691Z
+    [transaction_transaction_acquirer_batch] => 20180427
+    [transaction_transaction_acquirer_date] => 0427
+    [transaction_transaction_acquirer_id] => CBA_S2I
+    [transaction_transaction_acquirer_merchantId] => 353109290134156
+    [transaction_transaction_acquirer_settlementDate] => 2018-04-27
+    [transaction_transaction_acquirer_timeZone] => +1000
+    [transaction_transaction_acquirer_transactionId] => 308116789309600
+    [transaction_transaction_amount] => 730.00
+    [transaction_transaction_authorizationCode] => 749457
+    [transaction_transaction_currency] => AUD
+    [transaction_transaction_frequency] => SINGLE
+    [transaction_transaction_id] => 1
+    [transaction_transaction_receipt] => 811621096191
+    [transaction_transaction_source] => INTERNET
+    [transaction_transaction_terminal] => CBAS2I04
+    [transaction_transaction_type] => PAYMENT
+    [transaction_version] => 45
+)
+

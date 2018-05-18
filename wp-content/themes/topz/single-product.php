@@ -1,0 +1,1 @@
+<?php topz_product_detail_check(); ?>

@@ -1,0 +1,2415 @@
+/** postid-4262 over bath shower swing **/
+
+/** New design css of circle  ***/
+.postid-4262 .plus-icontopleft {
+    display: none;
+}
+.postid-4262 .top-mostleft.rightline .plus-topleft {
+    float: left;
+    margin-top: -2px;
+	visibility: hidden;
+}
+.postid-4262 .top-mostright.rightline .plus-topleft {
+    float: left;
+    margin-top: -36px;
+	visibility: hidden;
+}
+.postid-4262 .top-mostleft.leftline .plus-topleft {
+    float: left;
+    margin-top: -2px;
+}
+.postid-4262 .top-mostright.leftline .plus-topleft {
+    float: left;
+    margin-top: -36px;
+}
+.postid-4262 .optioninput-top1 {
+    float: right;
+    font-size: 14px;
+    border: 2px solid #ff1700;
+    border-radius: 30px;
+    /* padding: 8px 0 8px 0; */
+    font-weight: 700;
+    color: #000;
+    background: #bfbfbf;
+    width: 37px;
+    height: 37px;
+	text-align: center;
+}
+.postid-4262 .left-sign {
+    float: left;
+    margin-top: -6px;
+}
+.postid-4262 .topleft-arrow {
+    width: 100%;
+    color: #000;
+    font-size: 24px !important;
+    cursor: pointer;
+	visibility: hidden;
+}
+.postid-4262 .bottomleft-arrow {
+    width: 100%;
+    color: #000;
+    font-size: 24px !important;
+    cursor: pointer;
+	visibility: hidden;
+}
+.postid-4262 .plus-icontopright {
+    display: none;
+}
+.postid-4262 .top-mostleft.rightline .plus-topright {
+    float: right;
+    margin-top: -2px;
+}
+.postid-4262 .top-mostright.rightline .plus-topright {
+    float: right;
+    margin-top: -36px;
+}
+.postid-4262 .top-mostleft.leftline .plus-topright {
+    float: right;
+    margin-top: -2px;
+	visibility: hidden;
+}
+.postid-4262 .top-mostright.leftline .plus-topright {
+    float: right;
+    margin-top: -36px;
+	visibility: hidden;
+}
+.postid-4262 .optioninput-top2 {
+    float: left;
+    font-size: 14px;
+    border: 2px solid #ff1700;
+    border-radius: 30px;
+    /* padding: 8px 0 8px 0; */
+    font-weight: 700;
+    color: #000;
+    background: #bfbfbf;
+    width: 37px;
+    height: 37px;
+	text-align: center;
+}
+.postid-4262 .right-sign {
+    float: left;
+    margin-top: -6px;
+}
+.postid-4262 .qtyplus-topright {
+    width: 100%;
+    color: #000;
+    font-size: 24px !important;
+    cursor: pointer;
+}
+.postid-4262 .minus-topright {
+    width: 100%;
+    color: #000;
+    font-size: 24px !important;
+    cursor: pointer;
+}
+/*** bottom-left ***/
+.postid-4262 .plus-iconbottomleft {
+    display: none;
+}
+.postid-4262 .plus-iconbottomright {
+    display: none;
+}
+.postid-4262 .optioninput-bottom1 {
+    float: right;
+    font-size: 14px;
+    border: 2px solid #ff1700;
+    border-radius: 30px;
+    /* padding: 8px 0 8px 0; */
+    font-weight: 700;
+    color: #000;
+    background: #bfbfbf;
+    width: 37px;
+    height: 37px;
+	margin-top: 0px;
+    margin-left: 0;
+	text-align: center;
+}
+.postid-4262 .optioninput-bottom2 {
+    float: left;
+    font-size: 14px;
+    border: 2px solid #ff1700;
+    border-radius: 30px;
+    /* padding: 8px 0 8px 0; */
+    font-weight: 700;
+    color: #000;
+    background: #bfbfbf;
+    width: 37px;
+    height: 37px;
+	margin-top: 0;
+    margin-right: 0;
+	text-align: center;
+}
+/*** Bottom-Last Left ***/
+.postid-4262 .plus-iconbottomlastleft1 {
+    display: none;
+}
+.postid-4262 .bottom-mostleft {
+    width: 75%;
+    margin-left: 78px;
+    margin-top: 15%;
+}
+.postid-4262 .plus-bottomleft {
+    float: left;
+    margin-top: 0px;
+}
+.postid-4262 .optioninput-bottomleft1 {
+    float: right;
+    font-size: 14px;
+    border: 2px solid #ff1700;
+    border-radius: 30px;
+    padding: 8px 0 8px 0;
+    font-weight: 700;
+    color: #000;
+    background: #bfbfbf;
+    width: 37px;
+    height: 37px;
+    margin-top: 0px;
+    margin-left: 0;
+}
+.postid-4262 .optioninput-bottomleft2 {
+    float: left;
+    font-size: 14px;
+    border: 2px solid #ff1700;
+    border-radius: 30px;
+    padding: 8px 0 8px 0;
+    font-weight: 700;
+    color: #000;
+    background: #bfbfbf;
+    width: 37px;
+    height: 37px;
+    margin-top: 0;
+    margin-right: 0;
+}
+.postid-4262 .plus-bottomright {
+    float: right;
+    margin-top: 0px;
+}
+.postid-4262 .plus-iconbottomlastleft2 {
+    display: none;
+}
+.postid-4262 .bottom-mostright.rightline {
+    width: 64%;
+    margin-left: 151%;
+    margin-top: -45%;
+}
+.postid-4262 .bottom-mostright.leftline {
+    width: 64%;
+    margin-left: 30%;
+    margin-top: 22%;
+}
+.postid-4262 .plus-iconbottomlastright1 {
+    display: none;
+}
+.postid-4262 .plus-iconbottomlastright2 {
+    display: none;
+}
+.postid-4262 .optioninput-bottomright1 {
+    float: right;
+    font-size: 14px;
+    border: 2px solid #ff1700;
+    border-radius: 30px;
+    /* padding: 8px 0 8px 0; */
+    font-weight: 700;
+    color: #000;
+    background: #bfbfbf;
+    width: 37px;
+    height: 37px;
+    margin-top: 0px;
+    margin-left: 0;
+	text-align: center;
+}
+.postid-4262 .optioninput-bottomright2 {
+    float: left;
+    font-size: 14px;
+    border: 2px solid #ff1700;
+    border-radius: 30px;
+    /* padding: 8px 0 8px 0; */
+    font-weight: 700;
+    color: #000;
+    background: #bfbfbf;
+    width: 37px;
+    height: 37px;
+    margin-top: 0;
+    margin-right: 0;
+	text-align: center;
+}
+
+
+/** New design css of circle End ***/
+
+
+/*** minus-icon on review section ***/
+
+.postid-4262 .plus-icontopleft .minus-topleft {
+    float: left;
+    margin-left: 2px;
+}
+.postid-4262 .plus-iconbottomleft .minus-middleleft {
+    float: left;
+    margin-top: -35px;
+    margin-left: 76px;
+}
+.postid-4262 .plus-iconbottomlastleft1 .minus-bottomlleft {
+    margin-left: 2px;
+}
+.postid-4262 .plus-iconbottomlastleft2 .minus-bottomleftright {
+    margin-left: 2px;
+}
+.postid-4262 .plus-icontopright .minus-topright {
+    float: right;
+    margin-left: 2px;
+}
+.postid-4262 .plus-iconbottomright .minus-middleright {
+    float: right;
+    margin-top: -34px;
+}
+.postid-4262 .plus-iconbottomlastright1 .minus-bottomrightleft {
+    margin-left: 2px;
+}
+.postid-4262 .plus-iconbottomlastright2 .minus-bottomrright {
+    margin-left: 2px;
+}
+
+/** Screen Orientation Fields  Right image **/
+.postid-4262 .right-hinge .door-width {
+	margin-top: 10px;
+	margin-left: 440px;
+}
+.postid-4262 .right-hinge .screen-height {
+    margin-top: 200px;
+	margin-left: 550px;
+}
+.postid-4262 .right-hinge .screen-width {
+    margin-top: -120px;
+    margin-left: 430px;    
+}
+
+/** Screen Orientation Fields  Left image **/
+.postid-4262 .left-hinge .door-width {
+	margin-left: 110px;
+}
+.postid-4262 .left-hinge .screen-height {
+	margin-left: -5px;
+    margin-top: 26%;
+}
+.postid-4262 .left-hinge .screen-width {
+    margin-left: 130px;
+    margin-top: -16%;
+}
+
+/** Advanced option height,width, depth on image for Right**/
+.postid-4262 .right-hingereviewadvanced #advancedoptions-returnpanel2inner {
+    position: absolute;
+    margin-top: -26.4%;
+    margin-left: 9.2%;
+}
+.postid-4262 .right-hingereviewadvanced #advancedoptions-doorpanelinner {
+    position: absolute;
+    margin-top: -19.6%;
+    margin-left: -8%;
+}
+.postid-4262 .right-hingereviewadvanced #advancedoptions-hingepanelinner {
+    position: absolute;
+    margin-top: -19.6%;
+    margin-left: 8.9%;
+}
+
+/** Advanced option height,width, depth on image for left**/
+.postid-4262 .left-hingereviewadvanced #advancedoptions-returnpanel2inner {
+    position: absolute;
+    margin-top: -26.4%;
+    margin-left: -16.6%;
+}
+.postid-4262 .left-hingereviewadvanced #advancedoptions-doorpanelinner {
+    position: absolute;
+    margin-top: -19.4%;
+    margin-left: 2%;
+}
+.postid-4262 .left-hingereviewadvanced #advancedoptions-hingepanelinner {
+    position: absolute;
+    margin-top: -19.4%;
+    margin-left: -14.8%;
+}
+
+/** Review height,width, depth on right image  **/
+.postid-4262 .advancedoptions-panel1.right-hingereview #advancedoptions-reviewscreen-depthinner {
+    position: absolute;
+    margin-top: -48%;
+    margin-left: -38%;
+	display: none;
+}
+.postid-4262 .advancedoptions-panel1.right-hingereview #advancedoptions-reviewdoorpanelinner {
+    position: absolute;
+    margin-top: -24%;
+    margin-left: 8.8%;
+	font-weight: bold;
+}
+.postid-4262 .advancedoptions-panel1.right-hingereview #advancedoptions-reviewhingepanelinner {
+    position: absolute;
+    margin-top: -24%;
+    margin-left: 25.6%;
+	font-weight: bold;
+}
+.postid-4262 .advancedoptions-panel1.right-hingereview #advancedoptions-reviewscreen-widthinner {
+    position: absolute;
+    margin-top: -18%;
+    margin-left: 15%;
+	font-weight: bold;
+}
+
+.postid-4262 .advancedoptions-panel2.right-hingereview #advancedoptions-reviewreturnpanelinner2 {
+    position: absolute;
+    margin-top: -28.2%;
+    margin-left: -29.4%;
+	display: none;
+}
+.postid-4262 .advancedoptions-panel2.right-hingereview #advancedoptions-reviewdoorpanelinner2 {
+    position: absolute;
+    margin-top: -32.6%;
+    margin-left: 18%;
+	font-weight: bold;
+}
+.postid-4262 .advancedoptions-panel2.right-hingereview #advancedoptions-reviewhingepanelinner2 {
+    position: absolute;
+    margin-top: -33.1%;
+    margin-left: 27%;
+	font-weight: bold;
+}
+.postid-4262 .advancedoptions-panel2.right-hingereview #advancedoptions-review-screenheight {
+    position: absolute;
+    margin-top: -33.4%;
+    margin-left: 49.2%;
+	font-weight: bold;
+}
+
+/** Review height,width, depth on left image  **/
+.postid-4262 .advancedoptions-panel1.left-hingereview #advancedoptions-reviewdoorpanelinner {
+    position: absolute;
+    margin-top: -23.6%;
+    margin-left: -11.3%;
+	font-weight: bold;
+}
+.postid-4262 .advancedoptions-panel1.left-hingereview #advancedoptions-reviewhingepanelinner {
+    position: absolute;
+    margin-top: -23.6%;
+    margin-left: -28.2%;
+	font-weight: bold;
+}
+.postid-4262 .advancedoptions-panel1.left-hingereview #advancedoptions-reviewscreen-widthinner {
+    position: absolute;
+    margin-top: -17%;
+    margin-left: -15%;
+	font-weight: bold;
+}
+.postid-4262 .advancedoptions-panel1.left-hingereview #advancedoptions-reviewscreen-depthinner {
+    position: absolute;
+    margin-top: -42%;
+    margin-left: -38%;
+	display: none;
+}
+
+.postid-4262 .advancedoptions-panel2.left-hingereview #advancedoptions-reviewhingepanelinner2 {
+    position: absolute;
+    margin-top: -33.4%;
+    margin-left: -30%;
+	font-weight: bold;
+}
+.postid-4262 .advancedoptions-panel2.left-hingereview #advancedoptions-review-screenheight {
+    position: absolute;
+    margin-top: -39.4%;
+    margin-left: 43%;
+	font-weight: bold;
+}
+.postid-4262 .advancedoptions-panel2.left-hingereview #advancedoptions-reviewdoorpanelinner2 {
+    position: absolute;
+    margin-top: -33.4%;
+    margin-left: -14%;
+	font-weight: bold;
+}
+.postid-4262 .advancedoptions-panel2.left-hingereview #advancedoptions-reviewreturnpanelinner2 {
+    position: absolute;
+    margin-top: -28%;
+    margin-left: -9%;
+	display: none;
+}
+/** Advanced option input fields design  **/
+
+.postid-4262 #advancedoptions-image img {
+    margin: 0 auto;
+}
+.postid-4262 #advancedoptionsimage img {
+	max-width: 460px;
+}
+.postid-4262 .optioninput-bottomleft {
+    max-width: 37%;
+    margin-left: 0;
+	z-index: 9999;
+}
+.postid-4262 .optioninput-bottomright {
+    max-width: 37%;
+	z-index: 9999;
+}
+.postid-4262 .optioninput-bottomright #optioninputbottom {
+    width: 22%;
+}
+.postid-4262 .plus-icontopleft .fa.fa-plus {
+    float: left;
+    padding-top: 0px;
+    padding-right: 4px;
+    padding-left: 4px;
+    margin-right: 2px;
+    margin-top: 1px;
+}
+.postid-4262 .plus-icontopright .fa.fa-plus {
+    float: right;
+    padding-top: 0;
+    padding-right: 4px;
+    padding-left: 4px;
+    margin-right: 2px;
+    margin-top: 1px;
+}
+.postid-4262 .plus-iconbottomleft .fa.fa-plus {
+    float: left;
+    margin-top: -34px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.postid-4262 .plus-iconbottomright .fa.fa-plus {
+    float: right;
+    margin-top: -34px;
+    margin-right: 76px;
+    padding-right: 4px;
+    padding-left: 4px;
+}
+.postid-4262 .plus-iconbottomlastleft1 .fa.fa-plus {
+    padding-right: 4px;
+    padding-left: 4px;
+    margin-right: 2px;
+}
+.postid-4262 .plus-iconbottomlastleft2 .fa.fa-plus {
+    padding-right: 4px;
+    padding-left: 4px;
+    margin-right: 2px;
+}
+.postid-4262 .plus-iconbottomlastright1 .fa.fa-plus {
+    padding-right: 4px;
+    padding-left: 4px;
+    margin-right: 2px;
+}
+.postid-4262 .plus-iconbottomlastright2 .fa.fa-plus {
+    padding-right: 4px;
+    padding-left: 4px;
+    margin-right: 2px;
+}
+/*** Advanced option line move ***/
+.postid-4262 #myCanvasleft.rightline {
+    position: absolute;
+    margin-left: -28%;
+    margin-top: 4.1%;
+	display: none;
+}
+.postid-4262 #myCanvasright.rightline {
+    position: absolute;
+	margin-top: -42%;
+    margin-left: 20%;
+}
+.postid-4262 #myCanvasleft.leftline {
+    position: absolute;
+    margin-left: -31%;
+    margin-top: 4.1%;
+}
+.postid-4262 #myCanvasright.leftline {
+    position: absolute;
+    margin-top: -42%;
+    margin-left: 21%;
+	display: none;
+}
+.postid-4262 #myCanvasrightbottom.rightline{
+    position: absolute;
+    margin-left: -14%;
+    margin-top: 2%;
+    width: 30%;
+}
+.postid-4262 #myCanvasrightbottom.leftline {
+    position: absolute;
+    margin-left: -33%;
+    margin-top: 2%;
+    width: 30%;
+}
+.postid-4262 .myCanvasleftbottom.leftline {
+    position: absolute;
+    margin-left: -36%;
+    margin-top: 2%;
+    width: 68%;
+	display: none;
+}
+/** Media Screen  400px **/
+@media only screen and (max-width: 400px){ 
+	.postid-4262 .left-hinge .door-width {
+		margin-left: 110px;
+		width: auto;
+	}
+	.postid-4262 .left-hinge .screen-height {
+		margin-left: -5px;
+		margin-top: 26%;
+		width: auto;
+	}
+	.postid-4262 .left-hinge .screen-width {
+		margin-left: 130px;
+		margin-top: -16%;
+		width: auto;
+	}
+	.postid-4262 .right-hinge .door-width {
+		margin-top: -16px;
+		margin-left: 100px !important;
+		width: auto;
+	}
+	.postid-4262 .right-hinge .screen-height {
+		margin-top: 130px;
+		margin-left: 100px !important;
+		width: auto;
+	}
+	.postid-4262 .right-hinge .screen-width {
+		margin-top: -95px;
+		margin-left: 100px !important;
+		width: auto;		
+	}
+	.postid-4262 #msform{
+		width: 100%;
+	}
+	.postid-4262 #progressbar {
+		margin-left: 0;
+	}
+	.postid-4262 .step-total {
+    display: block;
+    width: 100%;
+	}
+	.postid-4262 .step-right-images {
+		display: block !important;
+		width: 100%;
+	}
+	.postid-4262 #msform fieldset {
+		position: relative;
+		max-width: 100%;
+		min-width: auto;
+		width: 100%;
+	}
+	.postid-4262 input.button-positionright {
+		float: none;
+		margin-top: 0 !important;
+		margin-right: 0 !important;
+	}
+	.postid-4262 input.button-positionleft {
+		float: none;
+		margin-top: 0 !important;
+		margin-right: 0 !important;
+	}
+	.postid-4262 .door-dimensions img {
+	  margin-left: 0 !important;
+	  max-width: 100% !important;
+	  min-width: auto;
+	 }
+	/*** hardware selection ***/
+	.postid-4262 .hardware-box {
+		min-width: 236px;
+		display: inline-block;
+	}
+	.postid-4262 .hardware-box .step-1 {
+		min-width: 0 !important;
+		max-width: 100%;
+		margin-left: 0;
+	}
+	.postid-4262 .hardware-technical {
+		float: none;
+		min-width: auto !important;
+	}
+	.postid-4262 .hardware-image {
+		float: none;
+		width: auto !important;
+	}
+	.postid-4262 .hardware-text {
+		float: none;
+		display: block;
+		width: auto;
+		min-height: auto;
+		padding: 10px 0 10px 0;
+	}
+	.postid-4262 .hardware-box .select-img input:checked + img {
+		min-width: 100% !important;
+		margin-left: 0px;
+	}
+	/*** hardware selection end ***/
+	
+	/*** Handle box ***/
+	
+	.postid-4262 .handle-box {
+	  display: inline-block;
+	 }
+	 .postid-4262 .handle-box .select-img input:checked + img {
+	  min-width: 100%;
+	  margin-left: 0;
+	 }
+	 .postid-4262 .handle-box .step-1 {
+	  min-width: 0 !important;
+	  max-width: 100%;
+	  margin-left: 0;
+	 }
+	 .postid-4262 .select-img {
+	  margin-bottom: 0px;
+	  width: 100%;
+	 }
+	
+	/*** Handle box end ***/
+	
+	/*** glass box ***/
+	.postid-4262 .glass-box {
+		min-width: 236px !important;
+		min-height: 0;
+		display: inline-block;
+	}
+	.postid-4262 .glass-box img {
+		padding-left: 0 !important;
+		min-width: 260px;
+	}
+	.postid-4262 .glass-box .select-img input:checked + img {
+		min-width: 260px;
+	}
+	/*** glass box end ***/
+	
+	/*** glass-treatment box ***/
+	.postid-4262 .treatment-box {
+		width: auto;
+		display: inline-block;
+	}
+	.postid-4262 .treatment-box.right {
+		float: none;
+	}
+	.postid-4262 .treatment-box.left {
+		float: none;
+		margin-left: 0;
+	}
+	.postid-4262 .treatment-box .back-opaque {
+		width: 248px;
+	}
+	.postid-4262 .treatment-box img {
+		min-width: 249px;
+		padding-left: 0px !important;
+	}
+	.postid-4262 .treatment-box .step-1 {
+		margin-left: 0;
+	}
+	.postid-4262 .treatment-box-text {
+		float: none;
+		margin-left: 0;
+		max-width: 100%;
+	}
+	.postid-4262 .treatment-box.right .select-img input:checked + img, .postid-4262 .treatment-box.left .select-img input:checked + img {
+		min-width: 260px !important;
+		margin-left: 0px !important;
+	}
+	/*** glass-treatment box end ***/
+	
+	/*** Review section ***/
+	.postid-4262 .review-images img {
+		min-width: auto;
+	}
+	.postid-4262 .checking {
+		min-width: 0;
+	}
+	.postid-4262 .product-review {
+		width: auto;
+	}
+	/*** Review section end ***/
+
+}
+
+/** Media Screen Max 401px-480px **/
+@media only screen and (min-width: 401px) and (max-width: 480px){ 
+	.postid-4262 .left-hinge .door-width {
+		margin-left: 110px;
+		width: auto;
+	}
+	.postid-4262 .left-hinge .screen-height {
+		margin-left: -5px;
+		margin-top: 26%;
+		width: auto;
+	}
+	.postid-4262 .left-hinge .screen-width {
+		margin-left: 130px;
+		margin-top: -16%;
+		width: auto;
+	}
+	.postid-4262 .right-hinge .door-width {
+		margin-top: -16px;
+		margin-left: 140px !important;
+		width: auto;
+	}
+	.postid-4262 .right-hinge .screen-height {
+		margin-top: 130px;
+		margin-left: 140px !important;
+		width: auto;
+	}
+	.postid-4262 .right-hinge .screen-width {
+		margin-top: -95px;
+		margin-left: 140px !important;
+		width: auto;		
+	}
+	.postid-4262 #msform{
+		width: 100%;
+	}
+	.postid-4262 #progressbar {
+		margin-left: 0;
+	}
+	.postid-4262 .step-total {
+    display: block;
+    width: 100%;
+	}
+	.postid-4262 .step-right-images {
+		display: block !important;
+		width: 100%;
+	}
+	.postid-4262 #msform fieldset {
+		position: relative;
+		max-width: 100%;
+		min-width: auto;
+		width: 100%;
+	}
+	.postid-4262 input.button-positionright {
+		float: none;
+		margin-top: 0 !important;
+		margin-right: 0 !important;
+	}
+	.postid-4262 input.button-positionleft {
+		float: none;
+		margin-top: 0 !important;
+		margin-right: 0 !important;
+	}
+	.postid-4262 .door-dimensions img {
+	  margin-left: 0 !important;
+	  max-width: 100% !important;
+	  min-width: auto;
+	 }
+	/*** hardware selection ***/
+	.postid-4262 .hardware-box {
+		min-width: 236px;
+		display: inline-block;
+	}
+	.postid-4262 .hardware-box .step-1 {
+		min-width: 0 !important;
+		max-width: 100%;
+		margin-left: 0;
+	}
+	.postid-4262 .hardware-technical {
+		float: none;
+		min-width: auto !important;
+	}
+	.postid-4262 .hardware-image {
+		float: none;
+		width: auto !important;
+	}
+	.postid-4262 .hardware-text {
+		float: none;
+		display: block;
+		width: auto;
+		min-height: auto;
+		padding: 10px 0 10px 0;
+	}
+	.postid-4262 .hardware-box .select-img input:checked + img {
+		min-width: 100% !important;
+		margin-left: 0px;
+	}
+	/*** hardware selection end ***/
+	
+	/*** Handle box ***/
+	
+	.postid-4262 .handle-box {
+	  display: inline-block;
+	 }
+	 .postid-4262 .handle-box .select-img input:checked + img {
+	  min-width: 100%;
+	  margin-left: 0;
+	 }
+	 .postid-4262 .handle-box .step-1 {
+	  min-width: 0 !important;
+	  max-width: 100%;
+	  margin-left: 0;
+	 }
+	 .postid-4262 .select-img {
+	  margin-bottom: 0px;
+	  width: 100%;
+	 }
+	
+	/*** Handle box end ***/
+	
+	/*** glass box ***/
+	.postid-4262 .glass-box {
+		min-width: 236px !important;
+		min-height: 0;
+		display: inline-block;
+	}
+	.postid-4262 .glass-box img {
+		padding-left: 0 !important;
+		min-width: 260px;
+	}
+	.postid-4262 .glass-box .select-img input:checked + img {
+		min-width: 260px;
+	}
+	/*** glass box end ***/
+	
+	/*** glass-treatment box ***/
+	.postid-4262 .treatment-box {
+		width: auto;
+		display: inline-block;
+	}
+	.postid-4262 .treatment-box.right {
+		float: none;
+	}
+	.postid-4262 .treatment-box.left {
+		float: none;
+		margin-left: 0;
+	}
+	.postid-4262 .treatment-box .back-opaque {
+		width: 248px;
+	}
+	.postid-4262 .treatment-box img {
+		min-width: 249px;
+		padding-left: 0px !important;
+	}
+	.postid-4262 .treatment-box .step-1 {
+		margin-left: 0;
+	}
+	.postid-4262 .treatment-box-text {
+		float: none;
+		margin-left: 0;
+		max-width: 100%;
+	}
+	.postid-4262 .treatment-box.right .select-img input:checked + img, .postid-4262 .treatment-box.left .select-img input:checked + img {
+		min-width: 260px !important;
+		margin-left: 0px !important;
+	}
+	/*** glass-treatment box end ***/
+	
+	/*** Review section ***/
+	.postid-4262 .review-images img {
+		min-width: auto;
+	}
+	.postid-4262 .checking {
+		min-width: 0;
+	}
+	.postid-4262 .product-review {
+		width: auto;
+	}
+	/*** Review section end ***/
+}
+
+
+/** Media Screen  481px to 560px **/
+@media only screen and (min-width: 481px) and (max-width: 560px){  
+	.postid-4262 .left-hinge .door-width {
+		margin-left: 20px;
+		margin-top: -12px;
+		width: auto;
+	}
+	.postid-4262 .left-hinge .screen-height {
+		margin-left: -32px;
+		margin-top: 26%;
+		width: auto;
+	}
+	.postid-4262 .left-hinge .screen-width {
+		margin-left: -35px;
+		margin-top: -20%;
+		width: auto;
+	}
+	.postid-4262 .right-hinge .door-width {
+		margin-top: -16px;
+		margin-left: 190px !important;
+		width: auto;
+	}
+	.postid-4262 .right-hinge .screen-height {
+		margin-top: 130px;
+		margin-left: 200px !important;
+		width: auto;
+	}
+	.postid-4262 .right-hinge .screen-width {
+		margin-top: -95px;
+		margin-left: 190px !important;
+		width: auto;		
+	} 
+	.postid-4262 #msform{
+		width: 100%;
+	}
+	.postid-4262 #progressbar {
+		margin-left: 0;
+	}
+	.postid-4262 .step-total {
+    display: block;
+    width: 100%;
+	}
+	.postid-4262 .step-right-images {
+		display: block !important;
+		width: 100%;
+	}
+	.postid-4262 #msform fieldset {
+		position: relative;
+		max-width: 100%;
+		min-width: auto;
+		width: 100%;
+	}
+	.postid-4262 input.button-positionright {
+		float: none;
+		margin-top: 0 !important;
+		margin-right: 0 !important;
+	}
+	.postid-4262 input.button-positionleft {
+		float: none;
+		margin-top: 0 !important;
+		margin-right: 0 !important;
+	}
+	.postid-4262 .door-dimensions img {
+	  margin-left: 0 !important;
+	  max-width: 100% !important;
+	  min-width: auto;
+	 }
+	/*** hardware selection ***/
+	.postid-4262 .hardware-box {
+		min-width: 236px;
+		display: inline-block;
+	}
+	.postid-4262 .hardware-box .step-1 {
+		min-width: 0 !important;
+		max-width: 100%;
+		margin-left: 0;
+	}
+	.postid-4262 .hardware-technical {
+		float: none;
+		min-width: auto !important;
+	}
+	.postid-4262 .hardware-image {
+		float: none;
+		width: auto !important;
+	}
+	.postid-4262 .hardware-text {
+		float: none;
+		display: block;
+		width: auto;
+		min-height: auto;
+		padding: 10px 0 10px 0;
+	}
+	.postid-4262 .hardware-box .select-img input:checked + img {
+		min-width: 100% !important;
+		margin-left: 0px;
+	}
+	/*** hardware selection end ***/
+	
+	/*** Handle box ***/
+	
+	.postid-4262 .handle-box {
+	  display: inline-block;
+	 }
+	 .postid-4262 .handle-box .select-img input:checked + img {
+	  min-width: 100%;
+	  margin-left: 0;
+	 }
+	 .postid-4262 .handle-box .step-1 {
+	  min-width: 0 !important;
+	  max-width: 100%;
+	  margin-left: 0;
+	 }
+	 .postid-4262 .select-img {
+	  margin-bottom: 0px;
+	  width: 100%;
+	 }
+	
+	/*** Handle box end ***/
+	
+	/*** glass box ***/
+	.postid-4262 .glass-box {
+		min-width: 236px !important;
+		min-height: 0;
+		display: inline-block;
+	}
+	.postid-4262 .glass-box img {
+		padding-left: 0 !important;
+		min-width: 260px;
+	}
+	.postid-4262 .glass-box .select-img input:checked + img {
+		min-width: 260px;
+	}
+	/*** glass box end ***/
+	
+	/*** glass-treatment box ***/
+	.postid-4262 .treatment-box {
+		width: auto;
+		display: inline-block;
+	}
+	.postid-4262 .treatment-box.right {
+		float: none;
+	}
+	.postid-4262 .treatment-box.left {
+		float: none;
+		margin-left: 0;
+	}
+	.postid-4262 .treatment-box img {
+		min-width: 260px;
+		padding-left: 0px !important;
+	}
+	.postid-4262 .treatment-box .step-1 {
+		margin-left: 0;
+	}
+	.postid-4262 .treatment-box-text {
+		float: none;
+		margin-left: 0;
+		max-width: 100%;
+	}
+	.postid-4262 .treatment-box.right .select-img input:checked + img, .postid-4262 .treatment-box.left .select-img input:checked + img {
+		min-width: 260px !important;
+		margin-left: 0px !important;
+	}
+	/*** glass-treatment box end ***/
+	
+	/*** Review section ***/
+	.postid-4262 .review-images img {
+		min-width: auto;
+	}
+	.postid-4262 .checking {
+		min-width: 0;
+	}
+	.postid-4262 .product-review {
+		width: auto;
+	}
+	/*** Review section end ***/
+
+}
+
+
+/** Media Screen  561px to 690px **/
+@media only screen and (min-width: 561px) and (max-width: 690px){  
+	.postid-4262 .left-hinge .door-width {
+		margin-left: 35px;
+		margin-top: -12px;
+		width: auto;
+	}
+	.postid-4262 .left-hinge .screen-height {
+		margin-left: -25px;
+		margin-top: 30%;
+		width: auto;
+	}
+	.postid-4262 .left-hinge .screen-width {
+		margin-left: 2px;
+		margin-top: -20%;
+		width: auto;
+	}
+	.postid-4262 .right-hinge .door-width {
+		margin-top: -16px;
+		margin-left: 260px !important;
+		width: auto;
+	}
+	.postid-4262 .right-hinge .screen-height {
+		margin-top: 145px;
+		margin-left: 270px !important;
+		width: auto;
+	}
+	.postid-4262 .right-hinge .screen-width {
+		margin-top: -95px;
+		margin-left: 260px !important;
+		width: auto;		
+	}
+	.postid-4262 #msform{
+		width: 100%;
+	}
+	.postid-4262 #progressbar {
+		margin-left: 0;
+	}
+	.postid-4262 .step-total {
+    display: block;
+    width: 100%;
+	}
+	.postid-4262 .step-right-images {
+		display: block !important;
+		width: 100%;
+	}
+	.postid-4262 #msform fieldset {
+		position: relative;
+		max-width: 100%;
+		min-width: auto;
+		width: 100%;
+	}
+	.postid-4262 input.button-positionright {
+		float: none;
+		margin-top: 0 !important;
+		margin-right: 0 !important;
+	}
+	.postid-4262 input.button-positionleft {
+		float: none;
+		margin-top: 0 !important;
+		margin-right: 0 !important;
+	}
+	.postid-4262 .door-dimensions img {
+	  margin-left: 0 !important;
+	  max-width: 100% !important;
+	  min-width: auto;
+	 }
+	/*** hardware selection ***/
+	.postid-4262 .hardware-box {
+		min-width: 236px;
+		display: inline-block;
+	}
+	.postid-4262 .hardware-box .step-1 {
+		min-width: 0 !important;
+		max-width: 100%;
+		margin-left: 0;
+	}
+	.postid-4262 .hardware-technical {
+		float: none;
+		min-width: auto !important;
+	}
+	.postid-4262 .hardware-image {
+		float: none;
+		width: auto !important;
+	}
+	.postid-4262 .hardware-text {
+		float: none;
+		display: block;
+		width: auto;
+		min-height: auto;
+		padding: 10px 0 10px 0;
+	}
+	.postid-4262 .hardware-box .select-img input:checked + img {
+		min-width: 100% !important;
+		margin-left: 0px;
+	}
+	/*** hardware selection end ***/
+	
+	/*** Handle box ***/
+	
+	.postid-4262 .handle-box {
+	  display: inline-block;
+	 }
+	 .postid-4262 .handle-box .select-img input:checked + img {
+	  min-width: 100%;
+	  margin-left: 0;
+	 }
+	 .postid-4262 .handle-box .step-1 {
+	  min-width: 0 !important;
+	  max-width: 100%;
+	  margin-left: 0;
+	 }
+	 .postid-4262 .select-img {
+	  margin-bottom: 0px;
+	  width: 100%;
+	 }
+	
+	/*** Handle box end ***/
+	
+	/*** glass box ***/
+	.postid-4262 .glass-box {
+		min-width: 236px !important;
+		min-height: 0;
+		display: inline-block;
+	}
+	.postid-4262 .glass-box img {
+		padding-left: 0 !important;
+		min-width: 260px;
+	}
+	.postid-4262 .glass-box .select-img input:checked + img {
+		min-width: 260px;
+	}
+	/*** glass box end ***/
+	
+	/*** glass-treatment box ***/
+	.postid-4262 .treatment-box {
+		width: auto;
+		display: inline-block;
+	}
+	.postid-4262 .treatment-box.right {
+		float: none;
+	}
+	.postid-4262 .treatment-box.left {
+		float: none;
+		margin-left: 0;
+	}
+	.postid-4262 .treatment-box img {
+		min-width: 260px;
+		padding-left: 0px !important;
+	}
+	.postid-4262 .treatment-box .step-1 {
+		margin-left: 0;
+	}
+	.postid-4262 .treatment-box-text {
+		float: none;
+		margin-left: 0;
+		max-width: 100%;
+	}
+	.postid-4262 .treatment-box.right .select-img input:checked + img, .postid-4262 .treatment-box.left .select-img input:checked + img {
+		min-width: 260px !important;
+		margin-left: 0px !important;
+	}
+	/*** glass-treatment box end ***/
+	
+	/*** Review section ***/
+	.postid-4262 .review-images img {
+		min-width: auto;
+	}
+	.postid-4262 .checking {
+		min-width: 0;
+	}
+	.postid-4262 .product-review {
+		width: auto;
+	}
+	/*** Review section end ***/
+
+}
+
+
+/** Media Screen  691px to 991px **/
+@media only screen and (min-width: 691px) and (max-width: 991px){  
+	.postid-4262 .left-hinge .door-width {
+		margin-left: 35px;
+		margin-top: -12px;
+		width: auto;
+	}
+	.postid-4262 .left-hinge .screen-height {
+		margin-left: -25px;
+		margin-top: 30%;
+		width: auto;
+	}
+	.postid-4262 .left-hinge .screen-width {
+		margin-left: 2px;
+		margin-top: -20%;
+		width: auto;
+	}
+	.postid-4262 .right-hinge .door-width {
+		margin-top: -8px;
+		margin-left: 260px !important;
+		width: auto;
+	}
+	.postid-4262 .right-hinge .screen-height {
+		margin-top: 155px;
+		margin-left: 260px !important;
+		width: auto;
+	}
+	.postid-4262 .right-hinge .screen-width {
+		margin-top: -96px;
+		margin-left: 260px !important;
+		width: auto;		
+	} 
+	.postid-4262 #msform{
+		width: 80%;
+	}
+	.postid-4262 .step-right-images {
+		float: left;
+		margin-top: 12px;
+	}
+	.postid-4262 #progressbar {
+		margin-left: 0;
+	}
+	.postid-4262 #msform fieldset {
+		position: relative;
+		max-width: 100%;
+		min-width: auto;
+		width: 100%;
+	}
+	.postid-4262 input.button-positionright {
+		float: none;
+		margin-top: 0 !important;
+		margin-right: 0 !important;
+	}
+	.postid-4262 input.button-positionleft {
+		float: none;
+		margin-top: 0 !important;
+		margin-right: 0 !important;
+	}
+	.postid-4262 .door-dimensions img {
+	  margin-left: 0 !important;
+	  max-width: 100% !important;
+	  min-width: auto;
+	 }
+	/*** hardware selection ***/
+	.postid-4262 .hardware-box {
+		min-width: 236px;
+		display: inline-block;
+	}
+	.postid-4262 .hardware-box .step-1 {
+		min-width: 0 !important;
+		max-width: 100%;
+		margin-left: 0;
+	}
+	.postid-4262 .hardware-technical {
+		float: none;
+		min-width: auto !important;
+	}
+	.postid-4262 .hardware-image {
+		float: none;
+		width: auto !important;
+	}
+	.postid-4262 .hardware-text {
+		float: none;
+		display: block;
+		width: auto;
+		min-height: auto;
+		padding: 10px 0 10px 0;
+	}
+	.postid-4262 .hardware-box .select-img input:checked + img {
+		min-width: 100% !important;
+		margin-left: 0px;
+	}
+	/*** hardware selection end ***/
+	
+	/*** Handle box ***/
+	
+	.postid-4262 .handle-box {
+	  display: inline-block;
+	 }
+	 .postid-4262 .handle-box .select-img input:checked + img {
+	  min-width: 100%;
+	  margin-left: 0;
+	 }
+	 .postid-4262 .handle-box .step-1 {
+	  min-width: 0 !important;
+	  max-width: 100%;
+	  margin-left: 0;
+	 }
+	 .postid-4262 .select-img {
+	  margin-bottom: 0px;
+	  width: 100%;
+	 }
+	
+	/*** Handle box end ***/
+	
+	/*** glass box ***/
+	.postid-4262 .glass-box {
+		min-width: 236px !important;
+		min-height: 0;
+		display: inline-block;
+	}
+	.postid-4262 .glass-box img {
+		padding-left: 0 !important;
+		min-width: 260px;
+	}
+	.postid-4262 .glass-box .select-img input:checked + img {
+		min-width: 260px;
+	}
+	/*** glass box end ***/
+	
+	/*** glass-treatment box ***/
+	.postid-4262 .treatment-box {
+		width: auto;
+		display: inline-block;
+	}
+	.postid-4262 .treatment-box.right {
+		float: none;
+	}
+	.postid-4262 .treatment-box.left {
+		float: none;
+		margin-left: 0;
+	}
+	.postid-4262 .treatment-box img {
+		min-width: 260px;
+		padding-left: 0px !important;
+	}
+	.postid-4262 .treatment-box .step-1 {
+		margin-left: 0;
+	}
+	.postid-4262 .treatment-box-text {
+		float: none;
+		margin-left: 0;
+		max-width: 100%;
+	}
+	.postid-4262 .treatment-box.right .select-img input:checked + img, .postid-4262 .treatment-box.left .select-img input:checked + img {
+		min-width: 260px !important;
+		margin-left: 0px !important;
+	}
+	/*** glass-treatment box end ***/
+	
+	/*** Review section ***/
+	.postid-4262 .review-images img {
+		min-width: auto;
+	}
+	.postid-4262 .checking {
+		min-width: 0;
+	}
+	.postid-4262 .product-review {
+		width: auto;
+	}
+	.postid-4262 #advancedoptionsimage img {
+		max-width: 400px;
+		margin-left: 28px;
+	}
+	
+	/** advanced accordian right**/
+	.postid-4262 .top-mostleft.rightline .plus-topleft {
+		float: left;
+		margin-top: -2px;
+		margin-left: -18%;
+		margin-right: 0;
+		visibility: hidden;
+	}
+	.postid-4262 .top-mostleft.rightline .plus-topright {
+		float: right;
+		margin-top: -2px;
+		margin-right: -18%;
+	}
+	.postid-4262 .top-mostright.rightline .plus-topleft {
+		float: left;
+		margin-top: -36px;
+		margin-left: -18%;
+		margin-right: 5%;
+		visibility: hidden;
+	}
+	.postid-4262 .top-mostright.rightline .plus-topright {
+		float: right;
+		margin-top: -36px;
+		margin-right: -18%;
+	}
+	.postid-4262 #myCanvasleft.rightline {
+		position: absolute;
+		margin-left: -38.4%;
+		margin-top: 9.4%;
+		height: 70%;
+		display: none;
+	}
+	.postid-4262 #myCanvasright.rightline {
+		position: absolute;
+		margin-top: -48.6%;
+		margin-left: 30%;
+		height: 70%;
+	}
+	.postid-4262 .optioninput-bottomleft.rightline {
+		max-width: 100%;
+		margin-left: 0%;
+		z-index: 999;
+		float: left;
+	}
+	.postid-4262 .optioninput-bottomright.rightline {
+		max-width: 54%;
+		margin-left: 0%;
+		z-index: 999;
+		float: right;
+	}
+	.postid-4262 .doorline.rightline {
+		position: absolute !important;
+		margin-left: -43.9% !important;
+		margin-top: 2% !important;
+		width: 65% !important;
+	}
+	.postid-4262 #myCanvasrightbottom.rightline {
+		position: absolute;
+		margin-left: -19.4%;
+		margin-top: 2%;
+		width: 32%;
+	}
+	.postid-4262 .bottom-mostright.rightline {
+		width: 62%;
+		margin-left: 3.4%;
+		margin-top: -40%;
+	}
+	
+	/** advanced accordian left**/
+	.postid-4262 .top-mostleft.leftline .plus-topleft {
+		float: left;
+		margin-top: -2px;
+		margin-left: -18%;
+		margin-right: 0;
+	}
+	.postid-4262 .top-mostleft.leftline .plus-topright {
+		float: right;
+		margin-top: -2px;
+		margin-right: -18%;
+		visibility: hidden;
+	}
+	.postid-4262 .top-mostright.leftline .plus-topleft {
+		float: left;
+		margin-top: -36px;
+		margin-left: -18%;
+		margin-right: 5%;
+	}
+	.postid-4262 .top-mostright.leftline .plus-topright {
+		float: right;
+		margin-top: -36px;
+		margin-right: -18%;
+		visibility: hidden;
+	}
+	.postid-4262 #myCanvasleft.leftline {
+		position: absolute;
+		margin-left: -38.4%;
+		margin-top: 8.6%;
+		height: 70%;
+	}
+	.postid-4262 #myCanvasright.leftline {
+		position: absolute;
+		margin-top: -49.6%;
+		margin-left: 30%;
+		height: 70%;
+		display: none;
+	}
+	.postid-4262 .optioninput-bottomleft.leftline {
+		max-width: 100%;
+		margin-left: 0%;
+		z-index: 999;
+		float: left;
+	}
+	.postid-4262 .optioninput-bottomright.leftline {
+		max-width: 54%;
+		margin-left: 0%;
+		z-index: 999;
+		float: right;
+	}
+	.postid-4262 #myCanvasrightbottom.leftline {
+		position: absolute;
+		margin-left: -20%;
+		margin-top: 4%;
+		width: 30%;
+	}
+	.postid-4262 .doorline.leftline {
+		position: absolute !important;
+		margin-left: -6.9% !important;
+		margin-top: 4% !important;
+		width: 65% !important;
+	}
+	.postid-4262 .bottom-mostright.leftline {
+		width: 62%;
+		margin-left: -60%;
+		margin-top: 12%;
+	}
+	
+	/*** Review section end ***/
+
+}
+
+
+/** Media Screen  992px to 1199px **/
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+	
+	.postid-4262 .left-hinge .door-width {
+		margin-left: 35px;
+		margin-top: -12px;
+		width: auto;
+	}
+	.postid-4262 .left-hinge .screen-height {
+		margin-left: -25px;
+		margin-top: 25%;
+		width: auto;
+	}
+	.postid-4262 .left-hinge .screen-width {
+		margin-left: 2px;
+		margin-top: -17%;
+		width: auto;
+	}
+	.postid-4262 .right-hinge .door-width {
+		margin-top: -8px;
+		margin-left: 290px;
+		width: auto;
+	}
+	.postid-4262 .right-hinge .screen-height {
+		margin-top: 190px;
+		margin-left: 340px;
+		width: auto;
+	}
+	.postid-4262 .right-hinge .screen-width {
+		margin-top: -106px;
+		margin-left: 290px;
+		width: auto;		
+	} 
+	.postid-4262 #msform{
+		width: 60%;
+	}
+	.postid-4262 .step-right-images {
+		float: left;
+		margin-top: 90px;
+	}
+	.postid-4262 #progressbar {
+		margin-left: 0;
+	}
+	.postid-4262 #msform fieldset {
+		position: relative;
+		max-width: 100%;
+		min-width: auto;
+		width: 98%;
+	}
+	.postid-4262 input.button-positionright {
+		float: none;
+		margin-top: 0 !important;
+		margin-right: 0 !important;
+	}
+	.postid-4262 input.button-positionleft {
+		float: none;
+		margin-top: 0 !important;
+		margin-right: 0 !important;
+	}
+	.postid-4262 .door-dimensions img {
+	  margin-left: 0 !important;
+	  max-width: 100% !important;
+	  min-width: auto;
+	 }
+	/*** hardware selection ***/
+	.postid-4262 .hardware-box {
+		min-width: 184px;
+		display: inline-block;
+	}
+	.postid-4262 .hardware-box img {
+		min-width: 180px;
+	}
+	.postid-4262 .hardware-box .select-img input:checked ~ .back-opaque img {
+		min-width: 184px;
+	}
+	.postid-4262 .hardware-box .back-opaque {
+		width: 181px;
+	}
+	.postid-4262 .hardware-box .step-1 {
+		min-width: 0 !important;
+		max-width: 100%;
+		margin-left: 0;
+	}
+	.postid-4262 .hardware-technical {
+		float: none;
+		min-width: auto !important;
+	}
+	.postid-4262 .hardware-image {
+		float: none;
+		width: auto !important;
+	}
+	.postid-4262 .hardware-text {
+		float: none;
+		display: block;
+		width: auto;
+		min-height: auto;
+		padding: 10px 0 10px 0;
+	}
+	.postid-4262 .hardware-box .select-img input:checked + img {
+		min-width: 100% !important;
+		margin-left: 0px;
+	}
+	/*** hardware selection end ***/
+	
+	/*** Handle box ***/
+	
+	.postid-4262 .handle-box {
+	  display: inline-block;
+	  min-width: 184px !important;
+	 }
+	 .postid-4262 .handle-box img {
+		min-width: 180px;
+		margin-top: -8px;
+	}
+	 .postid-4262 .handle-box .back-opaque {
+	  width: 180px;
+	}
+	.postid-4262 .handle-box .select-img input:checked ~ .back-opaque img {
+		min-width: 184px;
+		min-height: 175px;
+	}
+	 .postid-4262 .handle-box .select-img input:checked + img {
+	  min-width: 100%;
+	  margin-left: 0;
+	 }
+	 .postid-4262 .handle-box .step-1 {
+	  min-width: 0 !important;
+	  max-width: 100%;
+	  margin-left: 0;
+	 }
+	 .postid-4262 .select-img {
+	  margin-bottom: 0px;
+	  width: 100%;
+	 }
+	
+	/*** Handle box end ***/
+	
+	/*** glass box ***/
+	.postid-4262 .glass-box {
+		min-width: 184px !important;
+		min-height: 0;
+		display: inline-block;
+	}
+	.postid-4262 .glass-box img {
+		padding-left: 0 !important;
+		min-width: 180px !important;
+	}
+	.postid-4262 .glass-box .back-opaque {
+		width: 180px;
+	}
+	.postid-4262 .glass-box .select-img input:checked ~ .back-opaque img {
+		min-width: 184px !important;
+	}
+	.postid-4262 .glass-box .select-img input:checked + img {
+		min-width: 232px;
+	}
+	/*** glass box end ***/
+	
+	/*** glass-treatment box ***/
+	.postid-4262 .treatment-box {
+		width: auto;
+		display: inline-block;
+	}
+	.postid-4262 .treatment-box.right {
+		float: none;
+	}
+	.postid-4262 .treatment-box.left {
+		float: none;
+		margin-left: 0;
+	}
+	.postid-4262 .treatment-box img {
+		min-width: 249px;
+		padding-left: 0px !important;
+	}
+	.postid-4262 .treatment-box .back-opaque {
+		width: 249px;
+	}
+	.postid-4262 .treatment-box.right .select-img input:checked ~ .back-opaque img, .postid-4262 .treatment-box.left .select-img input:checked ~ .back-opaque img {
+		min-width: 250px !important;
+	}
+	.postid-4262 .treatment-box .step-1 {
+		margin-left: 0;
+	}
+	.postid-4262 .treatment-box-text {
+		float: none;
+		margin-left: 0;
+		max-width: 100%;
+	}
+	.postid-4262 .treatment-box.right .select-img input:checked + img, .postid-4262 .treatment-box.left .select-img input:checked + img {
+		min-width: 260px !important;
+		margin-left: 0px !important;
+	}
+	/*** glass-treatment box end ***/
+	
+	/*** Review section ***/
+	.postid-4262 .review-images img {
+		min-width: auto;
+	}
+	.postid-4262 .checking {
+		min-width: 0;
+	}
+	.postid-4262 .product-review {
+		width: auto;
+	}
+	/*** Review section end ***/
+	
+} 
+
+
+/* order page image measurements css at right (without) */
+
+.doorpanel_widthimg.product-4262.right.without {
+    position: absolute;
+    margin-top: -25.8%;
+    margin-left: 5.8%;
+	font-size: 12px;
+}
+.doorpanel_heightimg.product-4262.right.without {
+    position: absolute;
+    margin-top: -14.2%;
+    margin-left: 8.9%;
+	font-size: 12px;
+}
+.hingepanel_widthimg.product-4262.right.without {
+    position: absolute;
+    margin-top: -25.8%;
+    margin-left: 24.7%;
+	font-size: 12px;
+}
+.hingepanel_heightimg.product-4262.right.without {
+    position: absolute;
+    margin-top: -14.4%;
+    margin-left: 26.7%;
+	font-size: 12px;
+}
+.hingepanel_heightimgextra.product-4262.right.without {
+    position: absolute;
+    margin-top: -29.6%;
+    margin-left: 37%;
+    font-size: 12px;
+}
+
+/* order page image measurements css at left (without) */
+
+.doorpanel_widthimg.product-4262.left.without {
+    position: absolute;
+    margin-top: -25.4%;
+    margin-left: 57.5%;
+    font-size: 12px;
+}
+.doorpanel_heightimg.product-4262.left.without {
+    position: absolute;
+    margin-top: -15.8%;
+    margin-left: 54.5%;
+    font-size: 12px;
+}
+.hingepanel_widthimg.product-4262.left.without {
+    position: absolute;
+    margin-top: -25.5%;
+    margin-left: 39.4%;
+    font-size: 12px;
+}
+.hingepanel_heightimg.product-4262.left.without {
+    position: absolute;
+    margin-top: -16.3%;
+    margin-left: 36.9%;
+    font-size: 12px;
+}
+.hingepanel_heightimgextra.product-4262.left.without {
+    position: absolute;
+    margin-top: -29.1%;
+    margin-left: 25.6%;
+    font-size: 12px;
+}
+
+/*** Left (with) ***/
+.doorpanel_widthimg.product-4262.left.with {
+    position: absolute;
+    margin-top: -28.6%;
+    margin-left: 57.2%;
+}
+.doorpanel_heightimg.product-4262.left.with {
+    position: absolute;
+    margin-top: -17.9%;
+    margin-left: 54.2%;
+}
+.hingepanel_widthimg.product-4262.left.with {
+    position: absolute;
+    margin-top: -28.6%;
+    margin-left: 38.6%;
+}
+.hingepanel_heightimg.product-4262.left.with {
+    position: absolute;
+    margin-top: -17.9%;
+    margin-left: 36.4%;
+}
+.topleft_withimg.product-4262.left.with {
+    position: absolute;
+    margin-top: -36.3%;
+    margin-left: 31.7%;
+}
+.bottomright_withimg.product-4262.left.with {
+    position: absolute;
+    margin-top: -12%;
+    margin-left: 31.7%;
+}
+.bottomrleft_withimg.product-4262.left.with {
+    position: absolute;
+    margin-top: -8.3%;
+    margin-left: 35.4%;
+}
+.bottomrright_withimg.product-4262.left.with {
+    position: absolute;
+    margin-top: -7.9%;
+    margin-left: 43.3%;
+}
+.hingepanel_heightimgextra.product-4262.left.with {
+    position: absolute;
+    margin-top: -32.2%;
+    margin-left: 24.7%;
+}
+
+/*** Right (with) ***/
+.doorpanel_widthimg.product-4262.right.with {
+    position: absolute;
+    margin-top: -28%;
+    margin-left: 7%;
+}
+.doorpanel_heightimg.product-4262.right.with {
+    position: absolute;
+    margin-top: -17.3%;
+    margin-left: 10.6%;
+}
+.hingepanel_widthimg.product-4262.right.with {
+    position: absolute;
+    margin-top: -28%;
+    margin-left: 26%;
+}
+.hingepanel_heightimg.product-4262.right.with {
+    position: absolute;
+    margin-top: -17.3%;
+    margin-left: 28%;
+}
+.topleft_withimg.product-4262.right.with {
+    position: absolute;
+    margin-top: -36%;
+    margin-left: 35%;
+}
+.bottomright_withimg.product-4262.right.with {
+    position: absolute;
+    margin-top: -11.2%;
+    margin-left: 35.3%;
+}
+.bottomrleft_withimg.product-4262.right.with {
+    position: absolute;
+    margin-top: -8.5%;
+    margin-left: 23.6%;
+}
+.bottomrright_withimg.product-4262.right.with {
+    position: absolute;
+    margin-top: -8.5%;
+    margin-left: 31.5%;
+}
+.hingepanel_heightimgextra.product-4262.right.with {
+    position: absolute;
+    margin-top: -31.6%;
+    margin-left: 37.5%;
+}
+
+
+/* canvas door line */
+.postid-4262 .doorline.rightline { 
+    position: absolute;
+    margin-left: -33.9%;
+    margin-top: 2%;
+    width: 53%;
+}
+.postid-4262 .doorline.leftline { 
+    position: absolute;
+    margin-left: -21%;
+    margin-top: 2%;
+    width: 52%;
+} 
+
+/* canvas input leftbox at right product click  */
+.postid-4262 .bottom-mostleft {
+    width: 75%;
+    margin-left: 23px;
+    margin-top: 24%; 
+	display: none;
+}
+
+
+/*** Line value Error Msg on advanced options***/
+.postid-4262 .error_msgleft.rightline {
+    position: absolute;
+    width: 27%;
+    margin-top: -62%;
+    margin-left: -1%;
+    border: 1px solid red;
+    background: #d3d3d352;
+    color: #000;
+    font-weight: 400;
+    padding: 8px 0px 8px 10px;
+    text-align: left;
+	visibility: hidden;
+	
+}
+.postid-4262 .error_msgright.rightline {
+    position: absolute;
+    width: 25%;
+    margin-top: -47%;
+    margin-left: 70%;
+    border: 1px solid red;
+    background: #d3d3d352;
+    color: #000;
+    font-weight: 400;
+    padding: 8px 0px 8px 10px;
+    text-align: left;
+} 
+.postid-4262 .error_msgbottom.rightline {
+    position: relative;
+    width: 30%;
+    margin-top: -10%;
+    margin-left: 47%;
+    border: 1px solid red;
+    background: #d3d3d352;
+    color: #000;
+    font-weight: 400;
+    padding: 8px 0px 8px 0px;
+    text-align: center;
+}
+.postid-4262 .error_msgleft.leftline {
+    position: absolute;
+    width: 27%;
+    margin-top: -40%;
+    margin-left: -8%;
+    border: 1px solid red;
+    background: #d3d3d352;
+    color: #000;
+    font-weight: 400;
+    padding: 8px 0px 8px 10px;
+    text-align: left;
+}
+.postid-4262 .error_msgright.leftline {
+    position: absolute;
+    width: 25%;
+    margin-top: -40%;
+    margin-left:64%;
+    border: 1px solid red;
+    background: #d3d3d352;
+    color: #000;
+    font-weight: 400;
+    padding: 8px 0px 8px 10px;
+    text-align: left;
+	visibility: hidden;
+} 
+.postid-4262 .error_msgbottom.leftline {
+    position: relative;
+    width: 29%;
+    margin-top: 1%;
+    margin-left: 22.4%;
+    border: 1px solid red;
+    background: #d3d3d352;
+    color: #000;
+    font-weight: 400;
+    padding: 8px 5px 8px 5px;
+    text-align: center;
+}
+
+/*** clear button css***/
+.postid-4262 .resetline.rightline {
+    position: absolute;
+    margin-top: -14%;
+    margin-left: 29.5%;
+    padding: 2px 5px 2px 5px;
+}
+
+/** new addition **/
+
+/** Media Screen Max 480px **/
+@media only screen and (max-width: 480px){
+	
+/** Review height,width, depth on right image  **/
+
+.postid-4262 .advancedoptions-panel1.right-hingereview #advancedoptions-reviewdoorpanelinner {    
+    margin-top: -43%;
+}
+.postid-4262 .advancedoptions-panel1.right-hingereview #advancedoptions-reviewhingepanelinner {    
+    margin-top: -43%;
+}
+.postid-4262 .advancedoptions-panel1.right-hingereview #advancedoptions-reviewscreen-widthinner {    
+    margin-top: -30%;
+}
+
+.postid-4262 .advancedoptions-panel2.right-hingereview #advancedoptions-reviewdoorpanelinner2 {    
+    margin-top: -62%;
+    margin-left: 14%;	
+}
+.postid-4262 .advancedoptions-panel2.right-hingereview #advancedoptions-reviewhingepanelinner2 {    
+    margin-top: -62%;
+    margin-left: 28%;	
+}
+.postid-4262 .advancedoptions-panel2.right-hingereview #advancedoptions-review-screenheight {    
+    margin-top: -62%;
+    margin-left: 42%;	
+}
+
+/** Review height,width, depth on left image  **/
+.postid-4262 .advancedoptions-panel1.left-hingereview #advancedoptions-reviewdoorpanelinner {    
+    margin-top: -43%;
+    margin-left: -13%;	
+}
+.postid-4262 .advancedoptions-panel1.left-hingereview #advancedoptions-reviewhingepanelinner {    
+    margin-top: -43%;
+    margin-left: -33%;	
+}
+.postid-4262 .advancedoptions-panel1.left-hingereview #advancedoptions-reviewscreen-widthinner {    
+    margin-top: -30%;
+    margin-left: -20%;	
+}
+
+
+.postid-4262 .advancedoptions-panel2.left-hingereview #advancedoptions-reviewhingepanelinner2 {    
+    margin-top: -62%;
+    margin-left: -36%;	
+}
+.postid-4262 .advancedoptions-panel2.left-hingereview #advancedoptions-review-screenheight {    
+    margin-top: -73%;
+    margin-left: 36%;	
+}
+.postid-4262 .advancedoptions-panel2.left-hingereview #advancedoptions-reviewdoorpanelinner2 {    
+    margin-top: -62%;
+    margin-left: -20%;	
+}
+
+	
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-width : 600px) and (max-width : 767px) and (orientation : portrait) {
+	
+	/** Review height,width, depth on right image  **/
+	.postid-4262 .advancedoptions-panel1.right-hingereview #advancedoptions-reviewdoorpanelinner {
+		position: absolute;
+		margin-top: -29%;
+		margin-left: 9.8%;
+		font-weight: bold;
+	}
+	.postid-4262 .advancedoptions-panel1.right-hingereview #advancedoptions-reviewhingepanelinner {
+		position: absolute;
+		margin-top: -29%;
+		margin-left: 29.6%;
+		font-weight: bold;
+	}
+	.postid-4262 .advancedoptions-panel2.right-hingereview #advancedoptions-review-screenheight {
+		position: absolute;
+		margin-top: -40.4%;
+		margin-left: 47.2%;
+		font-weight: bold;
+	}
+	.postid-4262 .advancedoptions-panel2.right-hingereview #advancedoptions-reviewdoorpanelinner2 {
+		position: absolute;
+		margin-top: -38.6%;
+		margin-left: 20%;
+		font-weight: bold;
+	}
+	.postid-4262 .advancedoptions-panel2.right-hingereview #advancedoptions-reviewhingepanelinner2 {
+		position: absolute;
+		margin-top: -39.1%;
+		margin-left: 31%;
+		font-weight: bold;
+	}
+
+	/** Review height,width, depth on left image  **/
+	.postid-4262 .advancedoptions-panel1.left-hingereview #advancedoptions-reviewhingepanelinner {
+		position: absolute;
+		margin-top: -28.6%;
+		margin-left: -34.2%;
+		font-weight: bold;
+	}
+	.postid-4262 .advancedoptions-panel1.left-hingereview #advancedoptions-reviewdoorpanelinner {
+		position: absolute;
+		margin-top: -28.6%;
+		margin-left: -13.3%;
+		font-weight: bold;
+	}
+	.postid-4262 .advancedoptions-panel2.left-hingereview #advancedoptions-review-screenheight {
+		position: absolute;
+		margin-top: -47.4%;
+		margin-left: 41%;
+		font-weight: bold;
+	}
+	.postid-4262 .advancedoptions-panel2.left-hingereview #advancedoptions-reviewdoorpanelinner2 {
+		position: absolute;
+		margin-top: -40.4%;
+		margin-left: -17%;
+		font-weight: bold;
+	}
+	.postid-4262 .advancedoptions-panel2.left-hingereview #advancedoptions-reviewhingepanelinner2 {
+		position: absolute;
+		margin-top: -39.4%;
+		margin-left: -36%;
+		font-weight: bold;
+	}
+
+}
+
+/** Media Screen ipad landscape **/
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) {
+
+	/** Review height,width, depth on right image  **/
+	.postid-4262 .advancedoptions-panel1.right-hingereview #advancedoptions-reviewdoorpanelinner {
+		position: absolute;
+		margin-top: -29%;
+		margin-left: 9.8%;
+		font-weight: bold;
+	}
+	.postid-4262 .advancedoptions-panel1.right-hingereview #advancedoptions-reviewhingepanelinner {
+		position: absolute;
+		margin-top: -29%;
+		margin-left: 30.6%;
+		font-weight: bold;
+	}
+	.postid-4262 .advancedoptions-panel2.right-hingereview #advancedoptions-review-screenheight {
+		position: absolute;
+		margin-top: -40.3%;
+		margin-left: 48.2%;
+		font-weight: bold;
+	}
+	.postid-4262 .advancedoptions-panel2.right-hingereview #advancedoptions-reviewdoorpanelinner2 {
+		position: absolute;
+		margin-top: -39.6%;
+		margin-left: 20%;
+		font-weight: bold;
+	}
+	.postid-4262 .advancedoptions-panel2.right-hingereview #advancedoptions-reviewhingepanelinner2 {
+		position: absolute;
+		margin-top: -39.1%;
+		margin-left: 31%;
+		font-weight: bold;
+	}
+	
+	/** Advanced option values right **/
+	.postid-4262 .right-hingereviewadvanced #advancedoptions-returnpanel2inner {
+		position: absolute;
+		margin-top: -29.4%;
+		margin-left: 0.2%;
+		font-size: 14px;
+	}
+	.postid-4262 .right-hingereviewadvanced #advancedoptions-hingepanelinner {
+		position: absolute;
+		margin-top: -21.6%;
+		margin-left: 0.9%;
+		font-size: 14px;
+	}
+	.postid-4262 .right-hingereviewadvanced #advancedoptions-doorpanelinner {
+		position: absolute;
+		margin-top: -21.6%;
+		margin-left: -18%;
+		font-size: 14px;
+	}
+	
+	/** Advanced option design right **/
+	.postid-4262 #advancedoptionsimage img {
+		max-width: 360px;
+		margin-left: 0px;
+	}
+	.postid-4262 #myCanvasright.rightline {
+		position: absolute;
+		margin-top: -44%;
+		margin-left: 15%;
+		height: 180px;
+	}
+	.postid-4262 .doorline.rightline {
+		position: absolute;
+		margin-left: -59.9%;
+		margin-top: 2%;
+		width: 56%;
+	}
+	.postid-4262 #myCanvasrightbottom.rightline {
+		position: absolute;
+		margin-left: -38%;
+		margin-top: 2%;
+		width: 27%;
+	}
+	.postid-4262 .top-mostleft.rightline .plus-topright {
+		float: right;
+		margin-top: 45px;
+	}
+	.postid-4262 .top-mostright.rightline .plus-topright {
+		float: right;
+		margin-top: -43px;
+	}
+	.postid-4262 .bottom-mostright.rightline {
+		width: 92%;
+		margin-left: 118%;
+		margin-top: -75%;
+	}
+	.postid-4262 .error_msgright.rightline {
+		position: absolute;
+		width: 25%;
+		margin-top: -60%;
+		margin-left: 70%;
+		border: 1px solid red;
+		background: #d3d3d352;
+		color: #000;
+		font-weight: 400;
+		padding: 8px 0px 8px 10px;
+		text-align: left;
+	}
+	.postid-4262 .error_msgbottom.rightline {
+		position: relative;
+		width: 30%;
+		margin-top: -10%;
+		margin-left: 26%;
+		border: 1px solid red;
+		background: #d3d3d352;
+		color: #000;
+		font-weight: 400;
+		padding: 8px 0px 8px 0px;
+		text-align: center;
+	}
+	
+	/** Review height,width, depth on left image  **/
+	.postid-4262 .advancedoptions-panel1.left-hingereview #advancedoptions-reviewhingepanelinner {
+		position: absolute;
+		margin-top: -28.6%;
+		margin-left: -33.2%;
+		font-weight: bold;
+	}
+	.postid-4262 .advancedoptions-panel1.left-hingereview #advancedoptions-reviewdoorpanelinner {
+		position: absolute;
+		margin-top: -28.6%;
+		margin-left: -13.3%;
+		font-weight: bold;
+	}
+	.postid-4262 .advancedoptions-panel2.left-hingereview #advancedoptions-review-screenheight {
+		position: absolute;
+		margin-top: -47.4%;
+		margin-left: 41%;
+		font-weight: bold;
+	}
+	.postid-4262 .advancedoptions-panel2.left-hingereview #advancedoptions-reviewdoorpanelinner2 {
+		position: absolute;
+		margin-top: -39.4%;
+		margin-left: -17%;
+		font-weight: bold;
+	}
+	.postid-4262 .advancedoptions-panel2.left-hingereview #advancedoptions-reviewhingepanelinner2 {
+		position: absolute;
+		margin-top: -39.4%;
+		margin-left: -36%;
+		font-weight: bold;
+	}
+
+	/** Advanced option values left **/
+	.postid-4262 .left-hingereviewadvanced #advancedoptions-returnpanel2inner {
+		position: absolute;
+		margin-top: -29.4%;
+		margin-left: -9.6%;
+		font-size: 14px;
+	}
+	.postid-4262 .left-hingereviewadvanced #advancedoptions-hingepanelinner {
+		position: absolute;
+		margin-top: -21.4%;
+		margin-left: -8.8%;
+		font-size: 14px;
+	}
+	.postid-4262 .left-hingereviewadvanced #advancedoptions-doorpanelinner {
+		position: absolute;
+		margin-top: -21.4%;
+		margin-left: 11%;
+		font-size: 14px;
+	}
+
+	
+	/** Advanced option design left **/
+	.postid-4262 #myCanvasleft.leftline {
+		position: absolute;
+		margin-left: -28%;
+		margin-top: 16.1%;
+		height: 180px;
+	}
+	.postid-4262 #myCanvasrightbottom.leftline {
+		position: absolute;
+		margin-left: -26%;
+		margin-top: 2%;
+		width: 30%;
+	}
+	.postid-4262 .doorline.leftline {
+		position: absolute;
+		margin-left: -13%;
+		margin-top: 2%;
+		width: 52%;
+	}
+	.postid-4262 .top-mostleft.leftline .plus-topleft {
+		float: left;
+		margin-top: 45px;
+	}
+	.postid-4262 .top-mostright.leftline .plus-topleft {
+		float: left;
+		margin-top: -40px;
+	}
+	.postid-4262 .bottom-mostright.leftline {
+		width: 92%;
+		margin-left: 20%;
+		margin-top: 22%;
+	}
+	.postid-4262 .error_msgleft.leftline {
+		position: absolute;
+		width: 27%;
+		margin-top: -56%;
+		margin-left: -8%;
+		border: 1px solid red;
+		background: #d3d3d352;
+		color: #000;
+		font-weight: 400;
+		padding: 8px 0px 8px 10px;
+		text-align: left;
+	}
+	.postid-4262 .error_msgbottom.leftline {
+		position: relative;
+		width: 29%;
+		margin-top: -11%;
+		margin-left: 31.4%;
+		border: 1px solid red;
+		background: #d3d3d352;
+		color: #000;
+		font-weight: 400;
+		padding: 8px 5px 8px 5px;
+		text-align: center;
+	}
+		
+}

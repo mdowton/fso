@@ -1,0 +1,248 @@
+.home.blog .header{
+	margin-bottom:50px;
+} 
+.home.blog .category-header .entry-title{
+	font-weight: 600 !important;
+	font-size:28px;
+	text-transform:uppercase;
+	margin:0 0 20px;
+}
+/* hover image*/
+.image-hover{
+	&:hover .wrap-content{
+		h3{
+			color:@color;
+		}
+	}
+}
+/*
+*	Breadcrumbs 
+*/
+.topz_breadcrumbs{
+	background: url("../assets/img/bg-breadcrumb.jpg") no-repeat center center;
+	min-height: 250px; text-align: center; padding-top: 60px; margin-bottom: 40px;
+	.page-title{
+		color: #fff; font-size: 24px; font-weight: 900; margin-bottom: 4px;
+	}
+	.listing-title{
+		h1{
+			color: #fff; font-size: 20px; font-weight: 600; margin-bottom: 4px; text-transform: uppercase; margin-top: 40px;
+		}
+	}
+	.breadcrumbs .breadcrumb{
+		margin: 0;
+		background-color:transparent;
+		> li{
+			font-size;14px;
+			color:#fff;
+			text-transform:capitalize;
+			a,span{
+				font-size: 14px;
+			}
+			&:last-child{
+				span.go-page{
+					display:none;
+				}
+			}
+			+ li{
+				&:before{
+					content:'';
+					padding:0;
+				}
+			}
+			> .go-page{
+				&:before{
+					content:'/';
+					font-family:'FontAwesome';
+					padding:0 15px;
+				}
+				.rtl &{
+					float:left;
+					&:before{
+						content:'/';
+					}
+				}
+			}
+			> a{
+				color:#fff;
+				&:hover{
+					color:@color;
+				}
+			}
+			&.active{
+				color: #fff;
+			}
+		}
+	}
+}
+.search{
+	&.search-results .page.type-page .entry-content{
+		.entry-meta i{
+			margin-right:5px;
+		}
+		.bl_read_more {
+			a{
+				text-transform:capitalize;
+				color:@color;
+				display:inline-block;
+				margin:0 0 20px;
+				&:hover{
+					opacity:0.8;
+				}
+			}
+			i {
+				margin: 0 5px;
+			}
+		}
+	}
+	.listing-title h1 small{
+		color: @color;
+	}
+	.topz_breadcrumbs .listing-title{
+		span{
+			display: inline-block;
+		}
+		small{
+			position:relative; color: #fff;
+			&:before{
+				content:'"';
+				display:inline-block;
+				margin:0 5px;
+			}
+			&:after{
+				content:'"';
+				display:inline-block;
+				margin:0 5px;
+			}
+		}
+	}
+	.products-wrapper{
+		padding:0;
+	}
+	
+	.pag-search  > .pagination{
+		margin-bottom:40px;
+		
+	}
+	.no-result{
+		margin-bottom: 40px;
+		p{
+			font-size: 14px;
+			margin-bottom: 15px;
+		}
+		form{
+			label{
+				display: none;
+			}
+			max-width: 100%;
+			min-height: 40px;
+			position: relative;
+			input[type="text"],input[type="password"]{
+				border-radius: 0;
+				padding: 15px 85px 15px 20px;
+				width: 100%;
+			}
+			input[type="submit"]{
+				background: @color;
+				border: 1px solid @color;
+				border-radius: 0;
+				color: #fff;
+				padding: 15px;
+				position: absolute;
+				right: 0;
+				top: 0;
+				text-transform: uppercase;
+				&:hover{
+					background: darken(@color, 10);
+					border-color: darken(@color, 10);
+				}
+			}
+		}
+	}
+	&.rtl{
+		.no-result{
+			form{
+				input[type="text"]{
+					padding: 15px 20px 15px 85px;
+				}
+				input[type="submit"]{
+					right: auto;
+					left: 0;
+				}
+			}
+		}
+	}
+}
+.content-search {
+	>.post , .product, .page {
+		background-color: #fff;
+		margin-bottom: 30px;
+		padding:0;
+		.entry-thumb {
+			padding-right: 30px;
+			.rtl & {
+				padding-left: 30px;
+				padding-right: 0;
+			}
+		}
+		.entry-content {
+			overflow: hidden;
+			.title-blog {
+				h3 {
+					font-size: 16px;
+					color: #111;	
+				}
+			}
+			.entry-meta{
+				margin-bottom: 10px;
+				.entry-author {
+					color:#999;
+					a{
+						color:#999;
+						&:hover{
+							color:@color;
+						}
+					}
+				}
+				i {
+					margin-right: 5px;
+					.rtl & {
+						margin-right: 0;
+						margin-left: 5px;
+					}
+				}
+				a{
+					color:#999;
+					&:hover{
+						color:@color;
+					}
+				}
+				>span {
+					padding-right: 20px;
+					display: inline-block;
+					vertical-align: top;
+					color:#999;
+					.rtl & {
+						padding-right: 0;
+						padding-left: 20px;
+					}
+				}
+			}
+			.entry-description {
+				margin-bottom: 10px;
+			}
+			.bl_read_more {
+				a{
+					text-transform:capitalize;
+					color:@color;
+					&:hover{
+						opacity:0.8;
+					}
+				}
+				i {
+					margin: 0 5px;
+				}
+			}
+		}
+	}
+}

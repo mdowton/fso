@@ -1,0 +1,274 @@
+/*   Theme Name:    
+     TopZTheme URI:      
+	 http://demo.wpthemego.com/themes/sw_topzDescription:  
+	 TopZ is a high-end fashion and retail WooCommerce WordPress theme - suitable for selling clothing, fashion, high fashion, swimwear, accessories, watches, jewelries, sports, kids, furniture, and moreAuthor:   
+	 MagentechAuthor URI:         http://www.themeforest.net/user/magentechVersion:      
+	 1.3.1License:            GNU General Public License v2 or laterLicense 
+	 URI: http://www.gnu.org/licenses/gpl-2.0.htmlTags: rtl-language-support, sticky-post, two-columnsText
+	 Domain: topzThis theme, like WordPress, is licensed under the GPL.Use it to make something cool, have fun, and share what you've learned with others.*/
+.wp-caption {	margin-bottom: 1.75em;	max-width: 100%;}
+.wp-caption img[class*="wp-image-"] {	display: block;	margin: 0;}
+.wp-caption .wp-caption-text {	color: #686868;	font-size: 13px;	font-style: italic;	line-height: 1.6153846154;	
+padding-top: 0.5384615385em;}
+.bypostauthor > article .fn:after {	content: "\f304";	left: 3px;	position: relative;	top: 5px;}
+.gallery-caption {	color: #686868;
+	display: block;	
+	
+	font-size: 13px;
+	font-size: 0.8125rem;
+	font-style: italic;	
+	line-height: 1.6153846154;
+	padding-top: 0.5384615385em;
+	}
+	.header-locations {
+	background: #0085A6;
+}
+
+.locations-text ul {
+	margin: 10px 0px;
+}
+
+.locations-text li {
+	display: inline;
+	color: #ffffff;
+	padding: 0px 10px;
+	font-family: 'Roboto', sans-serif !important;
+	font-size: 14px;
+	letter-spacing: 0.1px;
+	text-transform: capitalize;
+}
+
+.locations-text li:first-child {
+	padding-left: 0px;
+	margin-left: -150px !important;
+}
+
+.top-header-title {
+	color: #ffffff;
+	font-family: 'Roboto', sans-serif !important;
+	font-size: 15px;
+	letter-spacing: 0.1px;
+	padding-top: 12px;
+}
+.topz-logo img {
+	margin: -13px 0px -8px 0px;
+	min-height: 65px;
+}
+
+.top-login li {
+	margin-top: 3px;
+}
+
+/** navigation **/
+
+@media (min-width: 991px) {
+	
+	.main-menu {
+		float: right;
+	}
+
+	.nav-pills >li {
+		margin: -17px 0px -16px -2px !important;
+	}
+
+	.nav-pills >li > a {
+		font-weight: normal;
+		text-transform: capitalize !important;
+		padding: 25px 15px;
+		line-height: 40px;
+	}  
+
+	.nav-pills.nav-mega li.active >a,
+	.nav-pills.nav-mega li:hover >a {
+		background-color: #0085A6;
+		color: #ffffff;
+		border-radius: 0px;
+	}
+	
+}
+
+/** home page **/
+
+.home.page .topz_breadcrumbs {
+	display: none !important;
+}
+
+.product-template-default .content {
+	margin-top: 20px;
+}
+
+.white h3 {
+	color: #ffffff !important;
+	padding-top: 0px !important;
+	margin-top: 0px;
+}
+
+.white h4 {
+	color: #ffffff !important;
+	padding-top: 12px;
+	padding-bottom: 10px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.shower-types img, .video-images img {
+	text-align: center !important;
+	margin: 0 auto !important;
+	border: 1px solid #999999;
+}
+
+@media (min-width: 1380px) {
+	
+	.shower-types img {
+		min-width: 290px;
+		margin-left: 15px !important;
+	}
+	
+	.home-h1 h1 {
+		font-size: 24px !important;
+		margin-bottom: -30px !important;
+		margin-left: -60px;
+	}
+
+	.left-home-text {
+		margin-left: -60px;
+	}
+	.right-home-text {
+		margin-right: -60px !important;
+		margin-left: 60px;
+	}
+	
+}
+
+/** show hide text **/
+
+.free-delivery h3, .free-delivery h4 {
+	color: #ffffff;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+
+.free-delivery button.accordion {
+    cursor: pointer;
+	background-color: #0085a6; 
+    width: 100%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.free-delivery button.accordion.active, .free-delivery button.accordion:hover {
+    background-color: #0085a6; 
+}
+
+.free-delivery div.panel {
+    display: none;
+    background-color: #0085a6;
+	outline: none;
+	border: none;
+}
+
+.free-delivery button.accordion:after {
+    content: '+'; 
+    font-size: 15px;
+	font-weight: bold;
+    color: #ffffff;
+    float: right;
+    margin-left: 5px;
+	margin-top: -23px;
+	color: #ffffff;
+}
+
+.free-delivery button.accordion.active:after {
+    content: "-"; 
+	color: #ffffff;
+}
+
+
+/** screen pages **/
+
+.product-template-default .topz_breadcrumbs {
+	display: none !important;
+}
+
+#progressbar li {
+	font-family: 'Roboto', sans-serif !important;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.screen-item-selection {
+	max-width:230px;
+	margin: 0 auto;
+}
+
+/** about us **/
+
+.font-mid, .about-us {
+	font-size: 14px;
+}
+
+
+
+/** footer **/
+
+.footer {
+	background: #F5F5F5;
+}
+
+ .widget_nav_menu h2.widgettitle {
+	 display: none;
+}
+
+ .widget_nav_menu a {
+	 font-size: 12px;
+}
+
+.widget_nav_menu li {
+	margin-bottom: -10px !important;
+}
+
+.footer-style1 .content-wrap >.vc_column-inner {
+  border-bottom: 0px !important;
+}
+
+.footer-copyright.style1 {
+	background: #232323;
+	color: #999999;
+	padding-top: 20px;
+}
+
+.sidebar-copyright img {
+	display: none !important;
+}
+
+/** responsive **/
+
+@media (max-width: 480px) {
+	
+	.header-locations, .widget.text-1 {
+		display: none !important;
+	}
+
+	.topz-logo img {
+		max-width: 270px;
+		min-height: auto !important;
+		float: right;
+	}
+	
+	#main-menu {
+		margin-left: -20px;
+	}
+	
+	.home-h1 h1, h2 {
+		font-size: 24px;
+	}
+	
+	.shower-types img {
+		margin-left: 30px !important;
+	}
+		
+}
+

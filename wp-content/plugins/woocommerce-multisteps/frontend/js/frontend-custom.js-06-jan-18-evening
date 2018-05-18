@@ -1,0 +1,816 @@
+$(function() {		
+
+		/*** Fitting fieldset extra div show/hide ***/
+		$("input[name='fitting']:radio").change(function () {
+			var fitting = $(this).attr('id');
+			 switch (fitting) {
+				case "chrome-select":
+					$("#chrome").show();
+					$("#satin-chrome").hide();
+					 $('#matt-black').hide();
+					break;
+				case "satinchrome-select":
+					$("#satin-chrome").show();
+					 $("#chrome").hide();
+					  $('#matt-black').hide();
+					break;
+				case "mattblack-select":
+					$('#matt-black').show();
+					 $("#chrome").hide();
+					 $("#satin-chrome").hide();
+					break;
+
+			}  
+		});
+		
+		/** Right Image Box Display **/
+		$(".door-img").click(function(){
+			$('.step-right-images').css({
+					display: 'block'
+			});
+		});
+
+		/** Advanced Options Top Fields Validation **/
+		$('.optioninput-top1').blur(function (e) {
+			var limittop1 = $('.optioninput-top1').val();
+				if((limittop1 > 0) && (limittop1 < 31))
+				{
+					$('.optioninput-bottom1').attr('disabled', 'disabled');
+					$('.optioninput-bottom1').val(0);
+				}
+				else {
+					$('.optioninput-bottom1').removeAttr('disabled');
+				}
+		});
+		$('.optioninput-top2').blur(function (e) {
+			var limittop2 = $('.optioninput-top2').val();
+				if((limittop2 > 0) && (limittop2 < 31))
+				{
+					$('.optioninput-bottom2').attr('disabled', 'disabled');
+					$('.optioninput-bottom2').val(0);
+				}
+				else {
+					$('.optioninput-bottom2').removeAttr('disabled');
+				}
+		});		
+
+
+		/** Advanced Options Bottom Fields Validation **/
+		$('.optioninput-bottom1').blur(function (e) {
+			var limitbottom1 = $('.optioninput-bottom1').val();
+				if((limitbottom1 > 0) && (limitbottom1 < 31))
+				{
+					$('.optioninput-top1').attr('disabled', 'disabled');
+					$('.optioninput-top1').val(0);
+				}
+				else {
+					$('.optioninput-top1').removeAttr('disabled');
+				}
+		});
+		$('.optioninput-bottom2').blur(function (e) {
+			var limitbottom2 = $('.optioninput-bottom2').val();
+				if((limitbottom2 > 0) && (limitbottom2 < 31))
+				{
+					$('.optioninput-top2').attr('disabled', 'disabled');
+					$('.optioninput-top2').val(0);
+				}
+				else {
+					$('.optioninput-top2').removeAttr('disabled');
+				}
+		});
+
+
+		/** Size Image display in review & box **/
+		$("input[type='radio']").on('change', function (){
+			$('.selections-text').html('<h3 class="selections-title">Selections</h3>');
+			$('#Orientation').html('' + $("input[name='size-hing']:checked").data('title') + '');
+			$('#hingehidden').val('' + $("input[name='size-hing']:checked").data('title') + '');
+			$('#drawhidden').val('' + $("input[name='size-hing']:checked").data('drawing') + '');
+		});
+		$(".door-img").click(function(){
+			var radioValue = $("input[name='size-hing']:checked").data('srcline');
+			if(radioValue){
+				//alert("Your are a - " + radioValue);
+                $('#box-size-img').html('<img src="' + (radioValue) + '"/>');
+				$('#doorimage-single').html('<img src="' + (radioValue) + '"/>');
+            }
+        });
+		
+		/*** Update button values updated Screen Height,Depth,Width and Door Width***/
+		$(".update-advancedoptions").click(function(){
+			$('#doorwidth').val('' + $('#doorwidthreview').val() + '');
+			$('#door-width-sq-metre').val('' + $('#doorwidthreview').val() + '');
+			$('#screen-height').html('Height: ' + $('#screenheightreview').val() + ' mm');
+			$('#screen-height-sq-metre').val('' + $('#screenheightreview').val() + '');
+			$('#screenheight').val('' + $('#screenheightreview').val() + '');
+			$('#screen-width').html('Width:' + $('#screenwidthreview').val() + ' mm');
+			$('#screen-width-sq-metre').val('' + $('#screenwidthreview').val() + '');
+			$('#screenwidth').val('' + $('#screenwidthreview').val() + '');
+			$('#screen-depth').html('Depth: ' + $('#screendepthreview').val() + ' mm');
+			$('#screen-depth-sq-metre').val('' + $('#screendepthreview').val() + '');
+			$('#screendepth').val('' + $('#screendepthreview').val() + '');
+		});
+
+		/**Right box Screen Height,Depth,Width**/
+		$(".shower-size").click(function(){
+			$('#door-width-sq-metre').val('' + $('#doorwidth').val() + '');
+			$('.showersize-text').html('<h3 class="product-title">Shower Size</h3>');
+			$('#screen-height').html('Height: ' + $('#screenheight').val() + ' mm');
+			$('#screen-height-sq-metre').val('' + $('#screenheight').val() + '');
+			$('#screen-width').html('Width:' + $('#screenwidth').val() + ' mm');
+			$('#screen-width-sq-metre').val('' + $('#screenwidth').val() + '');
+			$('#screen-depth').html('Depth: ' + $('#screendepth').val() + ' mm');
+			$('#screen-depth-sq-metre').val('' + $('#screendepth').val() + '');
+		});
+
+		/** Right box Door-panel **/
+		$(".shower-size,.update-advancedoptions").click(function(){
+			var doordww = $('#doorwidth').val();
+			var doordhh = $('#screenheight').val();
+			var doordw = $('#door-width-sq-metre').val();
+			var doordh = $('#screen-height-sq-metre').val();
+			if( doordww && doordhh ) {
+				var doordminus =  parseInt(doordh - 13);
+				//var doordpanel =  parseInt(doordw * doordminus);
+				$('.manufacturesize-text').html('<h3 class="manu-title">Manufacture Size</h3>');
+				$('#doorpanel-text').html('Door Panel:');
+				$('#door-width-dp').html('' + (doordw) + "&nbsp;X&nbsp;" + (doordminus) + '');
+				$('#advancedoptions-doorpanel').html('<span id="advancedoptions-doorpanelinner">' + (doordw) + '</span>');
+				$('#advancedoptions-reviewdoorpanel').html('<span id="advancedoptions-reviewdoorpanelinner">' + (doordww) + '</span>');
+				$('#advancedoptions-reviewdoorpanel2').html('<span id="advancedoptions-reviewdoorpanelinner2">' + (doordminus) + '</span>');
+				//$('#door-width-doorpanel').val('' + (doordpanel) + '');
+			}
+			else {}
+		});
+		/** Right box Return-panel **/
+		$(".shower-size,.update-advancedoptions").click(function(){
+			var doordhh = $('#screenheight').val();
+			var doordsw = $('#screenwidth').val();
+			var doorddd = $('#screendepth').val();
+			var doorrh = $('#screen-height-sq-metre').val();
+			var doorrd = $('#screen-depth-sq-metre').val();
+			if( doordhh && doorddd ) {
+				var doorrminusd =  parseInt(doorrd - 4);
+				var doorrminush =  parseInt(doorrh - 4);
+				//var doorrpanel =  parseInt(doorrminusd * doorrminush);
+				$('#returnpanel-text').html('Return Panel:');
+				$('#door-width-rp').html('' + (doorrminusd) + "&nbsp;X&nbsp;" + (doorrminush) + '');
+				$('#advancedoptions-returnpanel1').html('<span id="advancedoptions-returnpanel1inner">' + (doorrminusd) + '</span>');
+				$('#advancedoptions-returnpanel2').html('<span id="advancedoptions-returnpanel2inner">' + (doorrminush) + '</span>');
+				$('#advancedoptions-reviewreturnpanel').html('<span id="advancedoptions-reviewreturnpanelinner">' + (doorrminusd) + '</span>');
+				$('#advancedoptions-reviewreturnpanel2').html('<span id="advancedoptions-reviewreturnpanelinner2">' + (doorrminush) + '</span>');
+				$('#advancedoptions-reviewscreen-width').html('<span id="advancedoptions-reviewscreen-widthinner">' + (doordsw) + '</span>');
+				$('#advancedoptions-reviewscreen-depth').html('<span id="advancedoptions-reviewscreen-depthinner">' + (doorddd) + '</span>');
+				//$('#door-width-returnpanel').val('' + (doorrpanel) + '');
+			}
+			else{}
+		});
+
+		/** Right box Hinge-panel **/
+		$(".shower-size,.update-advancedoptions").click(function(){
+			var doordww = $('#doorwidth').val();
+			var doordhh = $('#screenheight').val();
+			var doordsw = $('#screenwidth').val();
+			var doorhw = $('#door-width-sq-metre').val();
+			var doorhh = $('#screen-height-sq-metre').val();
+			var doorhd = $('#screen-width-sq-metre').val();
+			if( doordww && doordhh && doordsw ) {
+				var doorhminusd =  parseInt(doorhd - doorhw - 20);
+				var doorhminush =  parseInt(doorhh - 4);
+				//var doorhpanel =  parseInt(doorhminusd * doorhminush);
+				$('#hingepanel-text').html('Hinge Panel:');
+				$('#door-width-hp').html('' + (doorhminusd) + "&nbsp;X&nbsp;" + (doorhminush) + '');
+				$('#advancedoptions-hingepanel').html('<span id="advancedoptions-hingepanelinner">' + (doorhminusd) + '</span>');
+				$('#advancedoptions-reviewhingepanel').html('<span id="advancedoptions-reviewhingepanelinner">' + (doorhminusd) + '</span>');
+				$('#advancedoptions-reviewhingepanel2').html('<span id="advancedoptions-reviewhingepanelinner2">' + (doorhminush) + '</span>');
+				$('#advancedoptions-review-screenheight').html('<span id="advancedoptions-review-screenheight">' + (doordhh) + '</span>');
+				//$('#door-width-hingepanel').val('' + (doorrpanel) + '');
+			}
+			else{}
+		});
+
+		
+		/**Custom Price value**/
+		$("input[type='radio']").on('change', function (){
+			$('#sizeimgp').val('' + $("input[name='size-hing']:checked").val() + '');
+		});
+		$(".continue").click(function(){
+			$('#fittingp').val( '' + $("input[name='fitting']:checked").val() + '' );
+			$('#fittingp1').val('' + $("input[name='prefitting']:checked").val() + '');
+			$('#glassp').val('' + $("input[name='glass']:checked").val() + '');
+			$('#glassp1').val('' + $("input[name='preglass']:checked").val() + '');
+        });
+		
+		/**Custom Price Box Calculation**/
+		$(".continue").click(function(){
+			var sum = 0;
+			$(".qty1").each(function(){
+				sum += +$(this).val();
+			});
+			$("#subtotal1").val(sum);
+		});
+		$(".continue").click(function(){
+			var sum = 0;
+			$(".qty2").each(function(){
+				sum += +$(this).val();
+			});
+			$("#subtotal2").val(sum);
+		});
+		$(".totalprice").click(function(){
+			var sum = 0;
+			$(".subprice").each(function(){
+				sum += +$(this).val();
+			});
+			$("#customtotal").val(sum);
+		});
+
+		/**$(".door-img").click(function(){
+			$('.box-price').html('<b>$' + $('#sizeimgp').val() + '</b>');
+		});
+		$(".ft-type").click(function(){
+			$('.box-price').html('<b>$' + $('#subtotal1').val() + '</b>');
+		});
+		$(".totalprice").click(function(){
+			$('.box-price').html('<b>$' + $('#customtotal').val() + '</b>');
+		});**/
+
+
+		/**Review Size image**/
+		$(".door-img").click(function(){
+			var radioValue = $("input[name='size-hing']:checked").data('srcline');
+			if(radioValue){
+				//alert("Your are a - " + radioValue);
+                $('#review-size-img').html('<img src="' + (radioValue) + '"/>');
+                $('#review-size-imgline').html('<img src="' + (radioValue) + '"/>');
+            }
+        });
+
+		$(".door-img").click(function(){
+			$('#reviewscreen-img-title').html('' + $("input[name='size-hing']:checked").data('title') + '');
+		});
+		
+		/*** Review images display depend on screen orientation ***/
+		$(".reviewleftrightimage").click(function(){
+			var reviewimage1leftimg = $("#reviewimage1left").data('src');
+			var reviewimage1rightimg = $("#reviewimage1right").data('src');
+			var reviewimage2leftimg = $("#reviewimage2left").data('src');
+			var reviewimage2rightimg = $("#reviewimage2right").data('src');
+			if($('input[id="left-hinge"]').is(":checked")){
+				//alert("Your are a - " + radioValue);
+                $('#reviewimage1').html('<img src="' + (reviewimage1leftimg) + '"/>');
+                $('#reviewimage2').html('<img src="' + (reviewimage2leftimg) + '"/>');
+            }
+			else if($('input[id="right-hinge"]').is(":checked")){
+				$('#reviewimage1').html('<img src="' + (reviewimage1rightimg) + '"/>');
+                $('#reviewimage2').html('<img src="' + (reviewimage2rightimg) + '"/>');
+			}
+        });
+		/*** Review Advancedoptions images display depend on screen orientation ***/
+		$(".reviewadvancedleftrightimage").click(function(){
+			var advancedoptionimageleftimg = $("#advancedoptions-imagevalueleft").data('src');
+			var advancedoptionimagerightimg = $("#advancedoptions-imagevalueright").data('src');
+			if($('input[id="left-hinge"]').is(":checked")){
+				//alert("Your are a - " + radioValue);
+                $('#advancedoptionsimage').html('<img src="' + (advancedoptionimageleftimg) + '" alt="" style="max-width: 460px;" />');
+            }
+			else if($('input[id="right-hinge"]').is(":checked")){
+				$('#advancedoptionsimage').html('<img src="' + (advancedoptionimagerightimg) + '" alt="" style="max-width: 460px;" />');
+			}
+        });
+		
+		/**Review Glass Treatment**/
+		$(".glass-treatment").click(function(){
+			var radioValue = $("input[name='preglass']:checked").data('src');
+			if(radioValue){
+				//alert("Your are a - " + radioValue);
+                $('#review-glass-treatment').html('<img src="' + (radioValue) + '"/>');
+            }
+        });
+		$(".review-step").click(function(){
+			var radioValue = $("input[name='preglass']:checked").data('title');
+			if(radioValue){
+				//alert("Your are a - " + radioValue);
+                $('#reviewglass-treatment').html(radioValue);
+				$('#glasstreatmenthidden').val(radioValue);
+            }
+        });
+        $(".review-step").click(function(){
+			$('#reviewglass-treatmentprice').html('add $' + $('#glassp1').val() + '');
+		});
+		
+		/**Review Glass Type**/
+		$(".glass-type").click(function(){
+			var radioValue = $("input[name='glass']:checked").data('src');
+			if(radioValue){
+				//alert("Your are a - " + radioValue);
+                $('#review-glass-type').html('<img src="' + (radioValue) + '"/>');
+            }
+        });
+		$(".review-step").click(function(){
+			var radioValue = $("input[name='glass']:checked").data('title');
+			if(radioValue){
+				//alert("Your are a - " + radioValue);
+                $('#reviewglass-type').html(radioValue);
+				$('#glasstypehidden').val(radioValue);
+            }	
+        });
+		$(".review-step").click(function(){
+		
+			if($('input[id="glasstype-squaremetre1"]').is(":checked")) {
+				$('#reviewglass-typeprice').html('add $' + $('#glassprice1').val() + '');
+			} 
+			else if($('input[id="glasstype-squaremetre2"]').is(":checked")){
+			    $('#reviewglass-typeprice').html('add $' + $('#glassprice2').val() + '');
+			} 
+		});
+		
+		/**Review Fitting Type**/
+		$(".ft-type").click(function(){
+			var radioValue = $("input[name='prefitting']:checked").data('src');
+			if(radioValue){
+				//alert("Your are a - " + radioValue);
+                $('#review-ft-type').html('<img src="' + (radioValue) + '"/>');
+            }
+        });
+		$(".review-step").click(function(){
+			var radioValue = $("input[name='prefitting']:checked").data('title');
+			if(radioValue){
+				//alert("Your are a - " + radioValue);
+                $('#reviewfitting-type').html(radioValue);
+				$('#fittinghandlehidden').val(radioValue);
+				
+            }
+        });
+		$(".review-step").click(function(){
+			$('#reviewfitting-typeprice').html('add $' + $('#fittingp1').val() + '');
+		});
+		
+		/**Review Fitting Finish**/
+		$(".ft-finish").click(function(){
+			var radioValue = $("input[name='fitting']:checked").data('src');
+			if(radioValue){
+				//alert("Your are a - " + radioValue);
+                $('#review-ft-finish').html('<img src="' + (radioValue) + '"/>');
+            }
+        });
+		$(".review-step").click(function(){
+			var radioValue = $("input[name='fitting']:checked").data('title');
+			if(radioValue){
+				//alert("Your are a - " + radioValue);
+                $('#reviewfitting-finish').html(radioValue);
+				$('#fittingfinishhidden').val(radioValue);
+            }
+        });
+		$(".review-step").click(function(){
+			$('#reviewfitting-finishprice').html('add $' + $('#fittingp').val() + '');
+		});
+		
+		/**Review Screen Height,Depth,Width**/
+		$(".review-step").click(function(){
+			$('#reviewfitting-finishprice').html('add $' + $('#fittingp').val() + '');
+			$('#review-height').html('<b>H:</b> ' + $('#screenheight').val() + ' mm');
+			$('#review-width').html('<b>W:</b>' + $('#screenwidth').val() + ' mm');
+			$('#review-depth').html('<b>D:</b> ' + $('#screendepth').val() + ' mm');
+		});
+
+
+		/** Review Selected Screen Orientation Height,Depth,Width and Door Width **/
+		$(".shower-size").click(function(){
+			$('#doorwidthreview').val('' + $('#doorwidth').val() + '');
+			$('#screenheightreview').val('' + $('#screenheight').val() + '');
+			$('#screenwidthreview').val('' + $('#screenwidth').val() + '');
+			$('#screendepthreview').val('' + $('#screendepth').val() + '');
+		});
+
+		/** Review Advanced option entered value display **/
+		$(".advanced-options").click(function(){
+			var radioValue = $('#advancedoptions-imagevalue').data('src');
+			if(radioValue){
+				//alert("Your are a - " + radioValue);
+                $('#review-advanced-options').html('<img src="' + (radioValue) + '"/>');
+            }
+        });
+		$(".advanced-options").click(function(){
+			$('#reviewglass-topleft').html('<b>' + $('#optioninput-top1value').val() + 'mm<b>');
+			$('#reviewglass-topright').html('<b>' + $('#optioninput-top2value').val() + 'mm<b>');
+			$('#reviewglass-bottomleft').html('<b>' + $('#optioninput-bottom1value').val() + 'mm<b>');
+			$('#reviewglass-bottomright').html('<b>' + $('#optioninput-bottom2value').val() + 'mm<b>');
+			$('#reviewglass-bottomleft1').html('<b>' + $('#optioninput-bottomleft1value').val() + 'mm<b>');
+			$('#reviewglass-bottomright1').html('<b>' + $('#optioninput-bottomleft2value').val() + 'mm<b>');
+			$('#reviewglass-bottomleft2').html('<b>' + $('#optioninput-bottomright1value').val() + 'mm<b>');
+			$('#reviewglass-bottomright2').html('<b>' + $('#optioninput-bottomright2value').val() + 'mm<b>');
+		});
+
+		/**Right box Fitting Finish**/
+		$(".ft-finish").click(function(){
+			var radioValue = $("input[name='fitting']:checked").data('src');
+			if(radioValue){
+				//alert("Your are a - " + radioValue);
+                $('#box-ft-finish').html('<img src="' + (radioValue) + '"/>');
+            }
+        });
+		$(".ft-finish").click(function(){
+			var radioValue = $("input[name='fitting']:checked").data('title');
+			if(radioValue){
+				//alert("Your are a - " + radioValue);
+				$('#box-ft-finishtext').html('Hardware:&nbsp;&nbsp;');
+                $('#box-ft-finishtitle').html(radioValue);
+            }
+        });
+		
+		/**Right box Fitting Type**/
+		$(".ft-type").click(function(){
+			var radioValue = $("input[name='prefitting']:checked").data('src');
+			if(radioValue){
+				//alert("Your are a - " + radioValue);
+                $('#box-ft-type').html('<img src="' + (radioValue) + '"/>');
+            }
+        });
+		$(".ft-type").click(function(){
+			var radioValue = $("input[name='prefitting']:checked").data('title');
+			if(radioValue){
+				//alert("Your are a - " + radioValue);
+				$('#box-ft-typetext').html('Handle:&nbsp;&nbsp;');
+                $('#box-ft-typetitle').html(radioValue);
+            }
+        });
+		
+		/**Right box Glass Type**/
+		$(".glass-type").click(function(){
+			var radioValue = $("input[name='glass']:checked").data('src');
+			if(radioValue){
+				//alert("Your are a - " + radioValue);
+                $('#box-glass-type').html('<img src="' + (radioValue) + '"/>');
+            }
+        });
+		$(".glass-type").click(function(){
+			var radioValue = $("input[name='glass']:checked").data('title');
+			if(radioValue){
+				//alert("Your are a - " + radioValue);
+				$('#box-glass-typetext').html('Glass:&nbsp;&nbsp;');
+                $('#box-glass-typetitle').html(radioValue);
+            }
+        });
+		/**Right box Glass Treatment**/
+		$(".glass-treatment").click(function(){
+			var radioValue = $("input[name='preglass']:checked").data('src');
+			if(radioValue){
+				//alert("Your are a - " + radioValue);
+                $('#box-glass-treatment').html('<img src="' + (radioValue) + '"/>');
+            }
+        });
+		$(".glass-treatment").click(function(){
+			var radioValue = $("input[name='preglass']:checked").data('title');
+			if(radioValue){
+				//alert("Your are a - " + radioValue);
+				$('#box-glass-treatmenttext').html('Glass Treatment:&nbsp;&nbsp;');
+                $('#box-glass-treatmenttitle').html(radioValue);
+            }
+        });
+
+		/** Add class in selected screen dimension image **/
+		$(".door-img").click(function () {
+            if ($("input[id='left-hinge']:checked").is(":checked")) {
+                $(".door-dimensions").addClass("left-hinge");
+				$(".advancedoptions-panel1").addClass("left-hingereview");
+				$(".advancedoptions-panel2").addClass("left-hingereview");
+				
+				$(".advancedoptions-returnpanel").addClass("left-hingereviewadvanced");
+				$(".advancedoptions-doorpanel").addClass("left-hingereviewadvanced");
+				$(".advancedoptions-hingepanel").addClass("left-hingereviewadvanced");
+				
+            }
+			else{
+				$(".door-dimensions").removeClass("left-hinge");
+				$(".advancedoptions-panel1").removeClass("left-hingereview");
+				$(".advancedoptions-panel2").removeClass("left-hingereview");
+				
+				$(".advancedoptions-returnpanel").removeClass("left-hingereviewadvanced");
+				$(".advancedoptions-doorpanel").removeClass("left-hingereviewadvanced");
+				$(".advancedoptions-hingepanel").removeClass("left-hingereviewadvanced");
+			}
+			if ($("input[id='right-hinge']:checked").is(":checked")) {
+                $(".door-dimensions").addClass("right-hinge");
+				$(".advancedoptions-panel1").addClass("right-hingereview");
+				$(".advancedoptions-panel2").addClass("right-hingereview");
+				
+				$(".advancedoptions-returnpanel").addClass("right-hingereviewadvanced");
+				$(".advancedoptions-doorpanel").addClass("right-hingereviewadvanced");
+				$(".advancedoptions-hingepanel").addClass("right-hingereviewadvanced");
+            }
+			else{
+				$(".door-dimensions").removeClass("right-hinge");
+				$(".advancedoptions-panel1").removeClass("right-hingereview");
+				$(".advancedoptions-panel2").removeClass("right-hingereview");
+				
+				$(".advancedoptions-returnpanel").removeClass("right-hingereviewadvanced");
+				$(".advancedoptions-doorpanel").removeClass("right-hingereviewadvanced");
+				$(".advancedoptions-hingepanel").removeClass("right-hingereviewadvanced");
+			}
+        });
+		
+
+		/*** Calculation for price **/
+		/** Screen Dimensions Height,Depth,Width total square metre **/
+		$(".shower-size,.update-advancedoptions").on("click", function(){
+			var doorw = parseInt($('#door-width-sq-metre').val());
+			var sd = parseInt($("#screen-depth-sq-metre").val());
+			var sh = parseInt($("#screen-height-sq-metre").val());
+			var sw = parseInt($("#screen-width-sq-metre").val());
+			var price_per = $("#screenprice").val();
+			var wh = parseInt($("#screenholes").val());
+			var seal = parseInt($("#screenseals").val());
+			var dome = parseInt($("#screendome").val());
+			var pkg = parseInt($("#screenpackage").val());
+			var adc = parseInt($("#screencost").val());
+			var comp = parseInt($("#screenprofit").val());
+			
+			/** Total linear metre price **/
+			var hingep = parseInt(sw - doorw - 20);
+			var returnp = parseInt(sd - 4);
+			var doorpanel = parseFloat(doorw + sh);
+			var hingepanel = parseFloat(hingep + sh);
+			var returnpanel = parseFloat(returnp + sh);
+			var doorpanelmulti = parseFloat(doorpanel * 2);
+			var hingepanelmulti = parseFloat(hingepanel * 2);
+			var returnpanelmulti = parseFloat(returnpanel * 2);
+			var doorpaneldivide = doorpanelmulti/1000;
+			var hingepaneldivide = hingepanelmulti/1000;
+			var returnpaneldivide = returnpanelmulti/1000;
+			
+			var sum_linearmetre = parseFloat(doorpaneldivide + hingepaneldivide + returnpaneldivide);
+			var total_linearmetre = parseFloat(sum_linearmetre * 5.51);
+			//alert(total_linearmetre);
+			
+			var screen_depth = sd/1000;
+			var screen_height = sh/1000;
+			var screen_width = sw/1000;
+			var mul1 = parseFloat(screen_depth*screen_height);
+			var mul2 = parseFloat(screen_width*screen_height);
+
+			var cal =  parseFloat(mul1 + mul2);
+			
+			var base_mul = parseFloat(cal*price_per);
+			var screen_sum = parseFloat(wh+seal+dome+pkg+adc+comp);
+			
+			var total_sum = parseInt(screen_sum+base_mul);
+			
+			var final_total = parseInt(total_sum+total_linearmetre)
+			
+			if(final_total){
+				$('.box-price').html('<b>$' + (final_total) + '</b>');
+				$('#runingtotal').val('' + (final_total) + '');
+				$('#totalprice_metre').val('' + (cal) + '');
+			}
+			
+			//alert(total_sum);         
+		});
+
+		/** Adding a hardware finish price into running toltal **/
+		if(($('#handlehidden').val()) == 1){
+			$(".ft-finish,.update-advancedoptions").on("click", function(){
+				var hardwarefinish = parseInt($("input[name='fitting']:checked").val());
+				var runing_sum = parseInt($("#runingtotal").val());
+
+				var cal =  hardwarefinish + runing_sum;
+				if(cal){
+					$('.box-price').html('<b>$' + (cal) + '</b>');
+					$('#runingtotal').val('' + (cal) + '');
+				}
+				
+				//alert(cal);         
+			});
+		}
+		else{
+			$(".ft-finish,.update-advancedoptions").on("click", function(){
+				var glasstype1 = parseFloat($("#glasstype-squaremetre1").val());
+				var glasstype2 = parseFloat($("#glasstype-squaremetre2").val());
+				var total_metre = parseFloat($("#totalprice_metre").val());
+				var glass_multi1 = parseFloat(total_metre*glasstype1);
+				var glass_multiint1 = parseInt(total_metre*glasstype1);
+				var glass_multiint2 = parseInt(total_metre*glasstype2);
+				var glass_multi2 = parseFloat(total_metre*glasstype2);
+				
+				var hardwarefinish = parseInt($("input[name='fitting']:checked").val());
+				var runing_sum = parseInt($("#runingtotal").val());
+
+				var cal =  hardwarefinish + runing_sum;
+				
+				if(cal){
+					$('.box-price').html('<b>$' + (cal) + '</b>');
+					$('#runingtotal').val('' + (cal) + '');
+				}
+			
+				if(glass_multi1){
+					$('.gt-squaremetreprice1').html('<b>' + (glass_multiint1) + '</b>');
+					$('#glassprice1').val('' + (glass_multi1) + '');
+				}  
+				if(glass_multi2){
+					$('.gt-squaremetreprice2').html('<b>' + (glass_multiint2) + '</b>');
+					$('#glassprice2').val('' + (glass_multi2) + '');
+				}  
+			});
+			
+		}
+		
+		/** Removing a hardware finish price into running toltal **/
+		$(".ft-typeback").on("click", function(){
+			var hardwarefinish = parseInt($("input[name='fitting']:checked").val());
+			var runing_sum = parseInt($("#runingtotal").val());
+
+			var cal = runing_sum - hardwarefinish;
+			if(cal){
+				$('.box-price').html('<b>$' + (cal) + '</b>');
+				$('#runingtotal').val('' + (cal) + '');
+			}
+			
+			//alert(cal);         
+		});
+
+		/** Adding a handle type price into running toltal **/
+		if(($('#handlehidden').val()) == 1){
+			$(".ft-type,.update-advancedoptions").on("click", function(){
+				var hardwarefinish = parseInt($("input[name='prefitting']:checked").val());
+				var runing_sum = parseInt($("#runingtotal").val());
+
+				var cal =  runing_sum + hardwarefinish;
+				if(cal){
+					$('.box-price').html('<b>$' + (cal) + '</b>');
+					$('#runingtotal').val('' + (cal) + '');
+				}
+				
+				//alert(cal);         
+			});
+		}
+		else{
+			$(".ft-type,.update-advancedoptions").on("click", function(){
+				var hardwarefinish = parseInt($("input[name='prefitting']:checked").val());
+				var runing_sum = parseInt($("#runingtotal").val());
+
+				var cal =  runing_sum + hardwarefinish;
+				if(cal){
+					$('.box-price').html('<b>$' + (cal) + '</b>');
+					$('#runingtotal').val('' + (cal) + '');
+				}
+				
+				//alert(cal);         
+			});
+		}
+		
+		/** Removing a handle type price into running toltal **/
+		if(($('#handlehidden').val()) == 1){
+			$(".glass-typeback").on("click", function(){
+				var hardwarefinish = parseInt($("input[name='prefitting']:checked").val());
+				var runing_sum = parseInt($("#runingtotal").val());
+
+				var cal = runing_sum - hardwarefinish;
+				if(cal){
+					$('.box-price').html('<b>$' + (cal) + '</b>');
+					$('#runingtotal').val('' + (cal) + '');
+				}
+				
+				//alert(cal);         
+			});
+		}
+		else{
+			$(".glass-typeback").on("click", function(){
+				var hardwarefinish = parseInt($("input[name='fitting']:checked").val());
+				var runing_sum = parseInt($("#runingtotal").val());
+
+				var cal = runing_sum - hardwarefinish;
+				if(cal){
+					$('.box-price').html('<b>$' + (cal) + '</b>');
+					$('#runingtotal').val('' + (cal) + '');
+				}
+				
+				//alert(cal);         
+			});
+		}
+
+		/** Glass type Square metre price calculation add **/
+		$(".gt-glassprice,.update-advancedoptions").on("click", function(){
+			var glasstype1 = parseFloat($("#glasstype-squaremetre1").val());
+			var glasstype2 = parseFloat($("#glasstype-squaremetre2").val());
+			var total_metre = parseFloat($("#totalprice_metre").val());
+			var glass_multi1 = parseFloat(total_metre*glasstype1);
+			var glass_multiint1 = parseInt(total_metre*glasstype1);
+			var glass_multiint2 = parseInt(total_metre*glasstype2);
+			var glass_multi2 = parseFloat(total_metre*glasstype2);
+			
+			
+			if(glass_multi1){
+				$('.gt-squaremetreprice1').html('<b>' + (glass_multiint1) + '</b>');
+				$('#glassprice1').val('' + (glass_multi1) + '');
+			}  
+			if(glass_multi2){
+				$('.gt-squaremetreprice2').html('<b>' + (glass_multiint2) + '</b>');
+				$('#glassprice2').val('' + (glass_multi2) + '');
+			}  
+		});
+		/** Glass type Square metre price calculation remove **/
+		$(".glass-typeback").on("click", function(){
+			var glassmtprice = parseInt($("#glassprice1").val());
+			var glassmtprice1 = parseInt($("#glassprice2").val());
+			var glass_mtsqprice = glassmtprice - glassmtprice;
+			var glass_mtsqprice1 = glassmtprice1 - glassmtprice1;
+			
+				$('#glassprice1').val('' + (glass_mtsqprice) + '');
+				$('#glassprice2').val('' + (glass_mtsqprice1) + '');
+		});
+		/** Adding a Glass type price into running toltal **/
+		$(".glass-type,.update-advancedoptions").on("click", function(){
+			var glasstype = parseInt($("#glassprice1").val());
+			var glasstype1 = parseInt($("#glassprice2").val());
+			var runing_sum = parseInt($("#runingtotal").val());
+			var glasstp = runing_sum + glasstype;
+			var glasstp1 = runing_sum + glasstype1;
+			
+			if($('input[id="glasstype-squaremetre1"]').is(":checked")) {
+				$('.box-price').html('<b>$' + (parseInt(glasstp)) + '</b>');
+				$('#runingtotal').val('' + (glasstp) + '');
+			} 
+			else if($('input[id="glasstype-squaremetre2"]').is(":checked")){
+				$('.box-price').html('<b>$' + (parseInt(glasstp1)) + '</b>');
+				$('#runingtotal').val('' + (glasstp1) + '');
+			} 
+			
+		});
+		/** Removing a Glass type price into running toltal **/
+		$(".glasstreat-back").on("click", function(){
+			var glasstype = parseInt($("#glassprice1").val());
+			var glasstype1 = parseInt($("#glassprice2").val());
+			var runing_sum = parseInt($("#runingtotal").val());
+
+			var glasstpr = runing_sum - glasstype;
+			var glasstpr1 = runing_sum - glasstype1;
+			
+			if($('input[id="glasstype-squaremetre1"]').is(":checked")) {
+				$('.box-price').html('<b>$' + (parseInt(glasstpr)) + '</b>');
+				$('#runingtotal').val('' + (glasstpr) + '');
+			} 
+			else if($('input[id="glasstype-squaremetre2"]').is(":checked")){
+				$('.box-price').html('<b>$' + (parseInt(glasstpr1)) + '</b>');
+				$('#runingtotal').val('' + (glasstpr1) + '');
+			} 	
+		});
+		
+		/** Adding a glass treatment price into running toltal **/
+		$(".glass-treatment,.update-advancedoptions").on("click", function(){
+			var glasstreatment = parseFloat($("input[name='preglass']:checked").val());
+			var runing_sum = parseFloat($("#runingtotal").val());
+
+			var cal =  runing_sum + glasstreatment;
+			if(cal){
+				$('.box-price').html('<b>$' + (cal) + '</b>');
+				$('#runingtotal').val('' + (cal) + '');
+			}
+			
+			//alert(cal);         
+		});
+		/** Removing a glass treatment price into running toltal **/
+		$(".glasstreatment-back").on("click", function(){
+			var glasstreatment = parseFloat($("input[name='preglass']:checked").val());
+			var runing_sum = parseFloat($("#runingtotal").val());
+
+			var cal = runing_sum - glasstreatment;
+			if(cal){
+				$('.box-price').html('<b>$' + (cal) + '</b>');
+				$('#runingtotal').val('' + (cal) + '');
+			}
+			
+			//alert(cal);         
+		});
+
+
+		/*** Store Advanced option entered value ***/
+		/**Advanced Options Top Fields **/
+		$(".advanced-options").click(function(){
+			$('#optioninput-top1value').val('' + $('.optioninput-top1').val() + '');
+			$('#optioninput-top2value').val('' + $('.optioninput-top2').val() + '');
+			$('#optioninput-bottom1value').val('' + $('.optioninput-bottom1').val() + '');
+			$('#optioninput-bottom2value').val('' + $('.optioninput-bottom2').val() + '');
+			$('#optioninput-bottomleft1value').val('' + $('.optioninput-bottomleft1').val() + '');
+			$('#optioninput-bottomleft2value').val('' + $('.optioninput-bottomleft2').val() + '');
+			$('#optioninput-bottomright1value').val('' + $('.optioninput-bottomright1').val() + '');
+			$('#optioninput-bottomright2value').val('' + $('.optioninput-bottomright2').val() + '');
+		});
+		
+		
+		/*** Advanced option accordian ***/
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+		  acc[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var panel = this.nextElementSibling;
+			if (panel.style.maxHeight){
+			  panel.style.maxHeight = null;
+			} else {
+			  panel.style.maxHeight = panel.scrollHeight + "px";
+			} 
+		  });
+		}
+		
+		
+});

@@ -1,0 +1,346 @@
+2017-11-08T21:49:14+00:00 CRITICAL Call to undefined method WC_Product_Simple::get_variation_attributes()
+
+2017-11-08T21:49:20+00:00 CRITICAL Call to undefined method WC_Product_Simple::get_variation_attributes()
+
+2017-11-08T21:49:48+00:00 CRITICAL Call to undefined method WC_Product_Simple::get_variation_attributes()
+
+2017-11-08T21:49:52+00:00 CRITICAL Call to undefined method WC_Product_Simple::get_variation_attributes()
+
+2017-11-08T21:50:47+00:00 CRITICAL Call to undefined method WC_Product_Simple::get_variation_attributes()
+
+2017-11-08T21:50:51+00:00 CRITICAL Call to undefined method WC_Product_Simple::get_variation_attributes()
+
+2017-11-08T21:51:27+00:00 CRITICAL Call to undefined method WC_Product_Simple::get_variation_attributes()
+
+2017-11-08T21:51:32+00:00 CRITICAL Call to undefined method WC_Product_Simple::get_variation_attributes()
+
+2017-11-08T21:51:47+00:00 CRITICAL Call to undefined method WC_Product_Simple::get_variation_attributes()
+
+2017-11-08T21:57:32+00:00 CRITICAL Call to undefined method WC_Product_Simple::get_variation_attributes()
+
+2017-11-08T21:57:36+00:00 CRITICAL Call to undefined method WC_Product_Simple::get_variation_attributes()
+
+2017-11-08T22:50:44+00:00 CRITICAL Call to undefined method WC_Product_Simple::get_variation_attributes()
+
+2017-11-08T22:56:11+00:00 CRITICAL Call to undefined method WC_Product_Simple::get_variation_attributes()
+
+2017-11-08T22:56:27+00:00 CRITICAL Call to undefined method WC_Product_Simple::get_variation_attributes()
+
+2017-11-08T22:56:31+00:00 CRITICAL Call to undefined method WC_Product_Simple::get_variation_attributes()
+
+2017-11-16T17:37:35+00:00 CRITICAL Call to a member function get_title() on null
+
+2017-11-16T17:38:49+00:00 CRITICAL Call to a member function get_title() on null
+
+2017-11-16T17:50:04+00:00 CRITICAL Call to a member function get_title() on null
+
+2017-11-23T19:39:50+00:00 CRITICAL Call to undefined function getElementById()
+
+2017-11-23T19:40:17+00:00 CRITICAL Call to undefined function getElementById()
+
+2017-11-23T21:53:39+00:00 CRITICAL Call to undefined function getElementById()
+
+2017-11-23T21:55:30+00:00 CRITICAL Call to undefined function getElementById()
+
+2017-12-08T17:29:05+00:00 CRITICAL Call to undefined function mb_detect_encoding()
+
+2017-12-18T15:59:34+00:00 CRITICAL Call to undefined function topz_header_check()
+
+2017-12-18T15:59:38+00:00 CRITICAL Call to undefined function topz_header_check()
+
+2017-12-18T16:00:52+00:00 CRITICAL Call to undefined function topz_header_check()
+
+2017-12-18T16:01:11+00:00 CRITICAL Call to undefined function topz_header_check()
+
+2017-12-18T16:15:31+00:00 CRITICAL Call to undefined function topz_header_check()
+
+2017-12-18T16:16:28+00:00 CRITICAL Call to undefined function topz_header_check()
+
+2017-12-18T16:16:30+00:00 CRITICAL Call to undefined function topz_header_check()
+
+2017-12-18T16:19:32+00:00 CRITICAL Call to undefined function topz_header_check()
+
+2017-12-18T16:20:17+00:00 CRITICAL Call to undefined function topz_header_check()
+
+2017-12-18T16:24:16+00:00 CRITICAL Call to undefined function topz_header_check()
+
+2017-12-18T16:27:23+00:00 CRITICAL Call to undefined function topz_header_check()
+
+2017-12-18T16:27:37+00:00 CRITICAL Call to undefined function topz_header_check()
+
+2017-12-18T18:09:28+00:00 CRITICAL Call to undefined function topz_header_check()
+
+2017-12-18T18:27:20+00:00 CRITICAL Call to undefined function topz_header_check()
+
+2017-12-18T18:29:15+00:00 CRITICAL Call to undefined function topz_header_check()
+
+2017-12-18T18:31:00+00:00 CRITICAL Call to undefined function topz_header_check()
+
+2017-12-18T18:35:21+00:00 CRITICAL Call to undefined function topz_header_check()
+
+2017-12-18T18:38:08+00:00 CRITICAL Call to undefined function topz_header_check()
+
+2017-12-18T18:38:20+00:00 CRITICAL Call to undefined function topz_header_check()
+
+2017-12-18T18:38:57+00:00 CRITICAL Call to undefined function topz_header_check()
+
+2017-12-18T18:39:05+00:00 CRITICAL Call to undefined function topz_header_check()
+
+2017-12-18T18:50:26+00:00 CRITICAL Call to undefined function topz_header_check()
+
+2017-12-19T02:40:49+00:00 CRITICAL Cannot use object of type WC_Cart as array
+
+2017-12-19T02:40:52+00:00 CRITICAL Cannot use object of type WC_Cart as array
+
+2017-12-19T02:42:18+00:00 CRITICAL Cannot use object of type WC_Cart as array
+
+2017-12-19T02:43:39+00:00 CRITICAL Cannot use object of type WC_Cart as array
+
+2017-12-19T18:06:38+00:00 CRITICAL Call to undefined function mb_internal_encoding()
+
+2017-12-19T18:11:57+00:00 CRITICAL Call to undefined function mb_internal_encoding()
+
+2017-12-19T18:14:02+00:00 CRITICAL Call to undefined function mb_internal_encoding()
+
+2017-12-19T18:15:41+00:00 CRITICAL Call to undefined function mb_internal_encoding()
+
+2017-12-19T18:21:41+00:00 CRITICAL Call to undefined function mb_internal_encoding()
+
+2017-12-19T18:23:27+00:00 CRITICAL Call to undefined function mb_internal_encoding()
+
+2017-12-19T18:39:04+00:00 CRITICAL Call to undefined function mb_internal_encoding()
+
+2017-12-19T18:39:13+00:00 CRITICAL Call to undefined function mb_internal_encoding()
+
+2017-12-19T18:40:54+00:00 CRITICAL Call to undefined function mb_internal_encoding()
+
+2017-12-21T21:57:16+00:00 CRITICAL Call to a member function get_results() on null
+
+2017-12-21T21:58:56+00:00 CRITICAL Call to a member function get_results() on null
+
+2017-12-26T21:53:25+00:00 CRITICAL Cannot use object of type WC_Product_Simple as array
+
+2018-01-19T16:08:48+00:00 CRITICAL Call to undefined method WooCommerce::get_shipping_total()
+
+2018-01-19T16:10:49+00:00 CRITICAL Using $this when not in object context
+
+2018-01-19T22:07:07+00:00 CRITICAL Call to undefined method WooCommerce::add_error()
+
+2018-01-19T22:07:36+00:00 CRITICAL Call to undefined method WooCommerce::add_error()
+
+2018-01-20T15:53:47+00:00 CRITICAL Call to a member function get_value() on null
+
+2018-01-20T15:53:57+00:00 CRITICAL Call to a member function get_value() on null
+
+2018-01-20T15:55:06+00:00 CRITICAL Call to a member function get_value() on string
+
+2018-01-20T15:55:59+00:00 CRITICAL Call to a member function get_value() on string
+
+2018-01-20T15:57:45+00:00 CRITICAL Call to a member function get_value() on string
+
+2018-01-20T16:13:52+00:00 CRITICAL Call to a member function get_value() on null
+
+2018-01-20T16:25:31+00:00 CRITICAL Call to a member function get_value() on null
+
+2018-01-20T16:31:06+00:00 CRITICAL Call to a member function get_value() on string
+
+2018-01-20T16:31:50+00:00 CRITICAL Call to a member function get_value() on string
+
+2018-01-20T16:37:02+00:00 CRITICAL Call to a member function get_value() on string
+
+2018-01-20T16:37:30+00:00 CRITICAL Call to a member function get_value() on string
+
+2018-01-20T16:38:19+00:00 CRITICAL Call to undefined function get_value()
+
+2018-01-20T16:39:20+00:00 CRITICAL Call to a member function get_value() on string
+
+2018-01-20T16:40:29+00:00 CRITICAL Call to a member function get_value() on string
+
+2018-01-20T16:54:59+00:00 CRITICAL Call to a member function get_value() on array
+
+2018-01-25T15:40:22+00:00 CRITICAL Call to a member function get_code() on null
+
+2018-01-25T23:35:35+00:00 CRITICAL Cannot use object of type stdClass as array
+
+2018-01-25T23:36:50+00:00 CRITICAL Cannot use object of type stdClass as array
+
+2018-02-15T17:55:12+00:00 CRITICAL Undefined constant '“\r\n”'
+
+2018-02-15T17:56:42+00:00 CRITICAL Undefined constant '“\r\n”'
+
+2018-02-15T17:58:50+00:00 CRITICAL Undefined constant '“\r\n”'
+
+2018-02-15T17:59:26+00:00 CRITICAL Undefined constant '“\r\n”'
+
+2018-02-15T18:01:52+00:00 CRITICAL Undefined constant '“\r\n”'
+
+2018-02-15T18:02:34+00:00 CRITICAL Undefined constant '“\r\n”'
+
+2018-02-15T18:04:48+00:00 CRITICAL Undefined constant '“\r\n”'
+
+2018-02-15T18:04:53+00:00 CRITICAL Undefined constant '“\r\n”'
+
+2018-02-15T18:11:13+00:00 CRITICAL Undefined constant '“\r\n”'
+
+2018-02-15T18:12:01+00:00 CRITICAL Undefined constant '“\r\n”'
+
+2018-03-08T18:38:42+00:00 CRITICAL Call to a member function get_cellmap() on null
+
+2018-03-08T18:38:47+00:00 CRITICAL Call to a member function get_cellmap() on null
+
+2018-03-08T18:38:51+00:00 CRITICAL Call to a member function get_cellmap() on null
+
+2018-03-08T18:41:20+00:00 CRITICAL Call to a member function get_cellmap() on null
+
+2018-03-08T18:41:24+00:00 CRITICAL Call to a member function get_cellmap() on null
+
+2018-03-08T18:41:26+00:00 CRITICAL Call to a member function get_cellmap() on null
+
+2018-03-09T16:02:38+00:00 CRITICAL Call to a member function get_cellmap() on null
+
+2018-03-09T16:02:42+00:00 CRITICAL Call to a member function get_cellmap() on null
+
+2018-03-09T16:05:33+00:00 CRITICAL Call to a member function get_cellmap() on null
+
+2018-03-09T16:05:37+00:00 CRITICAL Call to a member function get_cellmap() on null
+
+2018-03-09T16:28:24+00:00 CRITICAL Call to a member function get_cellmap() on null
+
+2018-03-09T16:28:28+00:00 CRITICAL Call to a member function get_cellmap() on null
+
+2018-03-09T16:42:46+00:00 CRITICAL Call to a member function get_cellmap() on null
+
+2018-03-09T16:42:50+00:00 CRITICAL Call to a member function get_cellmap() on null
+
+2018-03-12T22:43:24+00:00 CRITICAL Call to a member function get() on null
+
+2018-03-12T22:43:31+00:00 CRITICAL Call to a member function get() on null
+
+2018-03-12T22:43:35+00:00 CRITICAL Call to a member function get() on null
+
+2018-03-13T20:09:09+00:00 CRITICAL Call to undefined method WPO\WC\PDF_Invoices\Documents\Invoice::template_custom()
+
+2018-03-13T20:09:14+00:00 CRITICAL Call to undefined method WPO\WC\PDF_Invoices\Documents\Invoice::template_custom()
+
+2018-03-13T20:09:23+00:00 CRITICAL Call to undefined method WPO\WC\PDF_Invoices\Documents\Invoice::template_custom()
+
+2018-03-13T20:11:33+00:00 CRITICAL Call to undefined method WPO\WC\PDF_Invoices\Documents\Invoice::template_custom()
+
+2018-03-14T17:02:56+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 6000 bytes)
+
+2018-03-27T18:43:02+00:00 CRITICAL Cannot use object of type WC_Product_Simple as array
+
+2018-03-27T18:43:09+00:00 CRITICAL Cannot use object of type WC_Product_Simple as array
+
+2018-03-27T21:54:33+00:00 CRITICAL Call to undefined method WC_Order::add_order_item_totals_subtotal_row()
+
+2018-03-27T21:55:11+00:00 CRITICAL Call to undefined method WC_Order::add_order_item_totals_subtotal_row()
+
+2018-03-28T19:12:51+00:00 CRITICAL Call to undefined function alert()
+
+2018-03-28T20:10:22+00:00 CRITICAL Call to a member function set_price() on double
+
+2018-03-28T20:10:25+00:00 CRITICAL Call to a member function set_price() on double
+
+2018-03-28T20:10:37+00:00 CRITICAL Call to a member function set_price() on double
+
+2018-03-28T20:11:28+00:00 CRITICAL Call to a member function set_price() on double
+
+2018-03-28T22:01:35+00:00 CRITICAL Cannot use object of type WC_Cart as array
+
+2018-03-28T22:01:42+00:00 CRITICAL Cannot use object of type WC_Cart as array
+
+2018-03-28T22:02:17+00:00 CRITICAL Cannot use object of type WC_Cart as array
+
+2018-03-28T22:28:01+00:00 CRITICAL Cannot use object of type WC_Cart as array
+
+2018-03-28T22:28:04+00:00 CRITICAL Cannot use object of type WC_Cart as array
+
+2018-03-28T22:28:10+00:00 CRITICAL Cannot use object of type WC_Cart as array
+
+2018-03-28T22:29:44+00:00 CRITICAL Cannot use object of type WC_Cart as array
+
+2018-03-28T22:29:46+00:00 CRITICAL Cannot use object of type WC_Cart as array
+
+2018-03-28T22:30:07+00:00 CRITICAL Cannot use object of type WC_Cart as array
+
+2018-03-28T22:30:08+00:00 CRITICAL Cannot use object of type WC_Cart as array
+
+2018-03-28T22:30:10+00:00 CRITICAL Cannot use object of type WC_Cart as array
+
+2018-03-28T22:30:13+00:00 CRITICAL Cannot use object of type WC_Cart as array
+
+2018-03-29T17:43:49+00:00 CRITICAL Call to undefined function setTimeout()
+
+2018-03-29T17:43:55+00:00 CRITICAL Call to undefined function setTimeout()
+
+2018-03-29T17:43:57+00:00 CRITICAL Call to undefined function setTimeout()
+
+2018-03-29T17:43:57+00:00 CRITICAL Call to undefined function setTimeout()
+
+2018-03-29T17:43:57+00:00 CRITICAL Call to undefined function setTimeout()
+
+2018-03-29T17:43:58+00:00 CRITICAL Call to undefined function setTimeout()
+
+2018-03-29T17:44:00+00:00 CRITICAL Call to undefined function setTimeout()
+
+2018-03-29T17:44:02+00:00 CRITICAL Call to undefined function setTimeout()
+
+2018-03-29T17:44:02+00:00 CRITICAL Call to undefined function setTimeout()
+
+2018-03-29T17:44:03+00:00 CRITICAL Call to undefined function setTimeout()
+
+2018-03-29T17:44:05+00:00 CRITICAL Call to undefined function setTimeout()
+
+2018-03-29T17:44:13+00:00 CRITICAL Call to undefined function setTimeout()
+
+2018-03-29T17:44:18+00:00 CRITICAL Call to undefined function setTimeout()
+
+2018-03-30T15:39:59+00:00 CRITICAL Call to undefined function wc_cart_totals_subtotal()
+
+2018-03-30T15:40:11+00:00 CRITICAL Call to undefined function wc_cart_totals_subtotal()
+
+2018-04-03T18:56:19+00:00 CRITICAL Call to undefined method stdClass::get_label()
+
+2018-04-03T18:56:20+00:00 CRITICAL Call to undefined method stdClass::get_label()
+
+2018-04-03T18:56:32+00:00 CRITICAL Call to undefined method stdClass::get_label()
+
+2018-04-03T18:57:01+00:00 CRITICAL Call to undefined method stdClass::get_label()
+
+2018-04-11T15:18:00+00:00 CRITICAL Call to undefined method zcf_CapturingClassAjax::mapRegisterUser()
+
+2018-04-23T10:08:28+00:00 CRITICAL Class 'ProcessAccount' not found
+
+2018-04-23T10:08:45+00:00 CRITICAL Class 'ProcessAccount' not found
+
+2018-04-23T10:09:20+00:00 CRITICAL Class 'ProcessAccount' not found
+
+2018-04-23T10:09:52+00:00 CRITICAL Class 'ProcessAccount' not found
+
+2018-04-23T11:20:44+00:00 CRITICAL Class 'ProcessAccount' not found
+
+2018-04-23T11:22:20+00:00 CRITICAL Class 'ProcessAccount' not found
+
+2018-04-23T11:22:27+00:00 CRITICAL Class 'ProcessAccount' not found
+
+2018-04-23T11:24:36+00:00 CRITICAL Class 'ProcessAccount' not found
+
+2018-04-23T11:26:19+00:00 CRITICAL Class 'ProcessAccount' not found
+
+2018-04-23T17:01:49+00:00 CRITICAL Class 'ProcessAccount' not found
+
+2018-04-23T17:02:23+00:00 CRITICAL Class 'ProcessAccount' not found
+
+2018-04-23T17:19:41+00:00 CRITICAL Class 'ProcessAccount' not found
+
+2018-04-23T17:21:50+00:00 CRITICAL Class 'ProcessAccount' not found
+
+2018-04-23T17:22:04+00:00 CRITICAL Class 'ProcessAccount' not found
+
+2018-04-23T17:29:03+00:00 CRITICAL Class 'ProcessAccount' not found
+
+2018-04-23T17:29:53+00:00 CRITICAL Class 'ProcessAccount' not found
+
+2018-04-27T14:36:09+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 36000 bytes)
+

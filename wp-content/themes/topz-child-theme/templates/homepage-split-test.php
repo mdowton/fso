@@ -1,10 +1,12 @@
-<?php get_header(); ?>
+<?php 
+
+/* Template Name: Homepage split test */
+get_header(); ?>
 <?php 
 	$topz_sidebar_template	= get_post_meta( get_the_ID(), 'page_sidebar_layout', true );
 	$topz_sidebar 					= get_post_meta( get_the_ID(), 'page_sidebar_template', true );
 ?>
 
-	<?php topz_breadcrumb_title(); ?>	
 	<div class="container">
 		<div class="row">
 		<?php 
@@ -18,7 +20,7 @@
 			</aside>
 		<?php endif; ?>
 		
-			<div id="contents" role="main" class="main-page <?php topz_content_page(); ?>">
+			<div id="contents" role="main" class="main-page split-test-wrapper <?php topz_content_page(); ?>">
 				<?php
 				get_template_part('templates/content', 'page')
 				?>

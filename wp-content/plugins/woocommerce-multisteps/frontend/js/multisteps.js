@@ -7,7 +7,7 @@ var animating; //flag to prevent quick multi-click glitches
 
 /*** All Steps validation ***/
 /** screen orientation selection validation **/
-$(".door-img").click(function(){
+$(".door-img").click(function(e){
 		if($('input[name="size-hing"]').is(":checked")) {
 		  //alert("Please select the Product Design");
 		}
@@ -1620,11 +1620,16 @@ $(".advanced-options").click(function(e){
 				
 /** next button script **/
 $(".next").click(function(){
+		
 		if(animating) return false;
 		animating = true;
 		
 		current_fs = $(this).parent();
 		next_fs = $(this).parent().next();
+
+		let targetHash = $(current_fs).attr('id');
+
+		window.location = "#" + targetHash;
 		
 		//activate next step on progressbar using the index of next_fs
 		$("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");

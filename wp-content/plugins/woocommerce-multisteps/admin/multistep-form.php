@@ -183,7 +183,14 @@ function display_custom_data_product_page()
 	$mspc_pdfdrawing_image_url9 = get_post_meta( $post->ID, '_mspc_pdfdrawing_image_url9', true );
 	$mspc_pdfdrawing_image_url10 = get_post_meta( $post->ID, '_mspc_pdfdrawing_image_url10', true );
 	$mspc_pdfdrawing_image_url11 = get_post_meta( $post->ID, '_mspc_pdfdrawing_image_url11', true );
-	$mspc_pdfdrawing_image_url12 = get_post_meta( $post->ID, '_mspc_pdfdrawing_image_url12', true );	
+	$mspc_pdfdrawing_image_url12 = get_post_meta( $post->ID, '_mspc_pdfdrawing_image_url12', true );
+
+	$experiment_string = $_SERVER['QUERY_STRING'];
+	$exp = false;
+	
+	if ($experiment_string === 'exp=cart_contact' ) {
+		$exp = true;
+	}
 
 	?>
 
@@ -231,15 +238,18 @@ function display_custom_data_product_page()
 		</ul>
  
 	</li>
-<!-- 	<li>Review</li>
-	<li>Payment</li> -->
+	<!-- Remove display links -->
+	<?php if(!$exp) { ?>
+		<li>Review</li>
+		<li>Payment</li>
+	<?php } ?>
 	</ul>
 	<!-- fieldsets -->
 	
 	
 	<!--- Field step_Process_Size-1 --->
 
-	<fieldset>
+	<fieldset id="showertype">
 		
 		<h2 class="fs-title">Click on your Shower Type</h2>
 		
@@ -293,7 +303,7 @@ function display_custom_data_product_page()
 		$id = get_the_ID(); 
 		
 		/** Angled Corner Shower **/
-		if($id == 4280){
+		if($id == 4280 ){
 		?>
 			<?php
 			if($mspc_doorwidthhide == 1)
@@ -342,7 +352,7 @@ function display_custom_data_product_page()
 		
 		<?php
 		/** Wall to Wall **/
-		if($id == 4255){
+		if($id == 4255 ){
 		?>
 			<?php
 			if($mspc_doorwidthhide == 1)
@@ -1419,11 +1429,13 @@ function display_custom_data_product_page()
 		<input type="button" name="previous" class="previous action-button back glasstreatment-back" value="Back" />
 		<!--<input type="button" name="next" class="next action-button continue advanced-options" value="Next" />-->
 		<?php 
-		if( $cart_item['product_id'] == get_the_ID()) {
+		if( $cart_item['product_id'] == get_the_ID() && !$exp) {
 			echo '<button type="button" name="add-to-cart" value="'.get_the_ID().'" class="single_add_to_cart_button button action-button already_cart continue advanced-options product-id alt disabled">Already in cart</button>'; 
 		}
-		else{
+		else if (!$exp){
 			echo '<button type="submit" name="add-to-cart" value="'.get_the_ID().'" class="single_add_to_cart_button button action-button continue advanced-options advanced-optionsinput product-id alt">Add to cart</button>'; 
+		} else {
+			echo '<button type="button" class="btn btn-action" data-toggle="modal" data-target="#exampleModal">Finish</button>'; 
 		}
 		?>
 	</fieldset>
@@ -2041,13 +2053,18 @@ function display_custom_data_product_page()
 									
 									</div>								
 								</div>
-	
+								<?php if(!$exp) { ?>
 								<div class="row">
 									<div class="free-pickup">
 										Free Pickup: Major Cities<br />
 										<img src="/wp-content/uploads/2018/01/payment.png" />
 									</div>
-								</div>							
+								</div>
+								<?php } else { ?>
+									<div class="row">
+										<h2>Installed Price </h2>
+									</div>
+								<?php } ?>						
 						</div>
 						
 						<div class="step-right-images">
@@ -2059,6 +2076,29 @@ function display_custom_data_product_page()
 						</div>	
 					</div>
 <!--- Right box end --->
+
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog .modal-dialog-centered" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <form action='/'>
+		        <h2> Confirm your fixed pricing</h2>
+		        </form>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary">Save changes</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
 
 	<?php
  }

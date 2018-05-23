@@ -70,7 +70,14 @@ function topz_Options_Setup(){
 						'title' => esc_html__('Breadcrumb Background', 'topz'),
 						'sub_desc' => esc_html__( 'Use upload button to upload custom background for breadcrumb.', 'topz' ),
 						'std' => ''
-					),					
+					),
+					array(
+						'id' => 'install_areas',
+						'type' => 'textarea',
+						'title' => esc_html__('Install Locations', 'topz'),
+						'sub_desc' => esc_html__( 'Add pick up Locations', 'topz' ),
+						'std' => ''
+					),						
 			)		
 		);
 	

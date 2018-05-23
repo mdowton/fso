@@ -19,8 +19,8 @@
 }
 
 .header-locations {
-	//background: #0085A6;
 	background: #00A0C6;
+	padding:8px 0;
 }
 
 .locations-text ul {
@@ -36,6 +36,28 @@
 	letter-spacing: 0.1px;
 	text-transform: capitalize;
 }
+
+.locations-text {
+		color:#FFF;
+
+	}
+
+	.locations-text span {
+		display: inline-block;
+		margin:0 8px;
+	}
+
+	.locations-text a {
+		display: inline-block;
+		margin:0 8px;
+		color: #FFF;
+		text-decoration: none;
+	}
+
+	.locations-text a:hover{
+		color: #FFF;
+		text-decoration: none;
+	}
 
 .top-header-title, .top-header-title a {
 	color: #ffffff;
@@ -824,12 +846,13 @@ select.select_pickup {
 
 .home-installation {
 	position: absolute;
-	top: 0px;
+	top: auto;
 	left: 0px;
+	bottom:34px;
 	z-index: 9999 !important;
 	background: rgba(0,0,0,0.8);
-	padding: 42px 20px 42px 150px;
-	width: 500px;
+	padding: 16px 10px;
+	width: 100%;
 }
 
 .home-installation .install-text {
@@ -868,10 +891,6 @@ select.select_pickup {
 		padding: 25px 15px;
 	}
 	
-	.locations-text {
-		margin-left: 0px;
-	}
-	
 	.home-h1 h1 {
 		font-size: 24px !important;
 		margin-bottom: -30px !important;
@@ -889,7 +908,18 @@ select.select_pickup {
 	.sheridan-promo {
 		left: 0px !important;
 	}
+
 	
+	
+}
+@media only screen and (min-width: 481px) and (max-width: 920px) {
+
+	.home-installation {
+		padding: 12px;
+		width: 100%;
+		top: auto;
+		bottom:34px;
+	}
 }
 
 @media only screen and (min-width: 481px) and (max-width: 1379px) {
@@ -898,19 +928,12 @@ select.select_pickup {
 		padding: 25px 10px;
 	}
 	
-	.home-installation {
-		padding-left: 20px;
-		width: 400px;
-	}
 	
 	.promo-disc {
 		top: -700px;
 		left: 0px !important;
 	}
 	
-	.locations-text {
-		margin-left: 77px !important;
-	}
 	
 	.locations-text li, .locations-text li a {
 		padding: 0px 4px;
@@ -943,9 +966,7 @@ select.select_pickup {
 
 @media (max-width: 1280px) {
 	
-	.locations-text {
-		margin-left: 110px !important;
-	}
+
 	
 }
 

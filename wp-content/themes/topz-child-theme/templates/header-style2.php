@@ -7,28 +7,22 @@ $topz_colorset = topz_options()->getCpanelValue('scheme');
 $topz_logo = topz_options()->getCpanelValue('sitelogo');
 $sticky_menu 		= topz_options()->getCpanelValue( 'sticky_menu' );
 $topz_page_header  = ( get_post_meta( get_the_ID(), 'page_header_style', true ) != '' ) ? get_post_meta( get_the_ID(), 'page_header_style', true ) : topz_options()->getCpanelValue('header_style');
+$pick_up_locations = explode(',', topz_options()->getCpanelValue('install_areas'));
+
 ?>
 <header id="header" class="header header-<?php echo esc_attr( $topz_page_header ); ?>">
 	<div class="header-locations">
 		<div class="container rows">
-				<div class="locations-text pull-left">
-				<ul>
-					<li><strong>Pick Up Locations</strong></li>
-					<li>Sydney</li>
-					<li>Brisbane</li>
-					<li>Melbourne</li>
-					<li>Canberra</li>
-					<li>Adelaide</li>
-					<li>Darwin</li>
-					<li>Perth</li>
-					<li>Dubbo</li>
-					<li>Tamworth</li>
-					<li>Hobart</li>
-					<li>Wollongong</li>
-					<li>Newcastle</li>
-					<li>Albury</li>
-					<li>+ More</li>
-				</ul>
+				<div class="locations-text">
+					<div class="col-xs-12 col-sm-4 col-md-2">
+						<strong>Installation Areas</strong>
+					</div>	
+					<div class="col-xs-12 col-sm-8 col-md-10">
+						<?php foreach ($pick_up_locations as $value) { ?>
+							<span><?php echo esc_attr($value) ?></span>
+						<?php } ?>
+						<span><a href="/pick-up-locations/">+ Pick up Locations</a></span>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -46,7 +46,7 @@
 
 #msform {
 	max-width: 860px;
-	z-index: 9999;
+	z-index: 999;
 	margin:0px;
 	text-align: center;
 	position: relative;
@@ -269,7 +269,6 @@ h3.checkout-title {
 }
 .step-total {
     float: right;
-    //width: 70%;
 	min-width: 210px;
 	border: 1px solid #333333;
 	border-radius: 4px;
@@ -277,6 +276,7 @@ h3.checkout-title {
     padding: 15px 11px 15px 11px;
     background: rgba(255, 255, 255, 0.74);
     margin-top: 90px;
+    max-width:240px;
 }
 .step-process {
     float: left;
@@ -366,7 +366,7 @@ label.fsize-img {
 .step-right-images {
 	display: none;
 	float: left;
-    width: 90px;
+    width: 86px;
     border: 1px solid #A9A9A9;
 	border-radius: 4px;
     vertical-align: top;

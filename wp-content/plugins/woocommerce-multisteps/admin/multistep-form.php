@@ -247,7 +247,7 @@ function display_custom_data_product_page()
 	<!-- fieldsets -->
 	
 	
-	<!--- Field step_Process_Size-1 --->
+	<!-- Field step_Process_Size-1 -->
 
 	<fieldset id="showertype">
 		
@@ -289,9 +289,9 @@ function display_custom_data_product_page()
 		<input type="button" name="next" class="clear next action-button continue door-img" value="Next" />
 	</fieldset>
 
-	<!--- End Process --->
+	<!-- End Process -->
 	
-	<!--- Field step_Process_Size-2 --->
+	<!-- Field step_Process_Size-2 -->
 	<fieldset>
 		<h2 class="fs-title">Enter your Shower Size</h2>
 	(Advanced options for out of level floor and walls can be selected later)
@@ -600,9 +600,9 @@ function display_custom_data_product_page()
 			<input type="button" name="next" class="next action-button continue shower-size button-positionright" value="Next" />
 
 	</fieldset>
-	<!--- End Process --->
+	<!-- End Process -->
 	
-	<!--- Field step_Process_Fitting-1 --->
+	<!-- Field step_Process_Fitting-1 -->
 	<fieldset>
 	<h2 class="fs-title hardware-select">Click on your Hardware Selection</h2>
 
@@ -654,7 +654,7 @@ function display_custom_data_product_page()
 	
 	</fieldset>
 	
-	<!--- Field step_Process_Fitting-2 --->
+	<!-- Field step_Process_Fitting-2 -->
 	<?php
 	if($mspc_handleselectionhide == 1)
 	{
@@ -1435,7 +1435,7 @@ function display_custom_data_product_page()
 		else if (!$exp){
 			echo '<button type="submit" name="add-to-cart" value="'.get_the_ID().'" class="single_add_to_cart_button button action-button continue advanced-options advanced-optionsinput product-id alt">Add to cart</button>'; 
 		} else {
-			echo '<button type="button" class="btn btn-action" data-toggle="modal" data-target="#exampleModal">Finish</button>'; 
+			echo '<button type="button" class="btn action-button continue product-id" data-toggle="modal" data-target="#exampleModal" value="'.get_the_ID().'" >Finish</button>'; 
 		}
 		?>
 	</fieldset>
@@ -2023,7 +2023,7 @@ function display_custom_data_product_page()
 									
 									<div class="row">
 										<div class="right-column-selections">
-											<div class="right-column-title"><span id="Orientation"></span></div> 
+											<div class="right-column-title col-sm-12"><span id="Orientation"></span></div> 
 											<div class="right-column-title"><span id="box-ft-finishtext"></span><span id="box-ft-finishtitle"></span></div>
 											<div class="right-column-title"><span id="box-ft-typetext"></span><span id="box-ft-typetitle"></span></div>
 											<div class="right-column-title"><span id="box-glass-typetext"></span><span id="box-glass-typetitle"></span></div>
@@ -2062,7 +2062,9 @@ function display_custom_data_product_page()
 								</div>
 								<?php } else { ?>
 									<div class="row">
-										<h2>Installed Price </h2>
+										<div class="">
+											<h3 class="product-title">Installed Price </h3>
+										</div>
 									</div>
 								<?php } ?>						
 						</div>
@@ -2079,22 +2081,35 @@ function display_custom_data_product_page()
 
 		<!-- Modal -->
 		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		  <div class="modal-dialog .modal-dialog-centered" role="document">
+		  <div class="modal-dialog modal-dialog-centered" role="document">
 		    <div class="modal-content">
 		      <div class="modal-header">
-		        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+		        <h4 class="modal-title" id="exampleModalLabel">Confirm your fixed pricing</h4>
 		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 		          <span aria-hidden="true">&times;</span>
 		        </button>
 		      </div>
 		      <div class="modal-body">
-		        <form action='/'>
-		        <h2> Confirm your fixed pricing</h2>
-		        </form>
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-		        <button type="button" class="btn btn-primary">Save changes</button>
+ 		        <div role="form" class="wpcf7" id="wpcf7-f4-p4248-o1" lang="en-US" dir="ltr">
+					<div class="screen-reader-response"></div>
+
+					<div style="display: none;">
+					<input type="hidden" name="_wpcf7" value="4">
+					<input type="hidden" name="_wpcf7_version" value="5.0.1">
+					<input type="hidden" name="_wpcf7_locale" value="en_US">
+					<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f4-p4248-o1">
+					<input type="hidden" name="_wpcf7_container_post" value="4248">
+					<!-- SideBar totals -->
+					
+
+					</div>
+					<p><span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your Name*"></span><br>
+					<span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Your Email*"></span><br>
+					<span class="wpcf7-form-control-wrap your-phone"><input type="text" name="your-phone" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Your Phone Number"></span><br>
+					<span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your Message *"></textarea></span></p>
+					</div>
+					<p><input type="submit" value="Send message" class="wpcf7-form-control wpcf7-submit"></p>
+					<div class="wpcf7-response-output wpcf7-display-none"></div></div>
 		      </div>
 		    </div>
 		  </div>

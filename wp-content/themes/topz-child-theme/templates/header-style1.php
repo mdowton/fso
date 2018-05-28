@@ -12,16 +12,24 @@ $topz_page_header  = ( get_post_meta( get_the_ID(), 'page_header_style', true ) 
 <header id="header" class="header header-<?php echo esc_attr( $topz_page_header ); ?>">
 	<div class="header-locations">
 		<div class="container rows">
-				<div class="locations-text">
-					<div class="col-xs-12 col-sm-4 col-md-2">
-						<strong>Installation Areas</strong>
-					</div>	
-					<div class="col-xs-12 col-sm-8 col-md-10">
-						<?php foreach ($pick_up_locations as $value) { ?>
-							<span><?php echo esc_attr($value) ?></span>
-						<?php } ?>
-						<span><a href="/pick-up-locations/">+ Pick up Locations</a></span>
-					</div>
+				<div class="locations-text pull-left">
+					<ul>
+					<li><strong>Free Pick Up Locations</strong></li>
+					<li>Sydney</li>
+					<li>Brisbane</li>
+					<li>Melbourne</li>
+					<li>Canberra</li>
+					<li>Adelaide</li>
+					<li>Gold Coast</li>
+					<li>Coffs Harbour</li>
+					<li>Port Macquarie</li>
+					<li>Dubbo</li>
+					<li>Tamworth</li>
+					<li>Wollongong</li>
+					<li>Newcastle</li>
+					<li>Gosford</li>
+					<li>+ More</li>
+				</ul>
 				</div>
 			</div>
 		</div>

@@ -121,6 +121,11 @@
 	font-size: 18px;
 }
 
+/* Split Test HomePage turn off cart icon */
+.page-template-homepage-split-test .top-form {
+	display: none;
+}
+
 /** navigation **/
 
 @media (min-width: 991px) {

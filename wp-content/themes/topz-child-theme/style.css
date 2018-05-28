@@ -80,6 +80,13 @@
 .top-login li {
 	margin-top: 3px;
 }
+.hide-cart .top-form-minicart {
+	display: none;
+}
+
+.split-test-page #progressbar {
+	margin-left: 200px;
+}
 
 .wpb_wrapper.vc_figure .vc_single_image-wrapper img:hover {
 	opacity: 1 !important;

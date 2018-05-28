@@ -204,7 +204,7 @@ function display_custom_data_product_page()
 </div>
 
 <!-- multistep form -->
-<div id="msform">
+<div id="msform" <?php if($exp) { echo "class='split-test-page'"; } ?>>
 	<!-- progressbar -->
 	<ul id="progressbar">
 	<li class="active">Size

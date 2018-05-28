@@ -8,9 +8,15 @@ $topz_logo = topz_options()->getCpanelValue('sitelogo');
 $sticky_menu 		= topz_options()->getCpanelValue( 'sticky_menu' );
 $topz_page_header  = ( get_post_meta( get_the_ID(), 'page_header_style', true ) != '' ) ? get_post_meta( get_the_ID(), 'page_header_style', true ) : topz_options()->getCpanelValue('header_style');
 $pick_up_locations = explode(',', topz_options()->getCpanelValue('install_areas'));
+$experiment_string = $_SERVER['QUERY_STRING'];
+	$exp = false;
+	
+	if ($experiment_string === 'exp=cart_contact' ) {
+		$exp = true;
+	}
 
 ?>
-<header id="header" class="header header-<?php echo esc_attr( $topz_page_header ); ?>">
+<header id="header" class="header header-<?php echo esc_attr( $topz_page_header ); ?> <?php if ($exp) { echo "exp-page"; } ?>">
 	<div class="header-locations">
 		<div class="container rows">
 				<div class="locations-text">
@@ -31,7 +37,7 @@ $pick_up_locations = explode(',', topz_options()->getCpanelValue('install_areas'
 		<div class="container rows">
 			<!-- Sidebar Top Menu -->
 			<?php if (is_active_sidebar('top')) {?>
-			<div class="top-header">
+			<div class="top-header <?php if ($exp) { echo "hide-cart"; } ?>">
 				<?php dynamic_sidebar('top'); ?>
 			</div>
 			<?php }?>

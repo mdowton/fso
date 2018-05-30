@@ -128,7 +128,8 @@ $(".shower-size").click(function(){
 			 if (screenwidth === "") { 
 				//display error message
 				$("#dimension-message").text("Please enter Screen Width");
-				e.preventDefault();	
+				e.preventDefault();
+
 			 }
 			 else{
 					if ($('#screenwidth').val() < 720) { 
@@ -1627,9 +1628,6 @@ $(".next").click(function(){
 		current_fs = $(this).parent();
 		next_fs = $(this).parent().next();
 
-		let targetHash = $(current_fs).attr('id');
-
-		window.location = "#" + targetHash;
 		
 		//activate next step on progressbar using the index of next_fs
 		$("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");

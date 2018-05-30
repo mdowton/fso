@@ -1435,7 +1435,7 @@ function display_custom_data_product_page()
 		else if (!$exp){
 			echo '<button type="submit" name="add-to-cart" value="'.get_the_ID().'" class="single_add_to_cart_button button action-button continue advanced-options advanced-optionsinput product-id alt">Add to cart</button>'; 
 		} else {
-			echo '<button type="button" class="btn action-button continue product-id" data-toggle="modal" data-target="#exampleModal" value="'.get_the_ID().'" >Finish</button>'; 
+			echo '<button type="button" class="btn action-button continue product-id" data-toggle="modal" data-target="#exampleModal" value="'.get_the_ID().'" id="contact-form-modal">Finish</button>'; 
 		}
 		?>
 	</fieldset>
@@ -2090,27 +2090,43 @@ function display_custom_data_product_page()
 		        </button>
 		      </div>
 		      <div class="modal-body">
- 		        <div role="form" class="wpcf7" id="wpcf7-f4-p4248-o1" lang="en-US" dir="ltr">
+
+		      	<div role="form" class="wpcf7" id="wpcf7-f4-p6632-o1" lang="en-US" dir="ltr">
+				<div class="screen-reader-response"></div>
+				<form action="/test-form-page/#wpcf7-f4-p6632-o1" method="post" class="wpcf7-form" novalidate="novalidate" siq_id="autopick_7298">
+				</form></div>
+
+ 		        <!-- <div role="form" class="wpcf7" id="wpcf7-f4-p4248-o1" lang="en-US" dir="ltr">
 					<div class="screen-reader-response"></div>
 
 					<div style="display: none;">
-					<input type="hidden" name="_wpcf7" value="4">
-					<input type="hidden" name="_wpcf7_version" value="5.0.1">
-					<input type="hidden" name="_wpcf7_locale" value="en_US">
-					<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f4-p4248-o1">
-					<input type="hidden" name="_wpcf7_container_post" value="4248">
-					<!-- SideBar totals -->
-					
-
+						<input type="hidden" name="_wpcf7" value="4">
+						<input type="hidden" name="_wpcf7_version" value="5.0.1">
+						<input type="hidden" name="_wpcf7_locale" value="en_US">
+						<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f4-p4248-o1">
+						<input type="hidden" name="_wpcf7_container_post" value="4248">
+						<!-- SideBar totals -->
+						<!-- <input type="hidden" name="door_width" value="" id="selector-door-width">
+						<input type="hidden" name="screen_height" value="" id="selector-screen-height">
+						<input type="hidden" name="screen_depth" value="" id="selector-screen-depth">
+						<input type="hidden" name="screen_width" value="" id="selector-screen-width">
+						<input type="hidden" name="hinge_panel" value="" id="selector-hinge-panel">
+						<input type="hidden" name="panel_depth" value="" id="selector-panel-depth">
+						<input type="hidden" name="handle" value="" id="selector-handle">
+						<input type="hidden" name="glass" value="" id="selector-glass">
+						<input type="hidden" name="glass_treatment" value="" id="selector-glass-treatment">
+			
 					</div>
+					
 					<p><span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your Name*"></span><br>
 					<span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Your Email*"></span><br>
 					<span class="wpcf7-form-control-wrap your-phone"><input type="text" name="your-phone" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Your Phone Number"></span><br>
 					<span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your Message *"></textarea></span></p>
 					</div>
-					<p><input type="submit" value="Send message" class="wpcf7-form-control wpcf7-submit"></p>
+					<p><input type="submit" value="Send message" class="wpcf7-form-control wpcf7-submit" id="contact-form-submit"></p>
 					<div class="wpcf7-response-output wpcf7-display-none"></div></div>
-		      </div>
+		      </div> -->
+		      <?php echo do_shortcode('[contact-form-7 id="4" title="Contact Page"]') ?>
 		    </div>
 		  </div>
 		</div>

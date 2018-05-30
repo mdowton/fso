@@ -1,4 +1,84 @@
-$(function() {		
+$(function() {	
+		var selectors = {
+			doorWidth: $('#doorwidth'),
+			screenHeight: $('#screenheight'),
+			screenDepth: $('#screendepth'),
+			screenWidth: $('#screenwidth'),
+			hingePanel: $('#hingepanel'),
+			panelDepth: $('#paneldepth'),
+			hardwareSelection: $("input[name='fitting']:checked"),
+			handleSelection: $("input[name='prefitting']:checked"),
+			glassSelection: $("input[name='glass']:checked"),
+			glassTreatmentSelection: $("input[name='preglass']:checked"),
+			contactFormSubmit: $('#contact-form-submit'),
+			installedPrice: $('#runingtotal')
+		}
+
+		var formSelectors = {
+			doorWidth: $("#selector-door-width"),
+			screenHeight: $("#selector-screen-height"),
+			screenDepth: $("#selector-screen-depth"),
+			screenWidth: $("#selector-screen-width"),
+			hingePanel: $("#selector-hinge-panel"),
+			panelDepth: $("#selector-panel-depth"),
+			hardwareSelection: $("#selector-hardware"),
+			handleSelection: $("#selector-handle"),
+			glassSelection: $("#selector-glass"),
+			glassTreatmentSelection: $("#selector-glass-treatment"),
+
+		}
+
+		
+		$('#contact-form-modal').on('click', function(){
+			var text = 'Selections';
+
+			if($(selectors.doorWidth).val()){
+				text += '\nDoor width: ' + $(selectors.doorWidth).val();
+			}
+
+			if($(selectors.screenHeight).val()){
+				text += '\nScreen height: ' + $(selectors.screenHeight).val();
+			}
+
+			if($(selectors.screenDepth).val()){
+				text += '\nScreen Depth: ' + $(selectors.screenDepth).val();
+			}
+
+			if($(selectors.screenWidth).val()){
+				text += '\nScreen Width: ' + $(selectors.screenWidth).val();
+			}
+			
+			if($(selectors.hingePanel).val()){
+				text += '\nHinge Panel: ' + $(selectors.hingePanel).val();
+			}
+
+			if($(selectors.panelDepth).val()){
+				text += '\nPanel Depth: ' + $(selectors.panelDepth).val();
+			}			
+			
+			text += '\nHardware: ' + $("input[name='fitting']:checked").val();
+			text += '\nHandle: ' + $("input[name='prefitting']:checked").val();
+			text += '\nGlass: ' + $("input[name='glass']:checked").val();
+			text += '\nGlass Treatment: ' + $("input[name='preglass']:checked").val();
+			text += '\nInstalled Price: ' + '$' + $(selectors.installedPrice).val();
+
+			$('#shower-selection').val(text);
+
+			//$(formSelectors.doorWidth).val($(selectors.doorWidth).val());
+			//$(formSelectors.screenHeight).val($(selectors.screenHeight).val());
+			//$(formSelectors.screenDepth).val($(selectors.screenDepth).val());
+			//$(formSelectors.screenWidth).val($(selectors.screenWidth).val());
+			//$(formSelectors.hingePanel).val($(selectors.hingePanel).val());
+			//$(formSelectors.panelDepth).val($(selectors.panelDepth).val());
+
+			//$(formSelectors.hardwareSelection).val($(selectors.hardwareSelection).val());
+			//$(formSelectors.handleSelection).val($(selectors.handleSelection).val());
+			//$(formSelectors.glassSelection).val($(selectors.glassSelection).val());
+			//$(formSelectors.glassTreatmentSelection).val($(selectors.glassTreatmentSelection).val());
+		})
+
+
+
 
 		/*** Fitting fieldset extra div show/hide ***/
 		 $("input[name='fitting']:radio").change(function () {
